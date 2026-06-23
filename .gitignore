@@ -12,3 +12,24 @@ build/
 .idea/
 .vscode/
 .DS_Store
+
+# 运行时数据
+fgo.db
+
+# 调试产物
+mini.png
+svt_table.png
+svt2.json
+*.png
+*.jpg
+!docs/**/*.png
+!docs/**/*.jpg
+!examples/**/*.png
+!examples/**/*.jpg
+
+# 数据缓存
+plugins/fgo/data/cache/
+
+# 离线渲染测试产物
+test_render.py
+render_test_output.png
