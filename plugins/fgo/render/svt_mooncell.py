@@ -77,6 +77,7 @@ HIT_TYPE_LABEL: dict[str, str] = {
 
 
 def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    """按优先顺序尝试加载 CJK 字体；全部失败时退回 Pillow 默认位图字体。"""
     for p in [
         "plugins/fgo/data/fonts/NotoSansCJKsc-Regular.otf",
         "plugins/fgo/data/fonts/SourceHanSansSC-Regular.otf",
@@ -88,12 +89,15 @@ def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     return ImageFont.load_default()
 
 
+_DEFAULT_FONT_SIZE = 12  # 默认位图字体的近似高度（像素）
+
+
 def _fsize(font: ImageFont.FreeTypeFont | ImageFont.ImageFont) -> int:
     """字体高度（兼容 FreeType 和默认位图字体）"""
     try:
         return font.size  # type: ignore[attr-defined]
     except AttributeError:
-        return 12
+        return _DEFAULT_FONT_SIZE
 
 
 def fit_cover(im: Image.Image, box_w: int, box_h: int) -> Image.Image:
@@ -109,7 +113,7 @@ def fit_cover(im: Image.Image, box_w: int, box_h: int) -> Image.Image:
     return resized.crop((x0, y0, x0 + box_w, y0 + box_h))
 
 
-def _stat(level: int, base: Any, maxv: Any, lv_max: int, growth: list) -> int | None:
+def _stat(level: int, base: Any, maxv: Any, lv_max: int, growth: list[int]) -> int | None:
     if level == 1:
         return int(base) if base is not None else None
     if lv_max == level and maxv is not None:
@@ -263,11 +267,11 @@ async def render_svt_base_table(detail: dict[str, Any]) -> bytes:
     badge_w, badge_h = 44, 44
     badge_y = cur_y + (name_h - badge_h) // 2
     d.rectangle((badge_x, badge_y, badge_x + badge_w, badge_y + badge_h), fill=cls_color)
-    cls_lbl = cls_cn if cls_cn else cls[:3]
-    tw = d.textlength(cls_lbl, font=f_xs)
+    badge_class_label = cls_cn if cls_cn else cls[:3]
+    tw = d.textlength(badge_class_label, font=f_xs)
     d.text(
         (badge_x + (badge_w - tw) / 2, badge_y + (badge_h - _fsize(f_xs)) / 2),
-        cls_lbl, font=f_xs, fill=C_WHITE,
+        badge_class_label, font=f_xs, fill=C_WHITE,
     )
     # 从者名
     nx = badge_x + badge_w + 12
@@ -487,9 +491,9 @@ async def render_svt_base_table(detail: dict[str, Any]) -> bytes:
     # 职阶徽章
     b2_w, b2_h = 52, 22
     d.rectangle((rx_r, ry, rx_r + b2_w, ry + b2_h), fill=cls_color)
-    lbl = cls_cn or cls
-    tw = d.textlength(lbl, font=f_xs)
-    d.text((rx_r + (b2_w - tw) / 2, ry + (b2_h - _fsize(f_xs)) / 2), lbl, font=f_xs, fill=C_WHITE)
+    badge_label = cls_cn or cls
+    tw = d.textlength(badge_label, font=f_xs)
+    d.text((rx_r + (b2_w - tw) / 2, ry + (b2_h - _fsize(f_xs)) / 2), badge_label, font=f_xs, fill=C_WHITE)
     ry += b2_h + 8
 
     # 立绘区域

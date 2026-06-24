@@ -15,7 +15,7 @@ import json
 import sys
 from pathlib import Path
 
-# 将仓库根目录加入 sys.path，使相对导入可被正常解析
+# 将仓库根目录加入 sys.path，使相对导入能够被正常解析
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
