@@ -1,0 +1,74 @@
+{
+  "id": 100200,
+  "collectionNo": 2,
+  "name": "阿尔托莉雅·潘德拉贡（槍）",
+  "originalName": "アルトリア・ペンドラゴン（槍）",
+  "className": "lancer",
+  "rarity": 5,
+  "cost": 16,
+  "gender": "female",
+  "attribute": "sky",
+  "subAttribute": "servant",
+  "atkBase": 1696,
+  "atkMax": 10977,
+  "hpBase": 1854,
+  "hpMax": 12639,
+  "lvMax": 90,
+  "starAbsorb": 91,
+  "starGen": 12.0,
+  "instantDeathChance": 32.0,
+  "npChargeAtk": 1.05,
+  "npChargeDef": 3.0,
+  "cards": [1, 1, 1, 2, 3],
+  "cardDetails": {
+    "arts": {
+      "hitsDistribution": [33, 67]
+    },
+    "buster": {
+      "hitsDistribution": [100]
+    },
+    "quick": {
+      "hitsDistribution": [13, 25, 62]
+    },
+    "extra": {
+      "hitsDistribution": [12, 25, 63]
+    }
+  },
+  "profile": {
+    "cv": "川澄绫子",
+    "illustrator": "武内崇",
+    "stats": {
+      "strength": "B",
+      "endurance": "A",
+      "agility": "A+",
+      "mana": "B",
+      "luck": "B",
+      "np": "A++"
+    }
+  },
+  "traits": [
+    {"id": 1, "name": "人类"},
+    {"id": 2, "name": "女性"},
+    {"id": 3, "name": "骑乘"},
+    {"id": 4, "name": "从者"},
+    {"id": 5, "name": "人形"},
+    {"id": 6, "name": "圆桌骑士"},
+    {"id": 7, "name": "亚瑟传说相关"},
+    {"id": 8, "name": "天属性"},
+    {"id": 9, "name": "剑之从者"},
+    {"id": 10, "name": "超巨大"}
+  ],
+  "atkGrowth": [],
+  "hpGrowth": [],
+  "noblePhantasms": [],
+  "skills": [],
+  "appendPassive": [],
+  "extraAssets": {
+    "charaGraph": {
+      "ascension": {}
+    },
+    "faces": {
+      "ascension": {}
+    }
+  }
+}
