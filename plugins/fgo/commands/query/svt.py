@@ -4,8 +4,8 @@ from nonebot import on_command
 from nonebot.adapters.onebot.v11 import GroupMessageEvent, Message, MessageEvent, MessageSegment
 from nonebot.params import CommandArg
 
-from ...render.svt_mooncell import render_svt_base_table
 from ...services.query.svt_search import query_svt_detail_by_keyword_cn_first
+from ...services.wiki_screenshot import capture_servant_page
 from ...state import normalize_region
 from ...storage_sqlite import resolve_region
 
@@ -37,6 +37,7 @@ async def _(event: MessageEvent, arg: Message = CommandArg()):
     else:
         region, source = resolve_region(user_id, group_id)
 
+    # 查从者
     try:
         result = await query_svt_detail_by_keyword_cn_first(keyword)
     except Exception as e:
@@ -44,17 +45,20 @@ async def _(event: MessageEvent, arg: Message = CommandArg()):
 
     if not result:
         await svt.finish(
-            "未命中从者（当前使用：本地国服别名表 -> Atlas 结构化数据）\n"
+            "未命中从者（当前使用：本地国服别名表 → Atlas 结构化数据）\n"
             f"关键词：{keyword}\n"
             "你可以先在 aliases 文件里加一条映射：\n"
             "plugins/fgo/data/aliases/servant_cn.yaml\n"
         )
 
-    # 渲染 Mooncell 风格图片
+    cn_name = result.cn_name
+
+    # 尝试截取 fgowiki 页面
+    png = None
     try:
-        png = await render_svt_base_table(result.detail)
-    except Exception as e:
-        await svt.finish(f"渲染失败：{type(e).__name__}: {e}")
+        png = await capture_servant_page(cn_name, timeout_ms=15000)
+    except Exception:
+        pass
 
     source_text = {
         "explicit": "显式指定",
@@ -63,8 +67,15 @@ async def _(event: MessageEvent, arg: Message = CommandArg()):
         "default": "默认CN",
     }.get(source, "未知")
 
-    caption = f"{result.cn_name}  {region.upper()}（{source_text}）"
+    caption = f"{cn_name}  {region.upper()}（{source_text}）"
     if result.mooncell_url:
         caption += f"\n🔗 {result.mooncell_url}"
 
-    await svt.finish(MessageSegment.image(png) + MessageSegment.text(caption))
+    if png:
+        # 有截图时发送图片 + 说明文字
+        await svt.finish(MessageSegment.image(png) + MessageSegment.text(caption))
+    else:
+        # 截图失败时退回纯文字
+        await svt.finish(
+            caption + "\n（截图暂时不可用，点击链接查看页面）"
+        )
