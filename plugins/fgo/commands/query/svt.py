@@ -1,41 +1,20 @@
 from __future__ import annotations
 
 from nonebot import on_command
-from nonebot.adapters.onebot.v11 import GroupMessageEvent, Message, MessageEvent, MessageSegment
+from nonebot.adapters.onebot.v11 import Message, MessageEvent, MessageSegment
 from nonebot.params import CommandArg
 
 from ...services.query.svt_search import query_svt_detail_by_keyword_cn_first
-from ...services.wiki_screenshot import capture_servant_page
-from ...state import normalize_region
-from ...storage_sqlite import resolve_region
+from ...services.wiki_screenshot import capture_servant_sections
 
-svt = on_command("svt", aliases={"从者"}, priority=5)
+svt = on_command("查询", aliases={"svt", "从者"}, priority=5)
 
 
 @svt.handle()
 async def _(event: MessageEvent, arg: Message = CommandArg()):
-    text = arg.extract_plain_text().strip()
-    if not text:
-        await svt.finish("用法：/svt [cn|jp|tw] 关键词\n例如：/svt 摩根")
-
-    parts = text.split(maxsplit=1)
-
-    explicit_region = None
-    keyword = text
-    if len(parts) == 2:
-        maybe_region = normalize_region(parts[0])
-        if maybe_region:
-            explicit_region = maybe_region
-            keyword = parts[1].strip()
-
-    user_id = str(event.user_id)
-    group_id = str(event.group_id) if isinstance(event, GroupMessageEvent) else None
-
-    if explicit_region:
-        region = explicit_region
-        source = "explicit"
-    else:
-        region, source = resolve_region(user_id, group_id)
+    keyword = arg.extract_plain_text().strip()
+    if not keyword:
+        await svt.finish("用法：/查询 关键词\n例如：/查询 摩根")
 
     # 查从者
     try:
@@ -51,31 +30,23 @@ async def _(event: MessageEvent, arg: Message = CommandArg()):
             "plugins/fgo/data/aliases/servant_cn.yaml\n"
         )
 
-    cn_name = result.cn_name
-
-    # 尝试截取 fgowiki 页面
-    png = None
-    try:
-        png = await capture_servant_page(cn_name, timeout_ms=15000)
-    except Exception:
-        pass
-
-    source_text = {
-        "explicit": "显式指定",
-        "group": "群默认",
-        "user": "用户默认",
-        "default": "默认CN",
-    }.get(source, "未知")
-
-    caption = f"{cn_name}  {region.upper()}（{source_text}）"
+    # 截取 fgowiki 分节截图
+    header = f"{result.cn_name}"
     if result.mooncell_url:
-        caption += f"\n🔗 {result.mooncell_url}"
+        header += f"\n🔗 {result.mooncell_url}"
 
-    if png:
-        # 有截图时发送图片 + 说明文字
-        await svt.finish(MessageSegment.image(png) + MessageSegment.text(caption))
-    else:
-        # 截图失败时退回纯文字
-        await svt.finish(
-            caption + "\n（截图暂时不可用，点击链接查看页面）"
-        )
+    try:
+        sections = await capture_servant_sections(result.cn_name, timeout_ms=15000)
+    except Exception:
+        sections = []
+
+    if not sections:
+        await svt.finish(header + "\n（截图暂时不可用，请点击链接查看页面）")
+
+    # 只发基础数值
+    first = sections[0]
+    await svt.finish(
+        MessageSegment.text(header + "\n")
+        + MessageSegment.image(first.png_bytes)
+        + MessageSegment.text(f"【{first.title}】")
+    )

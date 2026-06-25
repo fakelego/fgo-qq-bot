@@ -13,8 +13,6 @@ build/
 .vscode/
 .DS_Store
 
-# 运行时数据
-fgo.db
 
 # 调试产物
 mini.png
@@ -27,4 +25,5 @@ test_render.py
 test_screenshot.py
 render_test_output.png
 wiki_screenshot.png
+screenshots/
 svt_test_data.json
