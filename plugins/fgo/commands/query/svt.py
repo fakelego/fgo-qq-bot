@@ -43,10 +43,6 @@ async def _(event: MessageEvent, arg: Message = CommandArg()):
     if not sections:
         await svt.finish(header + "\n（截图暂时不可用，请点击链接查看页面）")
 
-    # 只发基础数值
+    # 只发第一张截图
     first = sections[0]
-    await svt.finish(
-        MessageSegment.text(header + "\n")
-        + MessageSegment.image(first.png_bytes)
-        + MessageSegment.text(f"【{first.title}】")
-    )
+    await svt.finish(MessageSegment.image(first.png_bytes))
