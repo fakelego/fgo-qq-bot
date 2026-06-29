@@ -1,1523 +1,13 @@
 servants:
-  无地王约翰:
-    atlas_id: 1102000
-    collection_no: 469
-    aliases:
-    - 无地王约翰
-    - ジョン・ラックランド
-    - John Lackland
-  希波吕忒:
-    atlas_id: 405600
-    collection_no: 468
-    aliases:
-    - 希波吕忒
-    - ヒッポリュテ
-    - Hippolyta
-  普勒拉蒂:
-    atlas_id: 505600
-    collection_no: 467
-    aliases:
-    - 普勒拉蒂
-    - プレラーティ
-    - Prelati
-  雅克・德・莫莱:
-    atlas_id: 106600
-    collection_no: 466
-    aliases:
-    - 雅克・德・莫莱
-    - ジャック・ド・モレー
-    - Jacques de Molay
-    - 男团长
-    - 雅雅
-  得墨忒耳:
-    atlas_id: 306400
-    collection_no: 465
-    aliases:
-    - 得墨忒耳
-    - デメテル
-    - Demeter
-    - 农神
-    - 德墨忒尔
-  芙萝拉:
-    atlas_id: 1002000
-    collection_no: 464
-    aliases:
-    - 芙萝拉
-    - フローラ
-    - Flora
-  蛇女房:
-    atlas_id: 605200
-    collection_no: 463
-    aliases:
-    - 蛇女房
-    - Hebi Nyobo
-    - 蛇妻
-  花咲翁:
-    atlas_id: 505900
-    collection_no: 462
-    aliases:
-    - 花咲翁
-    - Hanasaka no Okina
-    - 开花爷爷
-  领主洛格雷斯:
-    atlas_id: 106500
-    collection_no: 461
-    aliases:
-    - 领主洛格雷斯
-    - ロード・ログレス
-    - Lord Logres
-    - 冠呆毛
-  马里斯·迦勒底亚斯:
-    atlas_id: 9947530
-    collection_no: 460
-    aliases:
-    - 马里斯·迦勒底亚斯
-    - マリス・カルデアス
-    - Maris Chaldeas
-  所罗门:
-    atlas_id: 1700100
-    collection_no: 83
-    aliases:
-    - 所罗门
-    - ソロモン
-    - Solomon
-    - 小便王
-  终结之伊丽莎白:
-    atlas_id: 1102200
-    collection_no: 458
-    aliases:
-    - 终结之伊丽莎白
-    - 終わりのエリザベート
-    - Ultimate Elisabeth
-    - 仇龙娘
-  伊丽莎白·巴托里:
-    atlas_id: 300500
-    collection_no: 18
-    aliases:
-    - 伊丽莎白·巴托里
-    - エリザベート・バートリー
-    - Elisabeth Báthory
-    - 龙娘
-  近藤勇:
-    atlas_id: 106400
-    collection_no: 456
-    aliases:
-    - 近藤勇
-    - Kondou Isami
-    - 组长
-    - 局长
-    - 大猩猩
-  原田左之助:
-    atlas_id: 306100
-    collection_no: 455
-    aliases:
-    - 原田左之助
-    - Harada Sanosuke
-  藤堂平助:
-    atlas_id: 1102100
-    collection_no: 454
-    aliases:
-    - 藤堂平助
-    - Toudou Heisuke
-  河上彦斋:
-    atlas_id: 605100
-    collection_no: 453
-    aliases:
-    - 河上彦斋
-    - 河上彦斎
-    - Kawakami Gensai
-    - 剑心
-  尼莫／诺亚:
-    atlas_id: 405700
-    collection_no: 452
-    aliases:
-    - 尼莫／诺亚
-    - ネモ／ノア
-    - Nemo/Noah
-    - 大尼莫
-  热内斯·克莱恩:
-    atlas_id: 1001900
-    collection_no: 451
-    aliases:
-    - 热内斯·克莱恩
-    - ジュネス・クレーン
-    - Jeunesse Crane
-    - 鹤Lily,青年克莱恩
-  幼体／提亚马特:
-    atlas_id: 1001600
-    collection_no: 376
-    aliases:
-    - 幼体／提亚马特
-    - ラーヴァ／ティアマト
-    - Larva/Tiamat
-    - 提妈
-  美游·艾德费尔特:
-    atlas_id: 504100
-    collection_no: 236
-    aliases:
-    - 美游·艾德费尔特
-    - 美遊・エーデルフェルト
-    - Miyu Edelfelt
-  玉兔:
-    atlas_id: 2301100
-    collection_no: 448
-    aliases:
-    - 玉兔
-    - 玉兎
-    - Gyokuto
-    - 水式姐
-    - 泳装式姐
-    - '212'
-    - '216'
-  呼延灼:
-    atlas_id: 604600
-    collection_no: 365
-    aliases:
-    - 呼延灼
-    - Huyan Zhuo
-    - 吾绰
-  克里姆希尔德:
-    atlas_id: 704200
-    collection_no: 345
-    aliases:
-    - 克里姆希尔德
-    - クリームヒルト
-    - Kriemhild
-    - 飞嫂
-    - 克琳希德
-  Passionlip:
-    atlas_id: 1000100
-    collection_no: 164
-    aliases:
-    - Passionlip
-    - パッションリップ
-    - Lip
-    - 帕森莉普
-    - 热情迷唇
-    - 西番莲
-    - 郁金香
-  U－奥尔加玛丽:
-    atlas_id: 4000100
-    collection_no: 444
-    aliases:
-    - U－奥尔加玛丽
-    - Ｕ－オルガマリー
-    - U-Olga Marie
-    - 所长
-  E－星玛丽:
-    atlas_id: 9946760
-    collection_no: 443
-    aliases:
-    - E－星玛丽
-    - Ｅ－ステラマリー
-    - E-Stella Marie
-    - 风所长
-    - 风玛丽
-    - 风之奥尔加玛丽
-  因陀罗:
-    atlas_id: 305900
-    collection_no: 442
-    aliases:
-    - 因陀罗
-    - インドラ
-    - Indra
-  堤丰·厄斐墨洛斯:
-    atlas_id: 2801100
-    collection_no: 441
-    aliases:
-    - 堤丰·厄斐墨洛斯
-    - テュフォン・エフェメロス
-    - Typhon Ephemeros
-    - 果子龙
-  莉莉丝:
-    atlas_id: 705100
-    collection_no: 440
-    aliases:
-    - 莉莉丝
-    - リリス
-    - Lilith
-  阿育王:
-    atlas_id: 305800
-    collection_no: 439
-    aliases:
-    - 阿育王
-    - アショカ王
-    - Ashoka
-  梅塔特隆·贞德:
-    atlas_id: 901900
-    collection_no: 438
-    aliases:
-    - 梅塔特隆·贞德
-    - メタトロン・ジャンヌ
-    - Metatron Jeanne
-    - 神贞德
-    - 睡贞
-  但丁·阿利吉耶里:
-    atlas_id: 2801000
-    collection_no: 437
-    aliases:
-    - 但丁·阿利吉耶里
-    - ダンテ・アリギエーリ
-    - Dante Alighieri
-  E－宏玛丽:
-    atlas_id: 9946280
-    collection_no: 436
-    aliases:
-    - E－宏玛丽
-    - Ｅ－グランマリー
-    - E-Grand Marie
-    - 地所长,地玛丽,地之奥尔加玛丽
-  小野小町:
-    atlas_id: 505800
-    collection_no: 435
-    aliases:
-    - 小野小町
-    - Ono-no-Komachi
-  黑姬:
-    atlas_id: 106200
-    collection_no: 434
-    aliases:
-    - 黑姬
-    - 黒姫
-    - Kurohime
-  比肖内:
-    atlas_id: 305700
-    collection_no: 433
-    aliases:
-    - 比肖内
-    - ビショーネ
-    - Biscione
-    - 纹章蛇
-    - 纹章龙
-    - 毒龙
-    - 绿龙
-  理查一世:
-    atlas_id: 106100
-    collection_no: 432
-    aliases:
-    - 理查一世
-    - リチャードⅠ世
-    - Richard I
-    - 狮心王理查
-    - 理查1世
-  Phantasmoon:
-    atlas_id: 2800900
-    collection_no: 431
-    aliases:
-    - Phantasmoon
-    - ファンタズムーン
-    - Space PhantasmoonⅤ
-    - Santasmoon
-    - 幻月
-    - 白月姬
-    - 白公主
-    - 魔法少女
-    - 月披
-  阿比盖尔·威廉姆斯〔圣诞〕:
-    atlas_id: 2800800
-    collection_no: 430
-    aliases:
-    - 阿比盖尔·威廉姆斯〔圣诞〕
-    - アビゲイル・ウィリアムズ〔サンタ〕
-    - Abigail Williams (Santa)
-    - 圣诞阿比
-  娄希:
-    atlas_id: 705000
-    collection_no: 429
-    aliases:
-    - 娄希
-    - ロウヒ
-    - Louhi
-  梵高〔矿工〕:
-    atlas_id: 305600
-    collection_no: 428
-    aliases:
-    - 梵高〔矿工〕
-    - ヴァン・ゴッホ〔マイナー〕
-    - Van Gogh (Miner)
-  图坦卡蒙:
-    atlas_id: 205300
-    collection_no: 427
-    aliases:
-    - 图坦卡蒙
-    - ツタンカーメン
-    - Tutankhamun
-  Kazuradrop:
-    atlas_id: 1001800
-    collection_no: 426
-    aliases:
-    - Kazuradrop
-    - カズラドロップ
-    - 缪瑞恩
-    - 糖果藤蔓
-    - 藤蔓之滴
-    - 猪笼草
-  岸波白野:
-    atlas_id: 2300700
-    collection_no: 424
-    aliases:
-    - 岸波白野
-    - Kishinami Hakuno
-    - 扎比夫
-  谜之女主角XX〔Alter〕:
-    atlas_id: 2501600
-    collection_no: 423
-    aliases:
-    - 谜之女主角XX〔Alter〕
-    - 謎のヒロインXX〔オルタ〕
-    - Mysterious Heroine XX (Alter)
-  特诺奇蒂特兰:
-    atlas_id: 2301000
-    collection_no: 422
-    aliases:
-    - 特诺奇蒂特兰
-    - テノチティトラン
-    - Tenochtitlan
-    - 泳装特拉洛克
-    - 维齐洛波奇特利
-    - 雨神
-  BB迪拜:
-    atlas_id: 2300600
-    collection_no: 421
-    aliases:
-    - BB迪拜
-    - ＢＢドバイ
-    - BB Dubai
-    - BB宇宙
-    - 黄金BB
-  徐福:
-    atlas_id: 1001400
-    collection_no: 352
-    aliases:
-    - 徐福
-    - Xu Fu
-    - 方巿
-  多布雷尼亚·尼基季奇:
-    atlas_id: 404400
-    collection_no: 332
-    aliases:
-    - 多布雷尼亚·尼基季奇
-    - ドブルイニャ・ニキチッチ
-    - Dobrynya Nikitich
-  谜之代行者C.I.E.L:
-    atlas_id: 2300900
-    collection_no: 418
-    aliases:
-    - 谜之代行者C.I.E.L
-    - 謎の代行者C.I.E.L
-    - Mysterious Executor C.I.E.L
-    - 教教我吧！希耶尔老师
-    - 星之希耶尔
-    - 学姐
-  埃列什基伽勒:
-    atlas_id: 303200
-    collection_no: 196
-    aliases:
-    - 埃列什基伽勒
-    - エレシュキガル
-    - Ereshkigal
-    - 艾蕾
-    - 枪凛
-  响＆千键:
-    atlas_id: 1001700
-    collection_no: 416
-    aliases:
-    - 响＆千键
-    - ひびき＆千鍵
-    - Hibiki&Chikagi
-    - 阿昙矶良
-  久远寺有珠:
-    atlas_id: 505500
-    collection_no: 415
-    aliases:
-    - 久远寺有珠
-    - 久遠寺有珠
-    - Kuonji Alice
-  静希草十郎:
-    atlas_id: 704900
-    collection_no: 414
-    aliases:
-    - 静希草十郎
-    - Shizuki Soujyuro
-  苍崎青子:
-    atlas_id: 2501400
-    collection_no: 413
-    aliases:
-    - 苍崎青子
-    - 蒼崎青子
-    - Aozaki Aoko
-    - 第五魔法使
-  E－水玛丽:
-    atlas_id: 9945600
-    collection_no: 412
-    aliases:
-    - E－水玛丽
-    - Ｅ－アクアマリー
-    - E-Aqua Marie
-    - 水所长,水玛丽,水之奥尔加玛丽
-  E－火玛丽:
-    atlas_id: 9945590
-    collection_no: 411
-    aliases:
-    - E－火玛丽
-    - Ｅ－フレアマリー
-    - E-Flare Marie
-    - 火所长,火玛丽,火之奥尔加玛丽
-  亚历山德罗·迪·卡利奥斯特罗:
-    atlas_id: 2800700
-    collection_no: 410
-    aliases:
-    - 亚历山德罗·迪·卡利奥斯特罗
-    - アレッサンドロ・ディ・カリオストロ
-    - Alessandro di Cagliostro
-    - 卡伯爵
-  岩窟王　基督山:
-    atlas_id: 1101700
-    collection_no: 409
-    aliases:
-    - 岩窟王　基督山
-    - 巌窟王　モンテ・クリスト
-    - Monte Cristo
-    - 新伯爵
-  耀星哈桑:
-    atlas_id: 605000
-    collection_no: 408
-    aliases:
-    - 耀星哈桑
-    - 耀星のハサン
-    - Hassan of the Aglare Star
-  玛丽·安托瓦内特〔Alter〕:
-    atlas_id: 1101300
-    collection_no: 407
-    aliases:
-    - 玛丽·安托瓦内特〔Alter〕
-    - マリー・アントワネット〔オルタ〕
-    - Marie Antoinette (Alter)
-  安德洛墨达:
-    atlas_id: 405500
-    collection_no: 406
-    aliases:
-    - 安德洛墨达
-    - アンドロメダ
-    - Andromeda
-    - 仙女座
-  宫本伊织:
-    atlas_id: 106000
-    collection_no: 405
-    aliases:
-    - 宫本伊织
-    - 宮本伊織
-    - Miyamoto Iori
-  由井正雪:
-    atlas_id: 505400
-    collection_no: 404
-    aliases:
-    - 由井正雪
-    - Yui Shousetsu
-  源赖光／丑御前:
-    atlas_id: 1101800
-    collection_no: 403
-    aliases:
-    - 源赖光／丑御前
-    - 源頼光／丑御前
-    - Minamoto-no-Raikou/Ushi Gozen
-    - 仇奶光
-    - 仇赖光
-  大和武尊:
-    atlas_id: 105900
-    collection_no: 402
-    aliases:
-    - 大和武尊
-    - ヤマトタケル
-    - Yamato Takeru
-    - 日本武尊
-  尼莫〔圣诞〕:
-    atlas_id: 405300
-    collection_no: 401
-    aliases:
-    - 尼莫〔圣诞〕
-    - ネモ〔サンタ〕
-    - Nemo (Santa)
-  上杉谦信:
-    atlas_id: 901800
-    collection_no: 400
-    aliases:
-    - 上杉谦信
-    - 上杉謙信
-    - Uesugi Kenshin
-    - 裁谦信
-  杂贺孙一:
-    atlas_id: 205200
-    collection_no: 399
-    aliases:
-    - 杂贺孙一
-    - 雑賀孫一
-    - Saika Magoichi
-    - 杂贺孙市
-    - 杂贺萤
-  永仓新八:
-    atlas_id: 704800
-    collection_no: 398
-    aliases:
-    - 永仓新八
-    - 永倉新八
-    - Nagakura Shinpachi
-  武田晴信:
-    atlas_id: 405200
-    collection_no: 397
-    aliases:
-    - 武田晴信
-    - Takeda Harunobu
-    - 武田信玄
-  忒修斯:
-    atlas_id: 105800
-    collection_no: 396
-    aliases:
-    - 忒修斯
-    - テセウス
-    - Thēseus
-  杉谷善住坊:
-    atlas_id: 205100
-    collection_no: 395
-    aliases:
-    - 杉谷善住坊
-    - Sugitani Zenjubou
-  托勒密:
-    atlas_id: 205000
-    collection_no: 394
-    aliases:
-    - 托勒密
-    - プトレマイオス
-    - Ptolemaîos
-  旺吉娜:
-    atlas_id: 2501300
-    collection_no: 393
-    aliases:
-    - 旺吉娜
-    - ワンジナ
-    - Wandjina
-  凯特·库·米可科尔:
-    atlas_id: 2800600
-    collection_no: 392
-    aliases:
-    - 凯特·库·米可科尔
-    - ケット・クー・ミコケル
-    - Cait Cú MikoCer
-    - 芭万·希
-    - 妖精骑士崔斯坦
-    - 妖崔
-  UDK－巴格斯特:
-    atlas_id: 204900
-    collection_no: 391
-    aliases:
-    - UDK－巴格斯特
-    - ＵＤＫ－バーゲスト
-    - UDK-Barghest
-    - 妖精骑士巴格斯特
-    - 妖精骑士高文
-    - 妖高
-  梅柳齐娜:
-    atlas_id: 901700
-    collection_no: 390
-    aliases:
-    - 梅柳齐娜
-    - メリュジーヌ
-    - Mélusine
-    - 梅柳齐娜·翁蒂娜
-    - 妖精骑士兰斯洛特
-    - 妖兰
-  诺克娜蕾·雅兰杜:
-    atlas_id: 2501200
-    collection_no: 389
-    aliases:
-    - 诺克娜蕾·雅兰杜
-    - ノクナレア・ヤラアーンドゥ
-    - Cnoc na Riabh Yaraändoo
-    - 梅芙
-  克洛伊·冯·爱因兹贝伦:
-    atlas_id: 202700
-    collection_no: 137
-    aliases:
-    - 克洛伊·冯·爱因兹贝伦
-    - クロエ・フォン・アインツベルン
-    - Chloe von Einzbern
-    - 小黑
-  铃鹿御前〔暑假〕:
-    atlas_id: 405000
-    collection_no: 387
-    aliases:
-    - 铃鹿御前〔暑假〕
-    - 鈴鹿御前〔サマバケ〕
-    - Suzuka Gozen (Vacay)
-  阿尔托莉雅·卡斯特:
-    atlas_id: 504500
-    collection_no: 284
-    aliases:
-    - 阿尔托莉雅·卡斯特
-    - アルトリア・キャスター
-    - Altria Caster
-    - C呆
-    - 术呆
-  雨之魔女梣:
-    atlas_id: 505300
-    collection_no: 385
-    aliases:
-    - 雨之魔女梣
-    - 雨の魔女トネリコ
-    - Aesc the Rain Witch
-    - 水摩根
-    - 术摩根
-  美杜莎:
-    atlas_id: 400100
-    collection_no: 23
-    aliases:
-    - 美杜莎
-    - メドゥーサ
-    - Medusa
-    - R姐
-    - 歌果
-  杜尔伽:
-    atlas_id: 204800
-    collection_no: 383
-    aliases:
-    - 杜尔伽
-    - ドゥルガー
-    - Durgā
-    - 黑樱
-    - 迦梨
-  难敌:
-    atlas_id: 704600
-    collection_no: 382
-    aliases:
-    - 难敌
-    - ドゥリーヨダナ
-    - Duryodhana
-  怖军:
-    atlas_id: 305400
-    collection_no: 381
-    aliases:
-    - 怖军
-    - ビーマ
-    - Bhīma
-  果心居士:
-    atlas_id: 604900
-    collection_no: 380
-    aliases:
-    - 果心居士
-    - Kashin Koji
-  瑟坦特:
-    atlas_id: 105700
-    collection_no: 379
-    aliases:
-    - 瑟坦特
-    - セタンタ
-    - Sétanta
-    - 幼狗
-  洛库斯塔:
-    atlas_id: 604800
-    collection_no: 378
-    aliases:
-    - 洛库斯塔
-    - ロクスタ
-    - Locusta
-  所多玛之兽／德拉科:
-    atlas_id: 3300100
-    collection_no: 377
-    aliases:
-    - 所多玛之兽／德拉科
-    - ソドムズビースト／ドラコー
-    - Sodom's Beast/Draco
-    - 兽尼禄
-  高杉晋作:
-    atlas_id: 204700
-    collection_no: 375
-    aliases:
-    - 高杉晋作
-    - Takasugi Shinsaku
-    - 社长
-  女教皇若安:
-    atlas_id: 901600
-    collection_no: 374
-    aliases:
-    - 女教皇若安
-    - 女教皇ヨハンナ
-    - Pope Johanna
-  库库尔坎:
-    atlas_id: 2501100
-    collection_no: 373
-    aliases:
-    - 库库尔坎
-    - ククルカン
-    - Kukulcan
-    - 羽蛇神
-  特拉洛克:
-    atlas_id: 2800500
-    collection_no: 372
-    aliases:
-    - 特拉洛克
-    - トラロック
-    - Tlāloc
-    - 维齐洛波奇特利
-    - 特诺奇蒂特兰
-    - 雨神
-  特斯卡特利波卡:
-    atlas_id: 604700
-    collection_no: 371
-    aliases:
-    - 特斯卡特利波卡
-    - テスカトリポカ
-    - Tezcatlipoca
-    - 烟雾镜
-  尼托克丽丝〔Alter〕:
-    atlas_id: 1101500
-    collection_no: 370
-    aliases:
-    - 尼托克丽丝〔Alter〕
-    - ニトクリス〔オルタ〕
-    - Nitocris (Alter)
-    - 黑尼托
-    - 仇尼托
-  格里戈里·拉斯普京:
-    atlas_id: 1001500
-    collection_no: 369
-    aliases:
-    - 格里戈里·拉斯普京
-    - グレゴリー・ラスプーチン
-    - Grigori Rasputin
-    - 言峰绮礼
-    - 言峰神父
-    - 麻婆
-  布里托玛特:
-    atlas_id: 305300
-    collection_no: 368
-    aliases:
-    - 布里托玛特
-    - ブリトマート
-    - Britomart
-  九纹龙伊丽莎:
-    atlas_id: 2800400
-    collection_no: 367
-    aliases:
-    - 九纹龙伊丽莎
-    - 九紋竜エリザ
-    - Elisa the Nine-Tattooed Dragon
-  黄飞虎:
-    atlas_id: 404900
-    collection_no: 366
-    aliases:
-    - 黄飞虎
-    - 黄飛虎
-    - Huang Feihu
-  壹与:
-    atlas_id: 901500
-    collection_no: 364
-    aliases:
-    - 壹与
-    - 壱与
-    - Iyo
-  山南敬助:
-    atlas_id: 105500
-    collection_no: 363
-    aliases:
-    - 山南敬助
-    - Yamanami Keisuke
-  千利休:
-    atlas_id: 704400
-    collection_no: 362
-    aliases:
-    - 千利休
-    - Sen-no-Rikyu
-  奥特琳德:
-    atlas_id: 604300
-    collection_no: 361
-    aliases:
-    - 奥特琳德
-    - オルトリンデ
-    - Ortlinde
-    - 女武神
-  希露德:
-    atlas_id: 604400
-    collection_no: 360
-    aliases:
-    - 希露德
-    - ヒルド
-    - Hildr
-    - 女武神
-  斯露德:
-    atlas_id: 604500
-    collection_no: 359
-    aliases:
-    - 斯露德
-    - スルーズ
-    - Thrúd
-    - 女武神
-  武则天:
-    atlas_id: 505200
-    collection_no: 358
-    aliases:
-    - 武则天
-    - 武則天
-    - Wu Zetian
-    - 周照
-  斯卡哈·斯卡蒂:
-    atlas_id: 503900
-    collection_no: 215
-    aliases:
-    - 斯卡哈·斯卡蒂
-    - スカサハ＝スカディ
-    - Scáthach-Skadi
-    - cba
-    - 绿拐
-  宇津见绘里濑:
-    atlas_id: 304300
-    collection_no: 283
-    aliases:
-    - 宇津见绘里濑
-    - 宇津見エリセ
-    - Utsumi Erice
-    - 宇津见绘里世
-    - 艾莉瑟
-  伊吹童子:
-    atlas_id: 104600
-    collection_no: 299
-    aliases:
-    - 伊吹童子
-    - Ibuki-Douji
-  加雷斯:
-    atlas_id: 303900
-    collection_no: 256
-    aliases:
-    - 加雷斯
-    - ガレス
-    - Gareth
-  阿瓦隆女士:
-    atlas_id: 2800300
-    collection_no: 353
-    aliases:
-    - 阿瓦隆女士
-    - レディ・アヴァロン
-    - Lady Avalon
-    - 女梅林
-  Archetype：Earth:
-    atlas_id: 2300500
-    collection_no: 351
-    aliases:
-    - Archetype：Earth
-    - アーキタイプ：アース
-    - 'Archetype: EARTH'
-    - 爱尔奎特·布伦史塔德
-    - 地球姬
-    - 公主
-  源为朝:
-    atlas_id: 204600
-    collection_no: 350
-    aliases:
-    - 源为朝
-    - 源為朝
-    - Minamoto-no-Tametomo
-  曲亭马琴:
-    atlas_id: 404800
-    collection_no: 349
-    aliases:
-    - 曲亭马琴
-    - 曲亭馬琴
-    - Kyokutei Bakin
-    - 阿路
-  张角:
-    atlas_id: 505100
-    collection_no: 348
-    aliases:
-    - 张角
-    - 張角
-    - Zhang Jue
-    - 黄巾
-  堂·吉诃德:
-    atlas_id: 305100
-    collection_no: 347
-    aliases:
-    - 堂·吉诃德
-    - ドン・キホーテ
-    - Don Quixote
-  詹姆斯·莫里亚蒂:
-    atlas_id: 901300
-    collection_no: 346
-    aliases:
-    - 詹姆斯·莫里亚蒂
-    - ジェームズ・モリアーティ
-    - James Moriarty
-    - 教授lily
-    - 莫里亚蒂lily
-    - 茉莉
-  罗兰:
-    atlas_id: 104300
-    collection_no: 344
-    aliases:
-    - 罗兰
-    - ローラン
-    - Roland
-    - 脱衣男
-  查理曼:
-    atlas_id: 105200
-    collection_no: 343
-    aliases:
-    - 查理曼
-    - シャルルマーニュ
-    - Charlemagne
-    - 夏露露
-  君士坦丁十一世:
-    atlas_id: 404700
-    collection_no: 342
-    aliases:
-    - 君士坦丁十一世
-    - コンスタンティノス11世
-    - Kōnstantînos XI
-    - 君十一
-  玛丽·安宁:
-    atlas_id: 304900
-    collection_no: 341
-    aliases:
-    - 玛丽·安宁
-    - メアリー・アニング
-    - Mary Anning
-  大黑天:
-    atlas_id: 504700
-    collection_no: 340
-    aliases:
-    - 大黑天
-    - 大黒天
-    - Daikokuten
-  超级班扬:
-    atlas_id: 1001300
-    collection_no: 339
-    aliases:
-    - 超级班扬
-    - スーパーバニヤン
-    - Super Bunyan
-  太岁星君:
-    atlas_id: 1001200
-    collection_no: 338
-    aliases:
-    - 太岁星君
-    - 太歳星君
-    - Taisui Xingjun
-  征氏姐妹:
-    atlas_id: 105300
-    collection_no: 337
-    aliases:
-    - 征氏姐妹
-    - 徴姉妹
-    - Hai Bà Trưng
-    - 二征
-  马纳南·麦克·利尔〔巴泽特〕:
-    atlas_id: 1001100
-    collection_no: 336
-    aliases:
-    - 马纳南·麦克·利尔〔巴泽特〕
-    - マナナン・マク・リール〔バゼット〕
-    - Manannán mac Lir (Bazett)
-  赫费斯提翁:
-    atlas_id: 2800200
-    collection_no: 335
-    aliases:
-    - 赫费斯提翁
-    - ヘファイスティオン
-    - Hephaistíon
-    - faker
-    - Faker
-  暗之高扬斯卡娅:
-    atlas_id: 2500900
-    collection_no: 334
-    aliases:
-    - 暗之高扬斯卡娅
-    - 闇のコヤンスカヤ
-    - Koyanskaya of Dark
-    - 暗狐
-    - 暗兔
-  BeastⅣ:
-    atlas_id: 9943610
-    collection_no: 333
-    aliases:
-    - BeastⅣ
-    - ビーストⅣ
-  太公望:
-    atlas_id: 404300
-    collection_no: 331
-    aliases:
-    - 太公望
-    - Taigong Wang
-    - 姜太公
-    - 钓鱼佬
-  玛尔达〔圣诞〕:
-    atlas_id: 505000
-    collection_no: 330
-    aliases:
-    - 玛尔达〔圣诞〕
-    - マルタ〔サンタ〕
-    - Martha (Santa)
-    - 术马达
-    - 术马大
-  坂本龙马:
-    atlas_id: 403000
-    collection_no: 211
-    aliases:
-    - 坂本龙马
-    - 坂本龍馬
-    - Sakamoto Ryouma
-  谜之兰丸X:
-    atlas_id: 1101200
-    collection_no: 328
-    aliases:
-    - 谜之兰丸X
-    - 謎の蘭丸X
-    - Mysterious Ranmaru X
-    - 森兰丸
-  出云阿国:
-    atlas_id: 504900
-    collection_no: 327
-    aliases:
-    - 出云阿国
-    - 出雲阿国
-    - Izumo-no-Okuni
-  伊丽莎白·巴托里〔灰姑娘〕:
-    atlas_id: 404600
-    collection_no: 326
-    aliases:
-    - 伊丽莎白·巴托里〔灰姑娘〕
-    - エリザベート・バートリー〔シンデレラ〕
-    - Elisabeth Báthory (Cinderella)
-    - 童话龙娘
-    - R龙娘
-  芝诺比阿:
-    atlas_id: 204500
-    collection_no: 325
-    aliases:
-    - 芝诺比阿
-    - ゼノビア
-    - Zenobia
-  雅克·德·莫莱:
-    atlas_id: 2501000
-    collection_no: 324
-    aliases:
-    - 雅克·德·莫莱
-    - ジャック・ド・モレー
-    - Jacques de Molay
-    - 女团长
-  清少纳言:
-    atlas_id: 204000
-    collection_no: 276
-    aliases:
-    - 清少纳言
-    - 清少納言
-    - Sei Shonagon
-  凯妮斯:
-    atlas_id: 304100
-    collection_no: 279
-    aliases:
-    - 凯妮斯
-    - カイニス
-    - Caenis
-    - 沸羊羊
-  迦摩:
-    atlas_id: 603700
-    collection_no: 239
-    aliases:
-    - 迦摩
-    - カーマ
-    - Kama
-    - 黑樱
-    - 杀库拉
-    - 撒库拉
-  莱昂纳多·达·芬奇:
-    atlas_id: 500900
-    collection_no: 127
-    aliases:
-    - 莱昂纳多·达·芬奇
-    - レオナルド・ダ・ヴィンチ
-    - Leonardo da Vinci
-    - 达芬奇亲
-    - 大碧池
-  夏洛特·科黛:
-    atlas_id: 603800
-    collection_no: 259
-    aliases:
-    - 夏洛特·科黛
-    - シャルロット・コルデー
-    - Charlotte Corday
-    - 夏绿蒂
-  阿纳斯塔西娅＆维:
-    atlas_id: 204400
-    collection_no: 318
-    aliases:
-    - 阿纳斯塔西娅＆维
-    - アナスタシア＆ヴィイ
-    - Anastasia&Viy
-  冲田总司〔Alter〕:
-    atlas_id: 1000700
-    collection_no: 209
-    aliases:
-    - 冲田总司〔Alter〕
-    - 沖田総司〔オルタ〕
-    - Okita Souji (Alter)
-    - 魔神总司
-    - 炼狱Alter
-  奥伯龙:
-    atlas_id: 2800100
-    collection_no: 316
-    aliases:
-    - 奥伯龙
-    - オベロン
-    - Oberon
-    - 蛾子
-    - 奥博龙
-    - 奥贝龙
-    - 奥伯隆
-  哈贝特洛特:
-    atlas_id: 404200
-    collection_no: 315
-    aliases:
-    - 哈贝特洛特
-    - ハベトロット
-    - Habetrot
-    - 哈贝喵
-  光之高扬斯卡娅:
-    atlas_id: 604200
-    collection_no: 314
-    aliases:
-    - 光之高扬斯卡娅
-    - 光のコヤンスカヤ
-    - Koyanskaya of Light
-    - 杀狐
-    - 光狐
-    - 红拐
-    - 杀兔
-    - 光兔
-  珀西瓦尔:
-    atlas_id: 304700
-    collection_no: 313
-    aliases:
-    - 珀西瓦尔
-    - パーシヴァル
-    - Percival
-    - 帕西瓦尔
-  妖精骑士兰斯洛特:
-    atlas_id: 304800
-    collection_no: 312
-    aliases:
-    - 妖精骑士兰斯洛特
-    - 妖精騎士ランスロット
-    - Tam Lin Lancelot
-    - 妖兰
-  妖精骑士崔斯坦:
-    atlas_id: 204300
-    collection_no: 311
-    aliases:
-    - 妖精骑士崔斯坦
-    - 妖精騎士トリスタン
-    - Tam Lin Tristan
-    - 妖崔
-  妖精骑士高文:
-    atlas_id: 105000
-    collection_no: 310
-    aliases:
-    - 妖精骑士高文
-    - 妖精騎士ガウェイン
-    - Tam Lin Gawain
-    - 妖高
-  摩根:
-    atlas_id: 704000
-    collection_no: 309
-    aliases:
-    - 摩根
-    - モルガン
-    - Morgan
-  谜之偶像X〔Alter〕:
-    atlas_id: 2500800
-    collection_no: 308
-    aliases:
-    - 谜之偶像X〔Alter〕
-    - 謎のアイドルX〔オルタ〕
-    - Mysterious Idol X (Alter)
-  克莱恩小姐:
-    atlas_id: 504600
-    collection_no: 307
-    aliases:
-    - 克莱恩小姐
-    - ミス・クレーン
-    - Miss Crane
-    - 鹤小姐
-  伽拉忒亚:
-    atlas_id: 703900
-    collection_no: 306
-    aliases:
-    - 伽拉忒亚
-    - ガラテア
-    - Galatea
-  阿摩耳〔卡莲〕:
-    atlas_id: 901100
-    collection_no: 305
-    aliases:
-    - 阿摩耳〔卡莲〕
-    - アムール〔カレン〕
-    - Amor (Caren)
-  鬼一法眼:
-    atlas_id: 604100
-    collection_no: 304
-    aliases:
-    - 鬼一法眼
-    - Kiichi Hogen
-  平景清:
-    atlas_id: 1101000
-    collection_no: 303
-    aliases:
-    - 平景清
-    - Taira-no-Kagekiyo
-  千子村正:
-    atlas_id: 104900
-    collection_no: 302
-    aliases:
-    - 千子村正
-    - Senji Muramasa
-    - 士郎
-  迦尔纳〔圣诞〕:
-    atlas_id: 104800
-    collection_no: 301
-    aliases:
-    - 迦尔纳〔圣诞〕
-    - カルナ〔サンタ〕
-    - Karna (Santa)
-  弗栗多:
-    atlas_id: 304600
-    collection_no: 300
-    aliases:
-    - 弗栗多
-    - ヴリトラ
-    - Vritra
-    - 福利多
-  渡边纲:
-    atlas_id: 104700
-    collection_no: 298
-    aliases:
-    - 渡边纲
-    - 渡辺綱
-    - Watanabe-no-Tsuna
-  芦屋道满:
-    atlas_id: 1001000
-    collection_no: 297
-    aliases:
-    - 芦屋道满
-    - 蘆屋道満
-    - Ashiya Douman
-  尼莫:
-    atlas_id: 403700
-    collection_no: 296
-    aliases:
-    - 尼莫
-    - ネモ
-    - Nemo
-    - 船长
-  梵高:
-    atlas_id: 2500600
-    collection_no: 295
-    aliases:
-    - 梵高
-    - ヴァン・ゴッホ
-    - Van Gogh
-  织田信胜:
-    atlas_id: 204100
-    collection_no: 294
-    aliases:
-    - 织田信胜
-    - 織田信勝
-    - Oda Nobukatsu
-  斋藤一:
-    atlas_id: 104400
-    collection_no: 293
-    aliases:
-    - 斋藤一
-    - 斎藤一
-    - Saitou Hajime
-  卑弥呼:
-    atlas_id: 901000
-    collection_no: 292
-    aliases:
-    - 卑弥呼
-    - Himiko
-    - 邪马台国女王
-  紫式部:
-    atlas_id: 504200
-    collection_no: 237
-    aliases:
-    - 紫式部
-    - Murasaki Shikibu
-  巴御前:
-    atlas_id: 104500
-    collection_no: 290
-    aliases:
-    - 巴御前
-    - Tomoe Gozen
-    - 剑巴御前
-  阿比盖尔·威廉姆斯〔夏〕:
-    atlas_id: 2500700
-    collection_no: 289
-    aliases:
-    - 阿比盖尔·威廉姆斯〔夏〕
-    - アビゲイル・ウィリアムズ〔夏〕
-    - Abigail Williams
-  虞美人:
-    atlas_id: 603500
-    collection_no: 230
-    aliases:
-    - 虞美人
-    - Yu Mei-ren
-    - 虞姬
-    - 雏罂
-  布伦希尔德:
-    atlas_id: 301200
-    collection_no: 88
-    aliases:
-    - 布伦希尔德
-    - ブリュンヒルデ
-    - Brynhild
-    - 布姐
-  伊莉雅丝菲尔·冯·爱因兹贝伦:
-    atlas_id: 502800
-    collection_no: 136
-    aliases:
-    - 伊莉雅丝菲尔·冯·爱因兹贝伦
-    - イリヤスフィール・フォン・アインツベルン
-    - Illyasviel von Einzbern
-    - 伊莉雅
-    - 小学生
-  杀生院祈荒:
-    atlas_id: 1000300
-    collection_no: 167
-    aliases:
-    - 杀生院祈荒
-    - 殺生院キアラ
-    - Sessyoin Kiara
-    - 妖尼姑
-    - 瞑生院祈荒
-  鬼女红叶:
-    atlas_id: 703700
-    collection_no: 282
-    aliases:
-    - 鬼女红叶
-    - 鬼女紅葉
-    - Kijyo Koyo
-    - 恐龙
-  旅行者:
-    atlas_id: 2500500
-    collection_no: 281
-    aliases:
-    - 旅行者
-    - ボイジャー
-    - Voyager
-    - 小王子
-  罗穆路斯·奎里努斯:
-    atlas_id: 304200
-    collection_no: 280
-    aliases:
-    - 罗穆路斯·奎里努斯
-    - ロムルス＝クィリヌス
-    - Romulus=Quirinus
-    - 神祖
-  狄俄斯库里:
-    atlas_id: 104200
-    collection_no: 278
-    aliases:
-    - 狄俄斯库里
-    - ディオスクロイ
-    - Dioscuri
-    - 双子座
-  奥德修斯:
-    atlas_id: 403800
-    collection_no: 277
-    aliases:
-    - 奥德修斯
-    - オデュッセウス
-    - Odysseus
-  杨贵妃:
-    atlas_id: 2500400
-    collection_no: 275
-    aliases:
-    - 杨贵妃
-    - 楊貴妃
-    - Yang Guifei
-    - 杨玉环
-    - 琰女
-  欧罗巴:
-    atlas_id: 404000
-    collection_no: 274
-    aliases:
-    - 欧罗巴
-    - エウロペ
-    - Europa
-  曼迪卡尔多:
-    atlas_id: 403900
-    collection_no: 273
-    aliases:
-    - 曼迪卡尔多
-    - マンドリカルド
-    - Mandricardo
-    - 大老师
-  超人俄里翁:
-    atlas_id: 203800
-    collection_no: 272
-    aliases:
-    - 超人俄里翁
-    - 超人オリオン
-    - Super Orion
-    - 超人熊
-  南丁格尔〔圣诞〕:
-    atlas_id: 203900
-    collection_no: 271
-    aliases:
-    - 南丁格尔〔圣诞〕
-    - ナイチンゲール〔サンタ〕
-    - Florence Nightingale (Santa)
-    - 弓南丁
-  阿斯托尔福:
-    atlas_id: 400400
-    collection_no: 94
-    aliases:
-    - 阿斯托尔福
-    - アストルフォ
-    - Astolfo
-    - 阿福
-    - 伪娘
-  灾星简:
-    atlas_id: 203700
-    collection_no: 269
-    aliases:
-    - 灾星简
-    - カラミティ・ジェーン
-    - Calamity Jane
-  太空伊什塔尔:
-    atlas_id: 1100900
-    collection_no: 268
-    aliases:
-    - 太空伊什塔尔
-    - スペース・イシュタル
-    - Space Ishtar
-    - 宇宙凛
-    - 太空凛
-    - S凛
-  冲田·J·总司:
-    atlas_id: 604000
-    collection_no: 267
-    aliases:
-    - 冲田·J·总司
-    - オキタ・Ｊ・ソウジ
-    - Okita J. Souji
-    - 杀总司
-  谜之Alterego·Λ:
-    atlas_id: 304000
-    collection_no: 266
-    aliases:
-    - 谜之Alterego·Λ
-    - 謎のアルターエゴ・Λ
-    - Mysterious Alter Ego Λ
-    - 枪莉莉丝
+  玛修·基列莱特:
+    atlas_id: 800100
+    collection_no: 1
+    aliases:
+    - 玛修·基列莱特
+    - マシュ・キリエライト
+    - Mash Kyrielight
+    - 盾娘
+    - 学妹
   阿尔托莉雅·潘德拉贡:
     atlas_id: 100100
     collection_no: 2
@@ -1531,590 +21,6 @@ servants:
     - Saber
     - 看板娘
     - 吾王
-  葛饰北斋:
-    atlas_id: 2500200
-    collection_no: 198
-    aliases:
-    - 葛饰北斋
-    - 葛飾北斎
-    - Katsushika Hokusai
-    - 阿荣
-  卡米拉:
-    atlas_id: 601700
-    collection_no: 46
-    aliases:
-    - 卡米拉
-    - カーミラ
-    - Carmilla
-    - 大龙娘
-  刑部姬:
-    atlas_id: 603100
-    collection_no: 189
-    aliases:
-    - 刑部姬
-    - 刑部姫
-    - Osakabehime
-    - 宅姬
-    - NEET姬
-    - 家里蹲
-    - 绿拐
-    - 邢捕头
-  宫本武藏:
-    atlas_id: 101700
-    collection_no: 153
-    aliases:
-    - 宫本武藏
-    - 宮本武蔵
-    - Miyamoto Musashi
-    - 武藏
-  莎乐美:
-    atlas_id: 703400
-    collection_no: 260
-    aliases:
-    - 莎乐美
-    - サロメ
-    - Salome
-  陈宫:
-    atlas_id: 504400
-    collection_no: 258
-    aliases:
-    - 陈宫
-    - 陳宮
-    - Chen Gong
-  巴沙洛缪·罗伯茨:
-    atlas_id: 403400
-    collection_no: 257
-    aliases:
-    - 巴沙洛缪·罗伯茨
-    - バーソロミュー・ロバーツ
-    - Bartholomew Roberts
-  帕里斯:
-    atlas_id: 203500
-    collection_no: 255
-    aliases:
-    - 帕里斯
-    - パリス
-    - Paris
-  伊阿宋:
-    atlas_id: 103800
-    collection_no: 254
-    aliases:
-    - 伊阿宋
-    - イアソン
-    - Jason
-  长尾景虎:
-    atlas_id: 303800
-    collection_no: 252
-    aliases:
-    - 长尾景虎
-    - 長尾景虎
-    - Nagao Kagetora
-    - 上杉谦信
-  森长可:
-    atlas_id: 703500
-    collection_no: 251
-    aliases:
-    - 森长可
-    - 森長可
-    - Mori Nagayoshi
-  织田信长:
-    atlas_id: 202400
-    collection_no: 69
-    aliases:
-    - 织田信长
-    - 織田信長
-    - Oda Nobunaga
-    - 信长
-    - Nobu
-  阿斯克勒庇俄斯:
-    atlas_id: 504300
-    collection_no: 249
-    aliases:
-    - 阿斯克勒庇俄斯
-    - アスクレピオス
-    - Asclepius
-    - 医神
-  马嘶:
-    atlas_id: 203300
-    collection_no: 248
-    aliases:
-    - 马嘶
-    - アシュヴァッターマン
-    - Aśvatthāman
-  阿周那〔Alter〕:
-    atlas_id: 703300
-    collection_no: 247
-    aliases:
-    - 阿周那〔Alter〕
-    - アルジュナ〔オルタ〕
-    - Arjuna (Alter)
-    - 芭娜娜
-    - 狂娜
-  威廉·退尔:
-    atlas_id: 203400
-    collection_no: 246
-    aliases:
-    - 威廉·退尔
-    - ウィリアム・テル
-    - William Tell
-  拉克什米·芭伊:
-    atlas_id: 103900
-    collection_no: 245
-    aliases:
-    - 拉克什米·芭伊
-    - ラクシュミー・バーイー
-    - Lakshmi Bai
-    - 印度贞德
-    - 章西女王
-    - 詹西女王
-  伟大的石像神:
-    atlas_id: 2300300
-    collection_no: 244
-    aliases:
-    - 伟大的石像神
-    - 大いなる石像神
-    - Great Stone Statue God
-    - 吉娜可·加里吉利
-    - 大象
-  格蕾:
-    atlas_id: 603900
-    collection_no: 243
-    aliases:
-    - 格蕾
-    - グレイ
-    - Gray
-    - 小灰
-  阿斯特赖亚:
-    atlas_id: 900800
-    collection_no: 242
-    aliases:
-    - 阿斯特赖亚
-    - アストライア
-    - Astraea
-    - 金钻头
-    - 露维亚
-  司马懿〔莱妮丝〕:
-    atlas_id: 403200
-    collection_no: 241
-    aliases:
-    - 司马懿〔莱妮丝〕
-    - 司馬懿〔ライネス〕
-    - Sima Yi (Reines)
-  BeastⅢ／L:
-    atlas_id: 9941730
-    collection_no: 240
-    aliases:
-    - BeastⅢ／L
-    - ビーストⅢ／L
-    - BeastⅢ/L
-  Kingprotea:
-    atlas_id: 1000900
-    collection_no: 238
-    aliases:
-    - Kingprotea
-    - キングプロテア
-    - 帝王花
-  李书文:
-    atlas_id: 301700
-    collection_no: 102
-    aliases:
-    - 李书文
-    - 李書文
-    - Li Shuwen
-    - 李大师
-  红阎魔:
-    atlas_id: 103700
-    collection_no: 234
-    aliases:
-    - 红阎魔
-    - 紅閻魔
-    - Beni-Enma
-    - 小麻雀
-  魁札尔·科亚特尔〔桑巴／圣诞〕:
-    atlas_id: 900700
-    collection_no: 233
-    aliases:
-    - 魁札尔·科亚特尔〔桑巴／圣诞〕
-    - ケツァル・コアトル〔サンバ／サンタ〕
-    - Quetzalcoatl (Samba/Santa)
-    - 圣诞羽蛇神
-  布拉达曼特:
-    atlas_id: 303600
-    collection_no: 232
-    aliases:
-    - 布拉达曼特
-    - ブラダマンテ
-    - Bradamante
-    - 布妹
-  赤兔马:
-    atlas_id: 403100
-    collection_no: 231
-    aliases:
-    - 赤兔马
-    - 赤兎馬
-    - Red Hare
-    - 丹驹
-  始皇帝:
-    atlas_id: 900600
-    collection_no: 229
-    aliases:
-    - 始皇帝
-    - Qin Shi Huang
-    - 嬴政
-    - 秦始皇
-    - 祖政
-  秦良玉:
-    atlas_id: 303500
-    collection_no: 228
-    aliases:
-    - 秦良玉
-    - Qin Liangyu
-    - 忠贞
-  兰陵王:
-    atlas_id: 103600
-    collection_no: 227
-    aliases:
-    - 兰陵王
-    - 蘭陵王
-    - Prince of Lan Ling
-  项羽:
-    atlas_id: 703200
-    collection_no: 226
-    aliases:
-    - 项羽
-    - 項羽
-    - Xiang Yu
-    - 西楚霸王
-    - 重瞳
-  酒吞童子:
-    atlas_id: 602100
-    collection_no: 112
-    aliases:
-    - 酒吞童子
-    - 酒呑童子
-    - Shuten-Douji
-  志度内:
-    atlas_id: 1000800
-    collection_no: 224
-    aliases:
-    - 志度内
-    - シトナイ
-    - Sitonai
-    - AE伊莉雅
-    - 西托奈
-  迪尔姆德·奥迪那:
-    atlas_id: 300200
-    collection_no: 71
-    aliases:
-    - 迪尔姆德·奥迪那
-    - ディルムッド・オディナ
-    - Diarmuid Ua Duibhne
-    - 刷子
-  谜之女主角XX:
-    atlas_id: 2500300
-    collection_no: 222
-    aliases:
-    - 谜之女主角XX
-    - 謎のヒロインXX
-    - Mysterious Heroine XX
-    - 水枪X
-    - XX毛
-  女王梅芙:
-    atlas_id: 401300
-    collection_no: 99
-    aliases:
-    - 女王梅芙
-    - 女王メイヴ
-    - Queen Medb
-  BB:
-    atlas_id: 2300100
-    collection_no: 166
-    aliases:
-    - BB
-    - ＢＢ
-  贞德〔Alter〕:
-    atlas_id: 1100300
-    collection_no: 106
-    aliases:
-    - 贞德〔Alter〕
-    - ジャンヌ・ダルク〔オルタ〕
-    - Jeanne d'Arc (Alter)
-    - 黑贞
-  牛若丸:
-    atlas_id: 401400
-    collection_no: 27
-    aliases:
-    - 牛若丸
-    - Ushiwakamaru
-    - 牛肉丸
-  茨木童子:
-    atlas_id: 702200
-    collection_no: 116
-    aliases:
-    - 茨木童子
-    - Ibaraki-Douji
-    - 脚神
-  贞德:
-    atlas_id: 900100
-    collection_no: 59
-    aliases:
-    - 贞德
-    - ジャンヌ・ダルク
-    - Jeanne d'Arc
-    - 村姑
-    - 贞日天
-  瓦尔基里:
-    atlas_id: 303300
-    collection_no: 214
-    aliases:
-    - 瓦尔基里
-    - ワルキューレ
-    - Valkyrie
-    - 女武神
-  齐格鲁德:
-    atlas_id: 103300
-    collection_no: 213
-    aliases:
-    - 齐格鲁德
-    - シグルド
-    - Sigurd
-    - 西哥
-  拿破仑:
-    atlas_id: 203100
-    collection_no: 212
-    aliases:
-    - 拿破仑
-    - ナポレオン
-    - Napoleon
-    - 拿皇
-  冈田以藏:
-    atlas_id: 603300
-    collection_no: 210
-    aliases:
-    - 冈田以藏
-    - 岡田以蔵
-    - Okada Izo
-  齐格:
-    atlas_id: 503800
-    collection_no: 208
-    aliases:
-    - 齐格
-    - ジーク
-    - Sieg
-    - 奥特飞
-  喀戎:
-    atlas_id: 203000
-    collection_no: 207
-    aliases:
-    - 喀戎
-    - ケイローン
-    - Chiron
-    - 师匠
-    - 马老师
-  阿喀琉斯:
-    atlas_id: 402900
-    collection_no: 206
-    aliases:
-    - 阿喀琉斯
-    - アキレウス
-    - Achilles
-    - 脚后跟
-  伊凡雷帝:
-    atlas_id: 402800
-    collection_no: 205
-    aliases:
-    - 伊凡雷帝
-    - イヴァン雷帝
-    - Ivan the Terrible
-    - 雷帝
-  安东尼奥·萨列里:
-    atlas_id: 1100600
-    collection_no: 204
-    aliases:
-    - 安东尼奥·萨列里
-    - アントニオ・サリエリ
-    - Antonio Salieri
-    - 萨老师
-  阿维斯布隆:
-    atlas_id: 503600
-    collection_no: 203
-    aliases:
-    - 阿维斯布隆
-    - アヴィケブロン
-    - Avicebron
-    - 黑C
-  阿塔兰忒〔Alter〕:
-    atlas_id: 703000
-    collection_no: 202
-    aliases:
-    - 阿塔兰忒〔Alter〕
-    - アタランテ〔オルタ〕
-    - Atalanta (Alter)
-    - 狂塔
-    - 黑塔
-    - 黑塔喵
-  阿纳斯塔西娅:
-    atlas_id: 503500
-    collection_no: 201
-    aliases:
-    - 阿纳斯塔西娅
-    - アナスタシア
-    - Anastasia
-    - 皇女
-  浅上藤乃:
-    atlas_id: 202900
-    collection_no: 200
-    aliases:
-    - 浅上藤乃
-    - Asagami Fujino
-  塞弥拉弥斯:
-    atlas_id: 603200
-    collection_no: 199
-    aliases:
-    - 塞弥拉弥斯
-    - セミラミス
-    - Semiramis
-    - 女帝
-  阿蒂拉·the·San〔ta〕:
-    atlas_id: 202200
-    collection_no: 197
-    aliases:
-    - 阿蒂拉·the·San〔ta〕
-    - アルテラ・ザ・サン〔タ〕
-    - Attila the San(ta)
-    - 弓大王
-  阿比盖尔·威廉姆斯:
-    atlas_id: 2500100
-    collection_no: 195
-    aliases:
-    - 阿比盖尔·威廉姆斯
-    - アビゲイル・ウィリアムズ
-    - Abigail Williams
-    - 阿比
-    - 泡泡
-    - 银钥匙
-  米德拉什的Caster:
-    atlas_id: 503400
-    collection_no: 194
-    aliases:
-    - 米德拉什的Caster
-    - ミドラーシュのキャスター
-    - Caster of Midrash
-    - 示巴女王
-  哪吒:
-    atlas_id: 303100
-    collection_no: 193
-    aliases:
-    - 哪吒
-    - Nezha
-    - 三太子
-    - 莲偶
-  俄刻阿诺斯的Caster:
-    atlas_id: 503300
-    collection_no: 192
-    aliases:
-    - 俄刻阿诺斯的Caster
-    - オケアノスのキャスター
-    - Caster of Okeanos
-    - 姑姑
-    - 喀耳刻
-  机械伊丽亲Ⅱ号机:
-    atlas_id: 1000500
-    collection_no: 191
-    aliases:
-    - 机械伊丽亲Ⅱ号机
-    - メカエリチャンⅡ号機
-    - Mecha Eli-chan Mk. Ⅱ
-    - 机械龙娘
-    - 2号机
-    - 机械小伊丽
-  机械伊丽亲:
-    atlas_id: 1000400
-    collection_no: 190
-    aliases:
-    - 机械伊丽亲
-    - メカエリチャン
-    - Mecha Eli-chan
-    - 机械龙娘
-    - 1号机
-    - 机械小伊丽
-  加藤段藏:
-    atlas_id: 603000
-    collection_no: 188
-    aliases:
-    - 加藤段藏
-    - 加藤段蔵
-    - Katou "Black Kite" Danzo
-  柳生但马守宗矩:
-    atlas_id: 103200
-    collection_no: 187
-    aliases:
-    - 柳生但马守宗矩
-    - 柳生但馬守宗矩
-    - Yagyu Tajima-no-kami Munenori
-    - 剑圣
-    - 柳但
-    - 榴弹
-    - 柳糖
-    - 老爷
-  宝藏院胤舜:
-    atlas_id: 301400
-    collection_no: 186
-    aliases:
-    - 宝藏院胤舜
-    - 宝蔵院胤舜
-    - Houzouin Inshun
-  Assassin Paraiso:
-    atlas_id: 602900
-    collection_no: 185
-    aliases:
-    - Assassin Paraiso
-    - アサシン・パライソ
-    - Assassin of Paraíso
-    - 望月千代女
-  Archer Inferno:
-    atlas_id: 202100
-    collection_no: 184
-    aliases:
-    - Archer Inferno
-    - アーチャー・インフェルノ
-    - Archer of Inferno
-    - 巴御前
-  帕尔瓦蒂:
-    atlas_id: 303000
-    collection_no: 183
-    aliases:
-    - 帕尔瓦蒂
-    - パールヴァティー
-    - Pārvatī
-    - 雪山樱
-  伊什塔尔:
-    atlas_id: 202000
-    collection_no: 142
-    aliases:
-    - 伊什塔尔
-    - イシュタル
-    - Ishtar
-    - 弓凛
-    - 伊什塔凛
-  源赖光:
-    atlas_id: 702300
-    collection_no: 114
-    aliases:
-    - 源赖光
-    - 源頼光
-    - Minamoto-no-Raikou
-    - 奶光
-    - 光妈
-  海伦娜·布拉瓦茨基:
-    atlas_id: 502300
-    collection_no: 100
-    aliases:
-    - 海伦娜·布拉瓦茨基
-    - エレナ・ブラヴァツキー
-    - Helena Blavatsky
-    - 海伦娜
-    - 海妈
   阿尔托莉雅·潘德拉贡〔Alter〕:
     atlas_id: 100200
     collection_no: 3
@@ -2124,23 +30,14 @@ servants:
     - Altria Pendragon (Alter)
     - 黑呆
     - 黑无毛
-  尼托克丽丝:
-    atlas_id: 501200
-    collection_no: 120
+  阿尔托莉雅·潘德拉贡〔Lily〕:
+    atlas_id: 100300
+    collection_no: 4
     aliases:
-    - 尼托克丽丝
-    - ニトクリス
-    - Nitocris
-    - 尼托
-  弗兰肯斯坦:
-    atlas_id: 700400
-    collection_no: 82
-    aliases:
-    - 弗兰肯斯坦
-    - フランケンシュタイン
-    - Frankenstein
-    - 肯娘
-    - 弗兰
+    - 阿尔托莉雅·潘德拉贡〔Lily〕
+    - アルトリア・ペンドラゴン〔リリィ〕
+    - Altria Pendragon (Lily)
+    - 莉莉
   尼禄·克劳狄乌斯:
     atlas_id: 100500
     collection_no: 5
@@ -2150,213 +47,60 @@ servants:
     - Nero Claudius
     - 尼禄
     - 红Saber
-  保罗·班扬:
-    atlas_id: 702800
-    collection_no: 174
+  齐格飞:
+    atlas_id: 100800
+    collection_no: 6
     aliases:
-    - 保罗·班扬
-    - ポール・バニヤン
-    - Paul Bunyan
-  夏洛克·福尔摩斯:
-    atlas_id: 900500
-    collection_no: 173
+    - 齐格飞
+    - ジークフリート
+    - Siegfried
+    - 飞哥
+  盖乌斯·尤利乌斯·恺撒:
+    atlas_id: 101300
+    collection_no: 7
     aliases:
-    - 夏洛克·福尔摩斯
-    - シャーロック・ホームズ
-    - Sherlock Holmes
-    - 老福
-  反抗军的Rider:
-    atlas_id: 402500
-    collection_no: 172
+    - 盖乌斯·尤利乌斯·恺撒
+    - ガイウス・ユリウス・カエサル
+    - Gaius Julius Caesar
+    - 红Saber
+    - 胖尼禄
+    - 凯撒
+  阿蒂拉:
+    atlas_id: 101800
+    collection_no: 8
     aliases:
-    - 反抗军的Rider
-    - レジスタンスのライダー
-    - Rider of the Resistance
-    - 克里斯托弗·哥伦布
-    - Christopher Columbus
-  黄金国的Berserker:
-    atlas_id: 702700
-    collection_no: 171
+    - 阿蒂拉
+    - アルテラ
+    - Altera
+    - 大王
+    - B提拉
+  吉尔·德·雷:
+    atlas_id: 102200
+    collection_no: 9
     aliases:
-    - 黄金国的Berserker
-    - エルドラドのバーサーカー
-    - Berserker of El Dorado
-    - CEO
-    - 亚马逊
-    - 彭忒西勒亚
-  不夜城的Assassin:
-    atlas_id: 602700
-    collection_no: 170
+    - 吉尔·德·雷
+    - ジル・ド・レェ
+    - Gilles de Rais
+    - 剑元帅
+  骑士迪昂:
+    atlas_id: 102600
+    collection_no: 10
     aliases:
-    - 不夜城的Assassin
-    - 不夜城のアサシン
-    - Assassin of the Nightless City
-    - 武则天
-    - 周照
-  不夜城的Caster:
-    atlas_id: 503000
-    collection_no: 169
+    - 骑士迪昂
+    - シュヴァリエ・デオン
+    - Chevalier d'Eon
+  卫宫:
+    atlas_id: 200100
+    collection_no: 11
     aliases:
-    - 不夜城的Caster
-    - 不夜城のキャスター
-    - Caster of the Nightless City
-    - '1001'
-    - 山鲁佐德
-  BeastⅢ／R:
-    atlas_id: 9939130
-    collection_no: 168
-    aliases:
-    - BeastⅢ／R
-    - ビーストⅢ／Ｒ
-    - BeastⅢ/R
-    - 魔性菩萨
-    - 天堂之孔
-  铃鹿御前:
-    atlas_id: 103000
-    collection_no: 165
-    aliases:
-    - 铃鹿御前
-    - 鈴鹿御前
-    - Suzuka Gozen
-    - JK狐
-  Meltryllis:
-    atlas_id: 1000200
-    collection_no: 163
-    aliases:
-    - Meltryllis
-    - メルトリリス
-    - 溶解莉莉丝
-    - 梅尔特莉莉丝
-    - Melt Lilith
-    - 孤挺花
-  茶茶:
-    atlas_id: 702600
-    collection_no: 162
-    aliases:
-    - 茶茶
-    - 茶々
-    - Chacha
-    - 浅井茶茶
-    - 淀殿
-  土方岁三:
-    atlas_id: 702500
-    collection_no: 161
-    aliases:
-    - 土方岁三
-    - 土方歳三
-    - Hijikata Toshizo
-    - 副长
-  亚瑟·潘德拉贡〔Prototype〕:
-    atlas_id: 102900
-    collection_no: 160
-    aliases:
-    - 亚瑟·潘德拉贡〔Prototype〕
-    - アーサー・ペンドラゴン〔プロトタイプ〕
-    - Arthur Pendragon (Prototype)
-    - 旧剑
-  新宿的Assassin:
-    atlas_id: 602600
-    collection_no: 159
-    aliases:
-    - 新宿的Assassin
-    - 新宿のアサシン
-    - Assassin of Shinjuku
-    - 小乙哥
-    - 燕青
-  新宿的Avenger:
-    atlas_id: 1100500
-    collection_no: 158
-    aliases:
-    - 新宿的Avenger
-    - 新宿のアヴェンジャー
-    - Avenger of Shinjuku
-    - 狼王
-    - 黑森·罗伯
-    - Hessian Lobo
-  卫宫〔Alter〕:
-    atlas_id: 201600
-    collection_no: 157
-    aliases:
-    - 卫宫〔Alter〕
-    - エミヤ〔オルタ〕
-    - Emiya (Alter)
-    - 黑A
-    - 黑茶
-  新宿的Archer:
-    atlas_id: 202300
-    collection_no: 156
-    aliases:
-    - 新宿的Archer
-    - 新宿のアーチャー
-    - Archer of Shinjuku
-    - 教授
-    - 詹姆斯·莫里亚蒂
-    - James Moriarty
-  谜之女主角X〔Alter〕:
-    atlas_id: 702400
-    collection_no: 155
-    aliases:
-    - 谜之女主角X〔Alter〕
-    - 謎のヒロインＸ〔オルタ〕
-    - Mysterious Heroine X (Alter)
-    - BX
-    - BX毛
-    - B呆
-  “山中老人”:
-    atlas_id: 602500
-    collection_no: 154
-    aliases:
-    - “山中老人”
-    - “山の翁”
-    - '"First Hassan"'
-    - 王哈
-    - 爷爷
-  盖提亚:
-    atlas_id: 9935500
-    collection_no: 151
-    aliases:
-    - 盖提亚
-    - ゲーティア
-    - Goetia
-    - 魔神王
-    - Gay提亚
-    - 人王
-  梅林:
-    atlas_id: 500800
-    collection_no: 150
-    aliases:
-    - 梅林
-    - マーリン
-    - Merlin
-    - 魔法☆梅莉
-    - 红拐
-  提亚马特:
-    atlas_id: 9935400
-    collection_no: 149
-    aliases:
-    - 提亚马特
-    - ティアマト
-    - Tiamat
-    - 提妈
-  豹人:
-    atlas_id: 302800
-    collection_no: 148
-    aliases:
-    - 豹人
-    - ジャガーマン
-    - Jaguar Warrior
-    - 老虎
-    - 大河
-    - 藤姐
-  戈耳工:
-    atlas_id: 1100400
-    collection_no: 147
-    aliases:
-    - 戈耳工
-    - ゴルゴーン
-    - Gorgon
-    - 魔神R姐
-    - 复仇R姐
+    - 卫宫
+    - エミヤ
+    - Emiya
+    - 红A
+    - 红茶
+    - 核弹剑仙
+    - 阿茶
+    - 背影男
   吉尔伽美什:
     atlas_id: 200200
     collection_no: 12
@@ -2367,59 +111,155 @@ servants:
     - 金闪闪
     - 二闪
     - 乌鲁克村长
-  魁札尔·科亚特尔:
-    atlas_id: 401800
-    collection_no: 144
+  罗宾汉:
+    atlas_id: 200300
+    collection_no: 13
     aliases:
-    - 魁札尔·科亚特尔
-    - ケツァル・コアトル
-    - Quetzalcoatl
-    - 羽蛇神
-    - 大姐姐
-  恩奇都:
-    atlas_id: 300800
-    collection_no: 143
+    - 罗宾汉
+    - ロビンフッド
+    - Robin Hood
+    - 绿茶
+    - 罗宾
+  阿塔兰忒:
+    atlas_id: 200500
+    collection_no: 14
     aliases:
-    - 恩奇都
-    - エルキドゥ
-    - Enkidu
-    - 小恩
-  贞德·Alter·Santa·Lily:
-    atlas_id: 302600
-    collection_no: 141
+    - 阿塔兰忒
+    - アタランテ
+    - Atalanta
+    - 阿塔
+    - 塔喵
+    - 猫茶
+  尤瑞艾莉:
+    atlas_id: 201200
+    collection_no: 15
     aliases:
-    - 贞德·Alter·Santa·Lily
-    - ジャンヌ・ダルク・オルタ・サンタ・リリィ
-    - Jeanne d'Arc Alter Santa Lily
-    - 童贞
-    - 幼贞
-    - 黑贞Lily
-    - 香香香
-  弗拉德三世〔EXTRA〕:
-    atlas_id: 300300
-    collection_no: 140
+    - 尤瑞艾莉
+    - エウリュアレ
+    - Euryale
+    - 二姐
+  阿拉什:
+    atlas_id: 201300
+    collection_no: 16
     aliases:
-    - 弗拉德三世〔EXTRA〕
-    - ヴラド三世〔EXTRA〕
-    - Vlad III (EXTRA)
-    - 枪大公
-  克娄巴特拉:
-    atlas_id: 600800
-    collection_no: 139
+    - 阿拉什
+    - アーラシュ
+    - Arash
+    - 自爆弓
+    - 大英雄
+    - Stella
+  库·丘林:
+    atlas_id: 300100
+    collection_no: 17
     aliases:
-    - 克娄巴特拉
-    - クレオパトラ
-    - Cleopatra
-    - 艳后
-  伊丽莎白·巴托里〔勇者〕:
-    atlas_id: 101000
-    collection_no: 138
+    - 库·丘林
+    - クー・フーリン
+    - Cú Chulainn
+    - 汪酱
+    - 大狗
+  伊丽莎白·巴托里:
+    atlas_id: 300500
+    collection_no: 18
     aliases:
-    - 伊丽莎白·巴托里〔勇者〕
-    - エリザベート・バートリー〔ブレイブ〕
-    - Elisabeth Báthory (Brave)
-    - S龙娘
-    - 剑龙娘
+    - 伊丽莎白·巴托里
+    - エリザベート・バートリー
+    - Elisabeth Báthory
+    - 龙娘
+  武藏坊弁庆:
+    atlas_id: 300600
+    collection_no: 19
+    aliases:
+    - 武藏坊弁庆
+    - 武蔵坊弁慶
+    - ムサシボウベンケイ
+    - Musashibou Benkei
+    - 常陆坊海尊
+  库·丘林〔Prototype〕:
+    atlas_id: 300700
+    collection_no: 20
+    aliases:
+    - 库·丘林〔Prototype〕
+    - クー・フーリン〔プロトタイプ〕
+    - Cú Chulainn (Prototype)
+    - 旧狗
+  列奥尼达一世:
+    atlas_id: 300900
+    collection_no: 21
+    aliases:
+    - 列奥尼达一世
+    - レオニダス一世
+    - レオニダスイッセイ
+    - Leonidas I
+    - 炎头
+    - 斯巴达
+  罗穆路斯:
+    atlas_id: 301000
+    collection_no: 22
+    aliases:
+    - 罗穆路斯
+    - ロムルス
+    - Romulus
+    - 罗马
+    - 神祖
+  美杜莎:
+    atlas_id: 400100
+    collection_no: 23
+    aliases:
+    - 美杜莎
+    - メドゥーサ
+    - Medusa
+    - R姐
+    - 歌果
+  乔尔乔斯:
+    atlas_id: 400600
+    collection_no: 24
+    aliases:
+    - 乔尔乔斯
+    - ゲオルギウス
+    - Georgios
+    - 乔老师
+  爱德华·蒂奇:
+    atlas_id: 400800
+    collection_no: 25
+    aliases:
+    - 爱德华·蒂奇
+    - エドワード・ティーチ
+    - Edward Teach
+    - 黑胡子
+    - 男船长
+  布狄卡:
+    atlas_id: 401100
+    collection_no: 26
+    aliases:
+    - 布狄卡
+    - ブーディカ
+    - Boudica
+    - 布妈
+  牛若丸:
+    atlas_id: 401400
+    collection_no: 27
+    aliases:
+    - 牛若丸
+    - ウシワカマル
+    - Ushiwakamaru
+    - 牛肉丸
+  亚历山大:
+    atlas_id: 401500
+    collection_no: 28
+    aliases:
+    - 亚历山大
+    - アレキサンダー
+    - Alexander
+    - 幼帝
+  玛丽·安托瓦内特:
+    atlas_id: 401700
+    collection_no: 29
+    aliases:
+    - 玛丽·安托瓦内特
+    - マリー・アントワネット
+    - Marie Antoinette
+    - 王后
+    - 蛋糕
   玛尔达:
     atlas_id: 401900
     collection_no: 30
@@ -2429,13 +269,342 @@ servants:
     - Martha
     - 马大
     - 圣女
+  美狄亚:
+    atlas_id: 500100
+    collection_no: 31
+    aliases:
+    - 美狄亚
+    - メディア
+    - Medea
+    - C妈
+  吉尔·德·雷（术阶）:
+    atlas_id: 500200
+    collection_no: 32
+    aliases:
+    - 吉尔·德·雷（术阶）
+    - ジル・ド・レェ
+  汉斯·克里斯蒂安·安徒生:
+    atlas_id: 500500
+    collection_no: 33
+    aliases:
+    - 汉斯·克里斯蒂安·安徒生
+    - ハンス・クリスチャン・アンデルセン
+    - Hans Christian Andersen
+  威廉·莎士比亚:
+    atlas_id: 500700
+    collection_no: 34
+    aliases:
+    - 威廉·莎士比亚
+    - ウィリアム・シェイクスピア
+    - William Shakespeare
+    - 莎比
+    - 莎翁
+  梅菲斯托费勒斯:
+    atlas_id: 501400
+    collection_no: 35
+    aliases:
+    - 梅菲斯托费勒斯
+    - メフィストフェレス
+    - Mephistopheles
+    - 恶魔
+  沃尔夫冈·阿马德乌斯·莫扎特:
+    atlas_id: 501500
+    collection_no: 36
+    aliases:
+    - 沃尔夫冈·阿马德乌斯·莫扎特
+    - ヴォルフガング・アマデウス・モーツァルト
+    - Wolfgang Amadeus Mozart
+  诸葛孔明〔埃尔梅罗Ⅱ世〕:
+    atlas_id: 501900
+    collection_no: 37
+    aliases:
+    - 诸葛孔明〔埃尔梅罗Ⅱ世〕
+    - 諸葛孔明〔エルメロイⅡ世〕
+    - ショカツコウメイ〔ロードエルメロイニセイ〕
+    - Zhuge Liang (Lord El-Melloi II)
+    - 孔老师
+    - 拐
+  库·丘林（术阶）:
+    atlas_id: 502100
+    collection_no: 38
+    aliases:
+    - 库·丘林（术阶）
+    - クー・フーリン
+  佐佐木小次郎:
+    atlas_id: 600100
+    collection_no: 39
+    aliases:
+    - 佐佐木小次郎
+    - 佐々木小次郎
+    - ササキコジロウ
+    - Sasaki Kojirou
+    - 屠龙剑圣
+    - 小次郎
+  咒腕哈桑:
+    atlas_id: 600200
+    collection_no: 40
+    aliases:
+    - 咒腕哈桑
+    - 呪腕のハサン
+    - ジュワンノハサン
+    - Hassan of the Cursed Arm
+    - 忠义无双
+  斯忒诺:
+    atlas_id: 601000
+    collection_no: 41
+    aliases:
+    - 斯忒诺
+    - ステンノ
+    - Stheno
+    - 大姐
+  荆轲:
+    atlas_id: 601100
+    collection_no: 42
+    aliases:
+    - 荆轲
+    - 荊軻
+    - ケイカ
+    - Jing Ke
+    - 匕见
+  夏尔·亨利·桑松:
+    atlas_id: 601200
+    collection_no: 43
+    aliases:
+    - 夏尔·亨利·桑松
+    - シャルル＝アンリ・サンソン
+    - Charles-Henri Sanson
+  剧院魅影:
+    atlas_id: 601300
+    collection_no: 44
+    aliases:
+    - 剧院魅影
+    - ファントム・オブ・ジ・オペラ
+    - Phantom of the Opera
+  玛塔·哈丽:
+    atlas_id: 601400
+    collection_no: 45
+    aliases:
+    - 玛塔·哈丽
+    - マタ・ハリ
+    - Mata Hari
+    - 舞娘
+  卡米拉:
+    atlas_id: 601700
+    collection_no: 46
+    aliases:
+    - 卡米拉
+    - カーミラ
+    - Carmilla
+    - 大龙娘
+  赫拉克勒斯:
+    atlas_id: 700100
+    collection_no: 47
+    aliases:
+    - 赫拉克勒斯
+    - ヘラクレス
+    - Heracles
+    - B叔
+    - 海叔
+  兰斯洛特:
+    atlas_id: 700200
+    collection_no: 48
+    aliases:
+    - 兰斯洛特
+    - ランスロット
+    - Lancelot
+    - 长江
+    - 狂兰
+    - 岳父
+  吕布奉先:
+    atlas_id: 700300
+    collection_no: 49
+    aliases:
+    - 吕布奉先
+    - 呂布奉先
+    - リョフホウセン
+    - Lu Bu Fengxian
+    - 吕布
+    - 吕高达
+    - 虎狼
+  斯巴达克斯:
+    atlas_id: 700500
+    collection_no: 50
+    aliases:
+    - 斯巴达克斯
+    - スパルタクス
+    - Spartacus
+    - 爱酱
+    - 微笑Boy
+  坂田金时:
+    atlas_id: 700600
+    collection_no: 51
+    aliases:
+    - 坂田金时
+    - 坂田金時
+    - サカタキントキ
+    - Sakata Kintoki
+    - B金时
+    - 狗蛋
+  弗拉德三世:
+    atlas_id: 700700
+    collection_no: 52
+    aliases:
+    - 弗拉德三世
+    - ヴラド三世
+    - ヴラドサンセイ
+    - Vlad III
+    - 大公
+    - 穿刺公
+    - 刺绣公
+    - 二胡公
+  阿斯忒里俄斯:
+    atlas_id: 700900
+    collection_no: 53
+    aliases:
+    - 阿斯忒里俄斯
+    - アステリオス
+    - Asterios
+    - 小牛
+  卡利古拉:
+    atlas_id: 701000
+    collection_no: 54
+    aliases:
+    - 卡利古拉
+    - カリギュラ
+    - Caligula
+    - 鬼舅
+  大流士三世:
+    atlas_id: 701100
+    collection_no: 55
+    aliases:
+    - 大流士三世
+    - ダレイオス三世
+    - ダレイオスサンセイ
+    - Darius III
+    - 酋长
   清姬:
     atlas_id: 701300
     collection_no: 56
     aliases:
     - 清姬
     - 清姫
+    - キヨヒメ
     - Kiyohime
+  血斧埃里克:
+    atlas_id: 701500
+    collection_no: 57
+    aliases:
+    - 血斧埃里克
+    - エイリーク・ブラッドアクス
+    - Eric Bloodaxe
+  玉藻猫:
+    atlas_id: 701600
+    collection_no: 58
+    aliases:
+    - 玉藻猫
+    - タマモキャット
+    - Tamamo Cat
+    - B玉
+    - B狐
+  贞德:
+    atlas_id: 900100
+    collection_no: 59
+    aliases:
+    - 贞德
+    - ジャンヌ・ダルク
+    - Jeanne d'Arc
+    - 村姑
+    - 贞日天
+  俄里翁:
+    atlas_id: 200900
+    collection_no: 60
+    aliases:
+    - 俄里翁
+    - オリオン
+    - Orion
+    - 月神
+  伊丽莎白·巴托里〔万圣节〕:
+    atlas_id: 502600
+    collection_no: 61
+    aliases:
+    - 伊丽莎白·巴托里〔万圣节〕
+    - エリザベート・バートリー〔ハロウィン〕
+    - Elisabeth Báthory (Halloween)
+    - C龙娘
+    - 术龙娘
+  玉藻前:
+    atlas_id: 500300
+    collection_no: 62
+    aliases:
+    - 玉藻前
+    - 玉藻の前
+    - タマモノマエ
+    - Tamamo-no-Mae
+    - C狐
+    - C玉
+    - Miko
+    - 咪咕
+  大卫:
+    atlas_id: 200600
+    collection_no: 63
+    aliases:
+    - 大卫
+    - ダビデ
+    - David
+    - 所罗门爹
+  赫克托耳:
+    atlas_id: 301600
+    collection_no: 64
+    aliases:
+    - 赫克托耳
+    - ヘクトール
+    - Hektor
+    - 赫叔
+  弗朗西斯·德雷克:
+    atlas_id: 400300
+    collection_no: 65
+    aliases:
+    - 弗朗西斯·德雷克
+    - フランシス・ドレイク
+    - Francis Drake
+    - 船长
+    - BBA
+  安妮·伯妮＆玛莉·瑞德:
+    atlas_id: 400900
+    collection_no: 66
+    aliases:
+    - 安妮·伯妮＆玛莉·瑞德
+    - アン・ボニー＆メアリー・リード
+    - Anne Bonny & Mary Read
+    - 双子
+  美狄亚〔Lily〕:
+    atlas_id: 501700
+    collection_no: 67
+    aliases:
+    - 美狄亚〔Lily〕
+    - メディア〔リリィ〕
+    - Medea (Lily)
+    - C子
+  冲田总司:
+    atlas_id: 102700
+    collection_no: 68
+    aliases:
+    - 冲田总司
+    - 沖田総司
+    - オキタソウジ
+    - Okita Souji
+    - 樱Saber
+    - 冲太
+  织田信长:
+    atlas_id: 202400
+    collection_no: 69
+    aliases:
+    - 织田信长
+    - 織田信長
+    - オダノブナガ
+    - Oda Nobunaga
+    - 信长
+    - Nobu
   斯卡哈:
     atlas_id: 301300
     collection_no: 70
@@ -2446,6 +615,48 @@ servants:
     - 师匠
     - BBA
     - 紫发美少女
+  迪尔姆德·奥迪那:
+    atlas_id: 300200
+    collection_no: 71
+    aliases:
+    - 迪尔姆德·奥迪那
+    - ディルムッド・オディナ
+    - Diarmuid Ua Duibhne
+    - 刷子
+  弗格斯·马克·罗伊:
+    atlas_id: 101400
+    collection_no: 72
+    aliases:
+    - 弗格斯·马克·罗伊
+    - フェルグス・マック・ロイ
+    - Fergus mac Róich
+    - 小刚
+  阿尔托莉雅·潘德拉贡〔圣诞Alter〕:
+    atlas_id: 402200
+    collection_no: 73
+    aliases:
+    - 阿尔托莉雅·潘德拉贡〔圣诞Alter〕
+    - アルトリア・ペンドラゴン〔サンタオルタ〕
+    - Altria Pendragon (Santa Alter)
+    - Raber
+    - raber
+  童谣:
+    atlas_id: 500400
+    collection_no: 74
+    aliases:
+    - 童谣
+    - ナーサリー・ライム
+    - Nursery Rhyme
+    - 爱丽丝
+  开膛手杰克:
+    atlas_id: 600500
+    collection_no: 75
+    aliases:
+    - 开膛手杰克
+    - ジャック・ザ・リッパー
+    - Jack the Ripper
+    - 女儿
+    - 雾都弃子
   莫德雷德:
     atlas_id: 100900
     collection_no: 76
@@ -2454,66 +665,386 @@ servants:
     - モードレッド
     - Mordred
     - 小莫
-  安妮·伯妮＆玛莉·瑞德:
-    atlas_id: 400900
-    collection_no: 66
+  尼古拉·特斯拉:
+    atlas_id: 201100
+    collection_no: 77
     aliases:
-    - 安妮·伯妮＆玛莉·瑞德
-    - アン・ボニー＆メアリー・リード
-    - Anne Bonny & Mary Read
-    - 双子
-  玛丽·安托瓦内特:
-    atlas_id: 401700
-    collection_no: 29
+    - 尼古拉·特斯拉
+    - ニコラ・テスラ
+    - Nikola Tesla
+    - 特总
+    - 祖师爷
+  阿尔托莉雅·潘德拉贡〔Alter〕（枪阶）:
+    atlas_id: 301900
+    collection_no: 78
     aliases:
-    - 玛丽·安托瓦内特
-    - マリー・アントワネット
-    - Marie Antoinette
-    - 王后
-    - 蛋糕
-  玉藻前:
-    atlas_id: 500300
-    collection_no: 62
+    - 阿尔托莉雅·潘德拉贡〔Alter〕（枪阶）
+    - アルトリア・ペンドラゴン〔オルタ〕
+  冯·霍恩海姆·帕拉塞尔苏斯:
+    atlas_id: 501000
+    collection_no: 79
     aliases:
-    - 玉藻前
-    - 玉藻の前
-    - Tamamo-no-Mae
-    - C狐
-    - C玉
-    - Miko
-    - 咪咕
-  贝德维尔:
-    atlas_id: 101200
-    collection_no: 126
+    - 冯·霍恩海姆·帕拉塞尔苏斯
+    - ヴァン・ホーエンハイム・パラケルスス
+    - Paracelsus von Hohenheim
+    - 豆爸
+  查尔斯·巴贝奇:
+    atlas_id: 501100
+    collection_no: 80
     aliases:
-    - 贝德维尔
-    - ベディヴィエール
-    - Bedivere
-    - 小贝
-    - 贝卿
-  俵藤太:
-    atlas_id: 201400
-    collection_no: 125
+    - 查尔斯·巴贝奇
+    - チャールズ・バベッジ
+    - Charles Babbage
+    - 蒸汽王
+  亨利·杰基尔＆海德:
+    atlas_id: 600700
+    collection_no: 81
     aliases:
-    - 俵藤太
-    - Tawara Touta
-    - 表藤太
-    - 送米弓
-  静谧哈桑:
-    atlas_id: 600900
-    collection_no: 124
+    - 亨利·杰基尔＆海德
+    - ヘンリー・ジキル＆ハイド
+    - Henry Jekyll & Hyde
+    - 海德
+    - 化身博士
+  弗兰肯斯坦:
+    atlas_id: 700400
+    collection_no: 82
     aliases:
-    - 静谧哈桑
-    - 静謐のハサン
-    - Hassan of the Serenity
-  高文:
-    atlas_id: 100700
-    collection_no: 123
+    - 弗兰肯斯坦
+    - フランケンシュタイン
+    - Frankenstein
+    - 肯娘
+    - 弗兰
+  所罗门:
+    atlas_id: 1700100
+    collection_no: 83
     aliases:
-    - 高文
-    - ガウェイン
-    - Gawain
-    - 大猩猩
+    - 所罗门
+    - ソロモン
+    - Solomon
+    - 小便王
+  阿周那:
+    atlas_id: 201500
+    collection_no: 84
+    aliases:
+    - 阿周那
+    - アルジュナ
+    - Arjuna
+    - 周黑鸭
+    - 娜娜子
+  迦尔纳:
+    atlas_id: 300400
+    collection_no: 85
+    aliases:
+    - 迦尔纳
+    - カルナ
+    - Karna
+    - 小太阳
+  谜之女主角X:
+    atlas_id: 601800
+    collection_no: 86
+    aliases:
+    - 谜之女主角X
+    - 謎のヒロインX
+    - ナゾノヒロインX
+    - Mysterious Heroine X
+    - X毛
+  芬恩·麦克库尔:
+    atlas_id: 301100
+    collection_no: 87
+    aliases:
+    - 芬恩·麦克库尔
+    - フィン・マックール
+    - Fionn mac Cumhaill
+  布伦希尔德:
+    atlas_id: 301200
+    collection_no: 88
+    aliases:
+    - 布伦希尔德
+    - ブリュンヒルデ
+    - Brynhild
+    - 布姐
+  贝奥武夫:
+    atlas_id: 700800
+    collection_no: 89
+    aliases:
+    - 贝奥武夫
+    - ベオウルフ
+    - Beowulf
+    - 狼叔
+    - 贝爷
+  尼禄·克劳狄乌斯〔新娘〕:
+    atlas_id: 100600
+    collection_no: 90
+    aliases:
+    - 尼禄·克劳狄乌斯〔新娘〕
+    - ネロ・クラウディウス〔ブライド〕
+    - Nero Claudius (Bride)
+    - 花嫁
+    - 嫁王
+  两仪式:
+    atlas_id: 102800
+    collection_no: 91
+    aliases:
+    - 两仪式
+    - 両儀式
+    - リョウギシキ
+    - Ryougi Shiki
+    - 剑式
+    - 根源式
+    - '215'
+  两仪式（杀阶）:
+    atlas_id: 602300
+    collection_no: 92
+    aliases:
+    - 两仪式（杀阶）
+    - 両儀式
+    - リョウギシキ
+  天草四郎:
+    atlas_id: 900200
+    collection_no: 93
+    aliases:
+    - 天草四郎
+    - アマクサシロウ
+    - Amakusa Shirou
+    - 天草
+    - 小神父
+    - 言峰士郎
+  阿斯托尔福:
+    atlas_id: 400400
+    collection_no: 94
+    aliases:
+    - 阿斯托尔福
+    - アストルフォ
+    - Astolfo
+    - 阿福
+    - 伪娘
+  幼吉尔:
+    atlas_id: 201800
+    collection_no: 95
+    aliases:
+    - 幼吉尔
+    - 子ギル
+    - コギル
+    - Gilgamesh (Child)
+    - 幼闪
+  岩窟王:
+    atlas_id: 1100200
+    collection_no: 96
+    aliases:
+    - 岩窟王
+    - 巌窟王
+    - ガンクツオウ
+    - Edmond Dantès
+    - 伯爵
+    - 超高校级的伯爵
+    - 哈哈队成员
+  南丁格尔:
+    atlas_id: 701400
+    collection_no: 97
+    aliases:
+    - 南丁格尔
+    - ナイチンゲール
+    - Florence Nightingale
+    - 南丁
+    - 护士
+  库·丘林〔Alter〕:
+    atlas_id: 702000
+    collection_no: 98
+    aliases:
+    - 库·丘林〔Alter〕
+    - クー・フーリン〔オルタ〕
+    - Cú Chulainn (Alter)
+    - 黑狗
+    - 狂狗
+    - 狂王
+  女王梅芙:
+    atlas_id: 401300
+    collection_no: 99
+    aliases:
+    - 女王梅芙
+    - 女王メイヴ
+    - ジョオウメイヴ
+    - Queen Medb
+  海伦娜·布拉瓦茨基:
+    atlas_id: 502300
+    collection_no: 100
+    aliases:
+    - 海伦娜·布拉瓦茨基
+    - エレナ・ブラヴァツキー
+    - Helena Blavatsky
+    - 海伦娜
+    - 海妈
+  罗摩:
+    atlas_id: 101900
+    collection_no: 101
+    aliases:
+    - 罗摩
+    - ラーマ
+    - Rama
+  李书文:
+    atlas_id: 301700
+    collection_no: 102
+    aliases:
+    - 李书文
+    - 李書文
+    - リ・ショブン
+    - Li Shuwen
+    - 李大师
+  托马斯·爱迪生:
+    atlas_id: 502500
+    collection_no: 103
+    aliases:
+    - 托马斯·爱迪生
+    - トーマス・エジソン
+    - Thomas Edison
+    - 爱迪狮
+  杰罗尼莫:
+    atlas_id: 501600
+    collection_no: 104
+    aliases:
+    - 杰罗尼莫
+    - ジェロニモ
+    - Geronimo
+    - 萨满
+  比利小子:
+    atlas_id: 201000
+    collection_no: 105
+    aliases:
+    - 比利小子
+    - ビリー・ザ・キッド
+    - Billy the Kid
+  贞德〔Alter〕:
+    atlas_id: 1100300
+    collection_no: 106
+    aliases:
+    - 贞德〔Alter〕
+    - ジャンヌ・ダルク〔オルタ〕
+    - Jeanne d'Arc (Alter)
+    - 黑贞
+  安哥拉曼纽:
+    atlas_id: 1100100
+    collection_no: 107
+    aliases:
+    - 安哥拉曼纽
+    - アンリマユ
+    - Aŋra Mainiiu
+    - 小安
+  伊斯坎达尔:
+    atlas_id: 400200
+    collection_no: 108
+    aliases:
+    - 伊斯坎达尔
+    - イスカンダル
+    - Iskandar
+    - 亚历山大大帝
+    - 征服王
+  卫宫〔Assassin〕:
+    atlas_id: 601500
+    collection_no: 109
+    aliases:
+    - 卫宫〔Assassin〕
+    - エミヤ〔アサシン〕
+    - Emiya (Assassin)
+    - 切嗣
+    - 切丝
+    - Papa
+  百貌哈桑:
+    atlas_id: 600300
+    collection_no: 110
+    aliases:
+    - 百貌哈桑
+    - 百貌のハサン
+    - ヒャクボウノハサン
+    - Hassan of the Hundred Personas
+  爱丽丝菲尔〔天之衣〕:
+    atlas_id: 502000
+    collection_no: 111
+    aliases:
+    - 爱丽丝菲尔〔天之衣〕
+    - アイリスフィール〔天の衣〕
+    - アイリスフィール〔テンノコロモ〕
+    - Irisviel (Holy Grail)
+    - 太太
+    - 爱丽
+  酒吞童子:
+    atlas_id: 602100
+    collection_no: 112
+    aliases:
+    - 酒吞童子
+    - 酒呑童子
+    - シュテンドウジ
+    - Shuten-Douji
+  玄奘三藏:
+    atlas_id: 502200
+    collection_no: 113
+    aliases:
+    - 玄奘三藏
+    - 玄奘三蔵
+    - ゲンジョウサンゾウ
+    - Xuanzang Sanzang
+    - 西行者
+  源赖光:
+    atlas_id: 702300
+    collection_no: 114
+    aliases:
+    - 源赖光
+    - 源頼光
+    - ミナモトノライコウ
+    - Minamoto-no-Raikou
+    - 奶光
+    - 光妈
+  坂田金时（骑阶）:
+    atlas_id: 402300
+    collection_no: 115
+    aliases:
+    - 坂田金时（骑阶）
+    - 坂田金時
+    - サカタキントキ
+  茨木童子:
+    atlas_id: 702200
+    collection_no: 116
+    aliases:
+    - 茨木童子
+    - イバラキドウジ
+    - Ibaraki-Douji
+    - 脚神
+  风魔小太郎:
+    atlas_id: 601900
+    collection_no: 117
+    aliases:
+    - 风魔小太郎
+    - 風魔小太郎
+    - フウマコタロウ
+    - Fuuma "Evil-wind" Kotarou
+  奥斯曼狄斯:
+    atlas_id: 401200
+    collection_no: 118
+    aliases:
+    - 奥斯曼狄斯
+    - オジマンディアス
+    - Ozymandias
+    - 拉二
+    - 奥兹曼迪亚斯
+  阿尔托莉雅·潘德拉贡（枪阶）:
+    atlas_id: 302000
+    collection_no: 119
+    aliases:
+    - 阿尔托莉雅·潘德拉贡（枪阶）
+    - アルトリア・ペンドラゴン
+  尼托克丽丝:
+    atlas_id: 501200
+    collection_no: 120
+    aliases:
+    - 尼托克丽丝
+    - ニトクリス
+    - Nitocris
+    - 尼托
+  兰斯洛特（剑阶）:
+    atlas_id: 102000
+    collection_no: 121
+    aliases:
+    - 兰斯洛特（剑阶）
+    - ランスロット
   崔斯坦:
     atlas_id: 200800
     collection_no: 122
@@ -2527,718 +1058,2841 @@ servants:
     - 特里斯坦
     - 崔卿
     - 特卿
-  兰斯洛特:
-    atlas_id: 700200
-    collection_no: 48
+  高文:
+    atlas_id: 100700
+    collection_no: 123
     aliases:
-    - 兰斯洛特
-    - ランスロット
-    - Lancelot
-    - 长江
-    - 狂兰
-    - 岳父
-  奥斯曼狄斯:
-    atlas_id: 401200
-    collection_no: 118
+    - 高文
+    - ガウェイン
+    - Gawain
+    - 大猩猩
+  静谧哈桑:
+    atlas_id: 600900
+    collection_no: 124
     aliases:
-    - 奥斯曼狄斯
-    - オジマンディアス
-    - Ozymandias
-    - 拉二
-    - 奥兹曼迪亚斯
-  风魔小太郎:
-    atlas_id: 601900
-    collection_no: 117
+    - 静谧哈桑
+    - 静謐のハサン
+    - セイヒツノハサン
+    - Hassan of the Serenity
+  俵藤太:
+    atlas_id: 201400
+    collection_no: 125
     aliases:
-    - 风魔小太郎
-    - 風魔小太郎
-    - Fuuma "Evil-wind" Kotarou
-  坂田金时:
-    atlas_id: 700600
-    collection_no: 51
+    - 俵藤太
+    - タワラトウタ
+    - Tawara Touta
+    - 表藤太
+    - 送米弓
+  贝德维尔:
+    atlas_id: 101200
+    collection_no: 126
     aliases:
-    - 坂田金时
-    - 坂田金時
-    - Sakata Kintoki
-    - B金时
-    - 狗蛋
-  玄奘三藏:
-    atlas_id: 502200
-    collection_no: 113
+    - 贝德维尔
+    - ベディヴィエール
+    - Bedivere
+    - 小贝
+    - 贝卿
+  莱昂纳多·达·芬奇:
+    atlas_id: 500900
+    collection_no: 127
     aliases:
-    - 玄奘三藏
-    - 玄奘三蔵
-    - Xuanzang Sanzang
-    - 西行者
-  爱丽丝菲尔〔天之衣〕:
-    atlas_id: 502000
-    collection_no: 111
+    - 莱昂纳多·达·芬奇
+    - レオナルド・ダ・ヴィンチ
+    - Leonardo da Vinci
+    - 达芬奇亲
+    - 大碧池
+  玉藻前（枪阶）:
+    atlas_id: 302400
+    collection_no: 128
     aliases:
-    - 爱丽丝菲尔〔天之衣〕
-    - アイリスフィール〔天の衣〕
-    - Irisviel (Holy Grail)
-    - 太太
-    - 爱丽
-  百貌哈桑:
-    atlas_id: 600300
-    collection_no: 110
+    - 玉藻前（枪阶）
+    - 玉藻の前
+    - タマモノマエ
+  阿尔托莉雅·潘德拉贡（弓阶）:
+    atlas_id: 202600
+    collection_no: 129
     aliases:
-    - 百貌哈桑
-    - 百貌のハサン
-    - Hassan of the Hundred Personas
-  卫宫〔Assassin〕:
-    atlas_id: 601500
-    collection_no: 109
+    - 阿尔托莉雅·潘德拉贡（弓阶）
+    - アルトリア・ペンドラゴン
+  玛丽·安托瓦内特（术阶）:
+    atlas_id: 502700
+    collection_no: 130
     aliases:
-    - 卫宫〔Assassin〕
-    - エミヤ〔アサシン〕
-    - Emiya (Assassin)
-    - 切嗣
-    - 切丝
-    - Papa
-  伊斯坎达尔:
-    atlas_id: 400200
-    collection_no: 108
+    - 玛丽·安托瓦内特（术阶）
+    - マリー・アントワネット
+  安妮·伯妮＆玛莉·瑞德（弓阶）:
+    atlas_id: 202500
+    collection_no: 131
     aliases:
-    - 伊斯坎达尔
-    - イスカンダル
-    - Iskandar
-    - 亚历山大大帝
-    - 征服王
-  安哥拉曼纽:
-    atlas_id: 1100100
-    collection_no: 107
+    - 安妮·伯妮＆玛莉·瑞德（弓阶）
+    - アン・ボニー＆メアリー・リード
+  莫德雷德（骑阶）:
+    atlas_id: 402400
+    collection_no: 132
     aliases:
-    - 安哥拉曼纽
-    - アンリマユ
-    - Aŋra Mainiiu
-    - 小安
-  比利小子:
-    atlas_id: 201000
-    collection_no: 105
+    - 莫德雷德（骑阶）
+    - モードレッド
+  斯卡哈（杀阶）:
+    atlas_id: 602400
+    collection_no: 133
     aliases:
-    - 比利小子
-    - ビリー・ザ・キッド
-    - Billy the Kid
-  杰罗尼莫:
-    atlas_id: 501600
-    collection_no: 104
+    - 斯卡哈（杀阶）
+    - スカサハ
+  清姬（枪阶）:
+    atlas_id: 302500
+    collection_no: 134
     aliases:
-    - 杰罗尼莫
-    - ジェロニモ
-    - Geronimo
-    - 萨满
-  托马斯·爱迪生:
-    atlas_id: 502500
-    collection_no: 103
+    - 清姬（枪阶）
+    - 清姫
+    - キヨヒメ
+  玛尔达（裁阶）:
+    atlas_id: 900400
+    collection_no: 135
     aliases:
-    - 托马斯·爱迪生
-    - トーマス・エジソン
-    - Thomas Edison
-    - 爱迪狮
-  罗摩:
-    atlas_id: 101900
-    collection_no: 101
+    - 玛尔达（裁阶）
+    - マルタ
+  伊莉雅丝菲尔·冯·爱因兹贝伦:
+    atlas_id: 502800
+    collection_no: 136
     aliases:
-    - 罗摩
-    - ラーマ
-    - Rama
-  库·丘林〔Alter〕:
-    atlas_id: 702000
-    collection_no: 98
+    - 伊莉雅丝菲尔·冯·爱因兹贝伦
+    - イリヤスフィール・フォン・アインツベルン
+    - Illyasviel von Einzbern
+    - 伊莉雅
+    - 小学生
+  克洛伊·冯·爱因兹贝伦:
+    atlas_id: 202700
+    collection_no: 137
     aliases:
-    - 库·丘林〔Alter〕
-    - クー・フーリン〔オルタ〕
-    - Cú Chulainn (Alter)
-    - 黑狗
-    - 狂狗
-    - 狂王
-  南丁格尔:
-    atlas_id: 701400
-    collection_no: 97
+    - 克洛伊·冯·爱因兹贝伦
+    - クロエ・フォン・アインツベルン
+    - Chloe von Einzbern
+    - 小黑
+  伊丽莎白·巴托里〔勇者〕:
+    atlas_id: 101000
+    collection_no: 138
     aliases:
-    - 南丁格尔
-    - ナイチンゲール
-    - Florence Nightingale
-    - 南丁
-    - 护士
-  岩窟王:
-    atlas_id: 1100200
-    collection_no: 96
+    - 伊丽莎白·巴托里〔勇者〕
+    - エリザベート・バートリー〔ブレイブ〕
+    - Elisabeth Báthory (Brave)
+    - S龙娘
+    - 剑龙娘
+  克娄巴特拉:
+    atlas_id: 600800
+    collection_no: 139
     aliases:
-    - 岩窟王
-    - 巌窟王
-    - Edmond Dantès
-    - 伯爵
-    - 超高校级的伯爵
-    - 哈哈队成员
-  幼吉尔:
-    atlas_id: 201800
-    collection_no: 95
+    - 克娄巴特拉
+    - クレオパトラ
+    - Cleopatra
+    - 艳后
+  弗拉德三世〔EXTRA〕:
+    atlas_id: 300300
+    collection_no: 140
     aliases:
-    - 幼吉尔
-    - 子ギル
-    - Gilgamesh (Child)
-    - 幼闪
-  天草四郎:
-    atlas_id: 900200
-    collection_no: 93
+    - 弗拉德三世〔EXTRA〕
+    - ヴラド三世〔EXTRA〕
+    - Vlad III (EXTRA)
+    - 枪大公
+  贞德·Alter·Santa·Lily:
+    atlas_id: 302600
+    collection_no: 141
     aliases:
-    - 天草四郎
-    - Amakusa Shirou
-    - 天草
-    - 小神父
-    - 言峰士郎
-  两仪式:
-    atlas_id: 102800
-    collection_no: 91
+    - 贞德·Alter·Santa·Lily
+    - ジャンヌ・ダルク・オルタ・サンタ・リリィ
+    - Jeanne d'Arc Alter Santa Lily
+    - 童贞
+    - 幼贞
+    - 黑贞Lily
+    - 香香香
+  伊什塔尔:
+    atlas_id: 202000
+    collection_no: 142
     aliases:
-    - 两仪式
-    - 両儀式
-    - Ryougi Shiki
-    - 剑式
-    - 根源式
-    - '215'
-  尼禄·克劳狄乌斯〔新娘〕:
-    atlas_id: 100600
-    collection_no: 90
+    - 伊什塔尔
+    - イシュタル
+    - Ishtar
+    - 弓凛
+    - 伊什塔凛
+  恩奇都:
+    atlas_id: 300800
+    collection_no: 143
     aliases:
-    - 尼禄·克劳狄乌斯〔新娘〕
-    - ネロ・クラウディウス〔ブライド〕
-    - Nero Claudius (Bride)
-    - 花嫁
-    - 嫁王
-  贝奥武夫:
-    atlas_id: 700800
-    collection_no: 89
+    - 恩奇都
+    - エルキドゥ
+    - Enkidu
+    - 小恩
+  魁札尔·科亚特尔:
+    atlas_id: 401800
+    collection_no: 144
     aliases:
-    - 贝奥武夫
-    - ベオウルフ
-    - Beowulf
-    - 狼叔
-    - 贝爷
-  芬恩·麦克库尔:
-    atlas_id: 301100
-    collection_no: 87
+    - 魁札尔·科亚特尔
+    - ケツァル・コアトル
+    - Quetzalcoatl
+    - 羽蛇神
+    - 大姐姐
+  吉尔伽美什（术阶）:
+    atlas_id: 501800
+    collection_no: 145
     aliases:
-    - 芬恩·麦克库尔
-    - フィン・マックール
-    - Fionn mac Cumhaill
-  谜之女主角X:
-    atlas_id: 601800
-    collection_no: 86
+    - 吉尔伽美什（术阶）
+    - ギルガメッシュ
+  美杜莎（枪阶）:
+    atlas_id: 302700
+    collection_no: 146
     aliases:
-    - 谜之女主角X
-    - 謎のヒロインX
-    - Mysterious Heroine X
-    - X毛
-  迦尔纳:
-    atlas_id: 300400
-    collection_no: 85
+    - 美杜莎（枪阶）
+    - メドゥーサ
+  戈耳工:
+    atlas_id: 1100400
+    collection_no: 147
     aliases:
-    - 迦尔纳
-    - カルナ
-    - Karna
-    - 小太阳
-  阿周那:
-    atlas_id: 201500
-    collection_no: 84
+    - 戈耳工
+    - ゴルゴーン
+    - Gorgon
+    - 魔神R姐
+    - 复仇R姐
+  豹人:
+    atlas_id: 302800
+    collection_no: 148
     aliases:
-    - 阿周那
-    - アルジュナ
-    - Arjuna
-    - 周黑鸭
-    - 娜娜子
-  亨利·杰基尔＆海德:
-    atlas_id: 600700
-    collection_no: 81
+    - 豹人
+    - ジャガーマン
+    - Jaguar Warrior
+    - 老虎
+    - 大河
+    - 藤姐
+  提亚马特:
+    atlas_id: 9935400
+    collection_no: 149
     aliases:
-    - 亨利·杰基尔＆海德
-    - ヘンリー・ジキル＆ハイド
-    - Henry Jekyll & Hyde
-    - 海德
-    - 化身博士
-  查尔斯·巴贝奇:
-    atlas_id: 501100
-    collection_no: 80
+    - 提亚马特
+    - ティアマト
+    - Tiamat
+    - 提妈
+  梅林:
+    atlas_id: 500800
+    collection_no: 150
     aliases:
-    - 查尔斯·巴贝奇
-    - チャールズ・バベッジ
-    - Charles Babbage
-    - 蒸汽王
-  冯·霍恩海姆·帕拉塞尔苏斯:
-    atlas_id: 501000
-    collection_no: 79
+    - 梅林
+    - マーリン
+    - Merlin
+    - 魔法☆梅莉
+    - 红拐
+  盖提亚:
+    atlas_id: 9935500
+    collection_no: 151
     aliases:
-    - 冯·霍恩海姆·帕拉塞尔苏斯
-    - ヴァン・ホーエンハイム・パラケルスス
-    - Paracelsus von Hohenheim
-    - 豆爸
-  尼古拉·特斯拉:
-    atlas_id: 201100
-    collection_no: 77
+    - 盖提亚
+    - ゲーティア
+    - Goetia
+    - 魔神王
+    - Gay提亚
+    - 人王
+  所罗门（术阶）:
+    atlas_id: 9935530
+    collection_no: 152
     aliases:
-    - 尼古拉·特斯拉
-    - ニコラ・テスラ
-    - Nikola Tesla
-    - 特总
-    - 祖师爷
-  开膛手杰克:
-    atlas_id: 600500
-    collection_no: 75
+    - 所罗门（术阶）
+    - ソロモン
+  宫本武藏:
+    atlas_id: 101700
+    collection_no: 153
     aliases:
-    - 开膛手杰克
-    - ジャック・ザ・リッパー
-    - Jack the Ripper
-    - 女儿
-    - 雾都弃子
-  童谣:
-    atlas_id: 500400
-    collection_no: 74
+    - 宫本武藏
+    - 宮本武蔵
+    - ミヤモトムサシ
+    - Miyamoto Musashi
+    - 武藏
+  “山中老人”:
+    atlas_id: 602500
+    collection_no: 154
     aliases:
-    - 童谣
-    - ナーサリー・ライム
-    - Nursery Rhyme
-    - 爱丽丝
-  阿尔托莉雅·潘德拉贡〔圣诞Alter〕:
-    atlas_id: 402200
-    collection_no: 73
+    - “山中老人”
+    - “山の翁”
+    - ヤマノオキナ
+    - '"First Hassan"'
+    - 王哈
+    - 爷爷
+  谜之女主角X〔Alter〕:
+    atlas_id: 702400
+    collection_no: 155
     aliases:
-    - 阿尔托莉雅·潘德拉贡〔圣诞Alter〕
-    - アルトリア・ペンドラゴン〔サンタオルタ〕
-    - Altria Pendragon (Santa Alter)
-    - Raber
-    - raber
-  弗格斯·马克·罗伊:
-    atlas_id: 101400
-    collection_no: 72
+    - 谜之女主角X〔Alter〕
+    - 謎のヒロインX〔オルタ〕
+    - ナゾノヒロインエックス〔オルタ〕
+    - 謎のヒロインＸ〔オルタ〕
+    - Mysterious Heroine X (Alter)
+    - BX
+    - BX毛
+    - B呆
+  新宿的Archer:
+    atlas_id: 202300
+    collection_no: 156
     aliases:
-    - 弗格斯·马克·罗伊
-    - フェルグス・マック・ロイ
-    - Fergus mac Róich
-    - 小刚
-  冲田总司:
-    atlas_id: 102700
-    collection_no: 68
+    - 新宿的Archer
+    - ジェームズ・モリアーティ
+    - 新宿のアーチャー
+    - Archer of Shinjuku
+    - 教授
+    - 詹姆斯·莫里亚蒂
+    - James Moriarty
+  卫宫〔Alter〕:
+    atlas_id: 201600
+    collection_no: 157
     aliases:
-    - 冲田总司
+    - 卫宫〔Alter〕
+    - エミヤ〔オルタ〕
+    - Emiya (Alter)
+    - 黑A
+    - 黑茶
+  新宿的Avenger:
+    atlas_id: 1100500
+    collection_no: 158
+    aliases:
+    - 新宿的Avenger
+    - ヘシアン・ロボ
+    - 新宿のアヴェンジャー
+    - Avenger of Shinjuku
+    - 狼王
+    - 黑森·罗伯
+    - Hessian Lobo
+  新宿的Assassin:
+    atlas_id: 602600
+    collection_no: 159
+    aliases:
+    - 新宿的Assassin
+    - 燕青
+    - エンセイ
+    - 新宿のアサシン
+    - Assassin of Shinjuku
+    - 小乙哥
+  亚瑟·潘德拉贡〔Prototype〕:
+    atlas_id: 102900
+    collection_no: 160
+    aliases:
+    - 亚瑟·潘德拉贡〔Prototype〕
+    - アーサー・ペンドラゴン〔プロトタイプ〕
+    - Arthur Pendragon (Prototype)
+    - 旧剑
+  土方岁三:
+    atlas_id: 702500
+    collection_no: 161
+    aliases:
+    - 土方岁三
+    - 土方歳三
+    - ヒジカタトシゾウ
+    - Hijikata Toshizo
+    - 副长
+  茶茶:
+    atlas_id: 702600
+    collection_no: 162
+    aliases:
+    - 茶茶
+    - 茶々
+    - チャチャ
+    - Chacha
+    - 浅井茶茶
+    - 淀殿
+  Meltryllis:
+    atlas_id: 1000200
+    collection_no: 163
+    aliases:
+    - Meltryllis
+    - メルトリリス
+    - 溶解莉莉丝
+    - 梅尔特莉莉丝
+    - Melt Lilith
+    - 孤挺花
+  Passionlip:
+    atlas_id: 1000100
+    collection_no: 164
+    aliases:
+    - Passionlip
+    - パッションリップ
+    - Lip
+    - 帕森莉普
+    - 热情迷唇
+    - 西番莲
+    - 郁金香
+  铃鹿御前:
+    atlas_id: 103000
+    collection_no: 165
+    aliases:
+    - 铃鹿御前
+    - 鈴鹿御前
+    - スズカゴゼン
+    - Suzuka Gozen
+    - JK狐
+  BB:
+    atlas_id: 2300100
+    collection_no: 166
+    aliases:
+    - BB
+    - ＢＢ
+  杀生院祈荒:
+    atlas_id: 1000300
+    collection_no: 167
+    aliases:
+    - 杀生院祈荒
+    - 殺生院キアラ
+    - セッショウインキアラ
+    - Sessyoin Kiara
+    - 妖尼姑
+    - 瞑生院祈荒
+  BeastⅢ／R:
+    atlas_id: 9939130
+    collection_no: 168
+    aliases:
+    - BeastⅢ／R
+    - ビーストⅢ／Ｒ
+    - BeastⅢ/R
+    - 魔性菩萨
+    - 天堂之孔
+  不夜城的Caster:
+    atlas_id: 503000
+    collection_no: 169
+    aliases:
+    - 不夜城的Caster
+    - シェヘラザード
+    - 不夜城のキャスター
+    - Caster of the Nightless City
+    - '1001'
+    - 山鲁佐德
+  不夜城的Assassin:
+    atlas_id: 602700
+    collection_no: 170
+    aliases:
+    - 不夜城的Assassin
+    - 武則天
+    - ブソクテン
+    - 不夜城のアサシン
+    - Assassin of the Nightless City
+    - 武则天
+    - 周照
+  黄金国的Berserker:
+    atlas_id: 702700
+    collection_no: 171
+    aliases:
+    - 黄金国的Berserker
+    - ペンテシレイア
+    - エルドラドのバーサーカー
+    - Berserker of El Dorado
+    - CEO
+    - 亚马逊
+    - 彭忒西勒亚
+  反抗军的Rider:
+    atlas_id: 402500
+    collection_no: 172
+    aliases:
+    - 反抗军的Rider
+    - クリストファー・コロンブス
+    - レジスタンスのライダー
+    - Rider of the Resistance
+    - 克里斯托弗·哥伦布
+    - Christopher Columbus
+  夏洛克·福尔摩斯:
+    atlas_id: 900500
+    collection_no: 173
+    aliases:
+    - 夏洛克·福尔摩斯
+    - シャーロック・ホームズ
+    - Sherlock Holmes
+    - 老福
+  保罗·班扬:
+    atlas_id: 702800
+    collection_no: 174
+    aliases:
+    - 保罗·班扬
+    - ポール・バニヤン
+    - Paul Bunyan
+  尼禄·克劳狄乌斯（术阶）:
+    atlas_id: 503200
+    collection_no: 175
+    aliases:
+    - 尼禄·克劳狄乌斯（术阶）
+    - ネロ・クラウディウス
+  弗兰肯斯坦（剑阶）:
+    atlas_id: 103100
+    collection_no: 176
+    aliases:
+    - 弗兰肯斯坦（剑阶）
+    - フランケンシュタイン
+  尼托克丽丝（杀阶）:
+    atlas_id: 602800
+    collection_no: 177
+    aliases:
+    - 尼托克丽丝（杀阶）
+    - ニトクリス
+  织田信长（狂阶）:
+    atlas_id: 702900
+    collection_no: 178
+    aliases:
+    - 织田信长（狂阶）
+    - 織田信長
+    - オダノブナガ
+  阿尔托莉雅·潘德拉贡〔Alter〕（骑阶）:
+    atlas_id: 402700
+    collection_no: 179
+    aliases:
+    - 阿尔托莉雅·潘德拉贡〔Alter〕（骑阶）
+    - アルトリア・ペンドラゴン〔オルタ〕
+  海伦娜·布拉瓦茨基（弓阶）:
+    atlas_id: 202800
+    collection_no: 180
+    aliases:
+    - 海伦娜·布拉瓦茨基（弓阶）
+    - エレナ・ブラヴァツキー
+  源赖光（枪阶）:
+    atlas_id: 302900
+    collection_no: 181
+    aliases:
+    - 源赖光（枪阶）
+    - 源頼光
+    - ミナモトノライコウ
+  伊什塔尔（骑阶）:
+    atlas_id: 402600
+    collection_no: 182
+    aliases:
+    - 伊什塔尔（骑阶）
+    - イシュタル
+  帕尔瓦蒂:
+    atlas_id: 303000
+    collection_no: 183
+    aliases:
+    - 帕尔瓦蒂
+    - パールヴァティー
+    - Pārvatī
+    - 雪山樱
+  Archer Inferno:
+    atlas_id: 202100
+    collection_no: 184
+    aliases:
+    - Archer Inferno
+    - 巴御前
+    - トモエゴゼン
+    - アーチャー・インフェルノ
+    - Archer of Inferno
+  Assassin Paraiso:
+    atlas_id: 602900
+    collection_no: 185
+    aliases:
+    - Assassin Paraiso
+    - 望月千代女
+    - モチヅキチヨメ
+    - アサシン・パライソ
+    - Assassin of Paraíso
+  宝藏院胤舜:
+    atlas_id: 301400
+    collection_no: 186
+    aliases:
+    - 宝藏院胤舜
+    - 宝蔵院胤舜
+    - ホウゾウインインシュン
+    - Houzouin Inshun
+  柳生但马守宗矩:
+    atlas_id: 103200
+    collection_no: 187
+    aliases:
+    - 柳生但马守宗矩
+    - 柳生但馬守宗矩
+    - ヤギュウタジマノカミムネノリ
+    - Yagyu Tajima-no-kami Munenori
+    - 剑圣
+    - 柳但
+    - 榴弹
+    - 柳糖
+    - 老爷
+  加藤段藏:
+    atlas_id: 603000
+    collection_no: 188
+    aliases:
+    - 加藤段藏
+    - 加藤段蔵
+    - カトウダンゾウ
+    - Katou "Black Kite" Danzo
+  刑部姬:
+    atlas_id: 603100
+    collection_no: 189
+    aliases:
+    - 刑部姬
+    - 刑部姫
+    - オサカベヒメ
+    - Osakabehime
+    - 宅姬
+    - NEET姬
+    - 家里蹲
+    - 绿拐
+    - 邢捕头
+  机械伊丽亲:
+    atlas_id: 1000400
+    collection_no: 190
+    aliases:
+    - 机械伊丽亲
+    - メカエリチャン
+    - Mecha Eli-chan
+    - 机械龙娘
+    - 1号机
+    - 机械小伊丽
+  机械伊丽亲Ⅱ号机:
+    atlas_id: 1000500
+    collection_no: 191
+    aliases:
+    - 机械伊丽亲Ⅱ号机
+    - メカエリチャンⅡ号機
+    - メカエリチャンニゴウキ
+    - Mecha Eli-chan Mk. Ⅱ
+    - 机械龙娘
+    - 2号机
+    - 机械小伊丽
+  俄刻阿诺斯的Caster:
+    atlas_id: 503300
+    collection_no: 192
+    aliases:
+    - 俄刻阿诺斯的Caster
+    - キルケー
+    - オケアノスのキャスター
+    - Caster of Okeanos
+    - 姑姑
+    - 喀耳刻
+  哪吒:
+    atlas_id: 303100
+    collection_no: 193
+    aliases:
+    - 哪吒
+    - ナタ
+    - Nezha
+    - 三太子
+    - 莲偶
+  米德拉什的Caster:
+    atlas_id: 503400
+    collection_no: 194
+    aliases:
+    - 米德拉什的Caster
+    - シバの女王
+    - シバノジョウオウ
+    - ミドラーシュのキャスター
+    - Caster of Midrash
+    - 示巴女王
+  阿比盖尔·威廉姆斯:
+    atlas_id: 2500100
+    collection_no: 195
+    aliases:
+    - 阿比盖尔·威廉姆斯
+    - アビゲイル・ウィリアムズ
+    - Abigail Williams
+    - 阿比
+    - 泡泡
+    - 银钥匙
+  埃列什基伽勒:
+    atlas_id: 303200
+    collection_no: 196
+    aliases:
+    - 埃列什基伽勒
+    - エレシュキガル
+    - Ereshkigal
+    - 艾蕾
+    - 枪凛
+  阿蒂拉·the·San〔ta〕:
+    atlas_id: 202200
+    collection_no: 197
+    aliases:
+    - 阿蒂拉·the·San〔ta〕
+    - アルテラ・ザ・サン〔タ〕
+    - アルテラ・ザ・サンタ
+    - Attila the San(ta)
+    - 弓大王
+  葛饰北斋:
+    atlas_id: 2500200
+    collection_no: 198
+    aliases:
+    - 葛饰北斋
+    - 葛飾北斎
+    - カツシカホクサイ
+    - Katsushika Hokusai
+    - 阿荣
+  塞弥拉弥斯:
+    atlas_id: 603200
+    collection_no: 199
+    aliases:
+    - 塞弥拉弥斯
+    - セミラミス
+    - Semiramis
+    - 女帝
+  浅上藤乃:
+    atlas_id: 202900
+    collection_no: 200
+    aliases:
+    - 浅上藤乃
+    - アサガミフジノ
+    - Asagami Fujino
+  阿纳斯塔西娅:
+    atlas_id: 503500
+    collection_no: 201
+    aliases:
+    - 阿纳斯塔西娅
+    - アナスタシア
+    - Anastasia
+    - 皇女
+  阿塔兰忒〔Alter〕:
+    atlas_id: 703000
+    collection_no: 202
+    aliases:
+    - 阿塔兰忒〔Alter〕
+    - アタランテ〔オルタ〕
+    - Atalanta (Alter)
+    - 狂塔
+    - 黑塔
+    - 黑塔喵
+  阿维斯布隆:
+    atlas_id: 503600
+    collection_no: 203
+    aliases:
+    - 阿维斯布隆
+    - アヴィケブロン
+    - Avicebron
+    - 黑C
+  安东尼奥·萨列里:
+    atlas_id: 1100600
+    collection_no: 204
+    aliases:
+    - 安东尼奥·萨列里
+    - アントニオ・サリエリ
+    - Antonio Salieri
+    - 萨老师
+  伊凡雷帝:
+    atlas_id: 402800
+    collection_no: 205
+    aliases:
+    - 伊凡雷帝
+    - イヴァン雷帝
+    - イヴァンライテイ
+    - Ivan the Terrible
+    - 雷帝
+  阿喀琉斯:
+    atlas_id: 402900
+    collection_no: 206
+    aliases:
+    - 阿喀琉斯
+    - アキレウス
+    - Achilles
+    - 脚后跟
+  喀戎:
+    atlas_id: 203000
+    collection_no: 207
+    aliases:
+    - 喀戎
+    - ケイローン
+    - Chiron
+    - 师匠
+    - 马老师
+  齐格:
+    atlas_id: 503800
+    collection_no: 208
+    aliases:
+    - 齐格
+    - ジーク
+    - Sieg
+    - 奥特飞
+  冲田总司〔Alter〕:
+    atlas_id: 1000700
+    collection_no: 209
+    aliases:
+    - 冲田总司〔Alter〕
+    - 沖田総司〔オルタ〕
+    - オキタソウジ・オルタ
+    - Okita Souji (Alter)
+    - 魔神总司
+    - 炼狱Alter
+  冈田以藏:
+    atlas_id: 603300
+    collection_no: 210
+    aliases:
+    - 冈田以藏
+    - 岡田以蔵
+    - オカダイゾウ
+    - Okada Izo
+  坂本龙马:
+    atlas_id: 403000
+    collection_no: 211
+    aliases:
+    - 坂本龙马
+    - 坂本龍馬
+    - サカモトリョウマ
+    - Sakamoto Ryouma
+  拿破仑:
+    atlas_id: 203100
+    collection_no: 212
+    aliases:
+    - 拿破仑
+    - ナポレオン
+    - Napoleon
+    - 拿皇
+  齐格鲁德:
+    atlas_id: 103300
+    collection_no: 213
+    aliases:
+    - 齐格鲁德
+    - シグルド
+    - Sigurd
+    - 西哥
+  瓦尔基里:
+    atlas_id: 303300
+    collection_no: 214
+    aliases:
+    - 瓦尔基里
+    - ワルキューレ
+    - Valkyrie
+    - 女武神
+  斯卡哈·斯卡蒂:
+    atlas_id: 503900
+    collection_no: 215
+    aliases:
+    - 斯卡哈·斯卡蒂
+    - スカサハ＝スカディ
+    - Scáthach-Skadi
+    - cba
+    - 绿拐
+  贞德（弓阶）:
+    atlas_id: 203200
+    collection_no: 216
+    aliases:
+    - 贞德（弓阶）
+    - ジャンヌ・ダルク
+  茨木童子（枪阶）:
+    atlas_id: 303400
+    collection_no: 217
+    aliases:
+    - 茨木童子（枪阶）
+    - イバラキドウジ
+  牛若丸（杀阶）:
+    atlas_id: 603400
+    collection_no: 218
+    aliases:
+    - 牛若丸（杀阶）
+    - ウシワカマル
+  贞德〔Alter〕（狂阶）:
+    atlas_id: 703100
+    collection_no: 219
+    aliases:
+    - 贞德〔Alter〕（狂阶）
+    - ジャンヌ・ダルク〔オルタ〕
+  BB（mooncancer）:
+    atlas_id: 2300200
+    collection_no: 220
+    aliases:
+    - BB（mooncancer）
+    - ＢＢ
+  女王梅芙（剑阶）:
+    atlas_id: 103400
+    collection_no: 221
+    aliases:
+    - 女王梅芙（剑阶）
+    - 女王メイヴ
+    - ジョオウメイヴ
+  谜之女主角XX:
+    atlas_id: 2500300
+    collection_no: 222
+    aliases:
+    - 谜之女主角XX
+    - 謎のヒロインXX
+    - ナゾノヒロインXX
+    - Mysterious Heroine XX
+    - 水枪X
+    - XX毛
+  迪尔姆德·奥迪那（剑阶）:
+    atlas_id: 103500
+    collection_no: 223
+    aliases:
+    - 迪尔姆德·奥迪那（剑阶）
+    - ディルムッド・オディナ
+  志度内:
+    atlas_id: 1000800
+    collection_no: 224
+    aliases:
+    - 志度内
+    - シトナイ
+    - Sitonai
+    - AE伊莉雅
+    - 西托奈
+  酒吞童子（术阶）:
+    atlas_id: 504000
+    collection_no: 225
+    aliases:
+    - 酒吞童子（术阶）
+    - 酒呑童子
+    - シュテンドウジ
+  项羽:
+    atlas_id: 703200
+    collection_no: 226
+    aliases:
+    - 项羽
+    - 項羽
+    - コウウ
+    - Xiang Yu
+    - 西楚霸王
+    - 重瞳
+  兰陵王:
+    atlas_id: 103600
+    collection_no: 227
+    aliases:
+    - 兰陵王
+    - 蘭陵王
+    - ランリョウオウ
+    - Prince of Lan Ling
+  秦良玉:
+    atlas_id: 303500
+    collection_no: 228
+    aliases:
+    - 秦良玉
+    - シン・リョウギョク
+    - Qin Liangyu
+    - 忠贞
+  始皇帝:
+    atlas_id: 900600
+    collection_no: 229
+    aliases:
+    - 始皇帝
+    - シコウテイ
+    - Qin Shi Huang
+    - 嬴政
+    - 秦始皇
+    - 祖政
+  虞美人:
+    atlas_id: 603500
+    collection_no: 230
+    aliases:
+    - 虞美人
+    - グ・ビジン
+    - Yu Mei-ren
+    - 虞姬
+    - 雏罂
+  赤兔马:
+    atlas_id: 403100
+    collection_no: 231
+    aliases:
+    - 赤兔马
+    - 赤兎馬
+    - セキトバ
+    - Red Hare
+    - 丹驹
+  布拉达曼特:
+    atlas_id: 303600
+    collection_no: 232
+    aliases:
+    - 布拉达曼特
+    - ブラダマンテ
+    - Bradamante
+    - 布妹
+  魁札尔·科亚特尔〔桑巴／圣诞〕:
+    atlas_id: 900700
+    collection_no: 233
+    aliases:
+    - 魁札尔·科亚特尔〔桑巴／圣诞〕
+    - ケツァル・コアトル〔サンバ／サンタ〕
+    - Quetzalcoatl (Samba/Santa)
+    - 圣诞羽蛇神
+  红阎魔:
+    atlas_id: 103700
+    collection_no: 234
+    aliases:
+    - 红阎魔
+    - 紅閻魔
+    - ベニエンマ
+    - Beni-Enma
+    - 小麻雀
+  李书文（杀阶）:
+    atlas_id: 603600
+    collection_no: 235
+    aliases:
+    - 李书文（杀阶）
+    - 李書文
+    - リ・ショブン
+  美游·艾德费尔特:
+    atlas_id: 504100
+    collection_no: 236
+    aliases:
+    - 美游·艾德费尔特
+    - 美遊・エーデルフェルト
+    - ミユ・エーデルフェルト
+    - Miyu Edelfelt
+  紫式部:
+    atlas_id: 504200
+    collection_no: 237
+    aliases:
+    - 紫式部
+    - ムラサキ・シキブ
+    - Murasaki Shikibu
+  Kingprotea:
+    atlas_id: 1000900
+    collection_no: 238
+    aliases:
+    - Kingprotea
+    - キングプロテア
+    - 帝王花
+  迦摩:
+    atlas_id: 603700
+    collection_no: 239
+    aliases:
+    - 迦摩
+    - カーマ
+    - Kama
+    - 黑樱
+    - 杀库拉
+    - 撒库拉
+  BeastⅢ／L:
+    atlas_id: 9941730
+    collection_no: 240
+    aliases:
+    - BeastⅢ／L
+    - ビーストⅢ／L
+    - BeastⅢ/L
+  司马懿〔莱妮丝〕:
+    atlas_id: 403200
+    collection_no: 241
+    aliases:
+    - 司马懿〔莱妮丝〕
+    - 司馬懿〔ライネス〕
+    - シバイ
+    - Sima Yi (Reines)
+  阿斯特赖亚:
+    atlas_id: 900800
+    collection_no: 242
+    aliases:
+    - 阿斯特赖亚
+    - アストライア
+    - Astraea
+    - 金钻头
+    - 露维亚
+  格蕾:
+    atlas_id: 603900
+    collection_no: 243
+    aliases:
+    - 格蕾
+    - グレイ
+    - Gray
+    - 小灰
+  伟大的石像神:
+    atlas_id: 2300300
+    collection_no: 244
+    aliases:
+    - 伟大的石像神
+    - ジナコ＝カリギリ
+    - 大いなる石像神
+    - Great Stone Statue God
+    - 吉娜可·加里吉利
+    - 大象
+  拉克什米·芭伊:
+    atlas_id: 103900
+    collection_no: 245
+    aliases:
+    - 拉克什米·芭伊
+    - ラクシュミー・バーイー
+    - Lakshmi Bai
+    - 印度贞德
+    - 章西女王
+    - 詹西女王
+  威廉·退尔:
+    atlas_id: 203400
+    collection_no: 246
+    aliases:
+    - 威廉·退尔
+    - ウィリアム・テル
+    - William Tell
+  阿周那〔Alter〕:
+    atlas_id: 703300
+    collection_no: 247
+    aliases:
+    - 阿周那〔Alter〕
+    - アルジュナ〔オルタ〕
+    - アルジュナ・オルタ
+    - Arjuna (Alter)
+    - 芭娜娜
+    - 狂娜
+  马嘶:
+    atlas_id: 203300
+    collection_no: 248
+    aliases:
+    - 马嘶
+    - アシュヴァッターマン
+    - Aśvatthāman
+  阿斯克勒庇俄斯:
+    atlas_id: 504300
+    collection_no: 249
+    aliases:
+    - 阿斯克勒庇俄斯
+    - アスクレピオス
+    - Asclepius
+    - 医神
+  魔王信长:
+    atlas_id: 1100700
+    collection_no: 250
+    aliases:
+    - 魔王信长
+    - 魔王信長
+    - マオウノブナガ
+  森长可:
+    atlas_id: 703500
+    collection_no: 251
+    aliases:
+    - 森长可
+    - 森長可
+    - モリ・ナガヨシ
+    - Mori Nagayoshi
+  长尾景虎:
+    atlas_id: 303800
+    collection_no: 252
+    aliases:
+    - 长尾景虎
+    - 長尾景虎
+    - ナガオ・カゲトラ
+    - Nagao Kagetora
+    - 上杉谦信
+  莱昂纳多·达·芬奇（骑阶）:
+    atlas_id: 403500
+    collection_no: 253
+    aliases:
+    - 莱昂纳多·达·芬奇（骑阶）
+    - レオナルド・ダ・ヴィンチ
+  伊阿宋:
+    atlas_id: 103800
+    collection_no: 254
+    aliases:
+    - 伊阿宋
+    - イアソン
+    - Jason
+  帕里斯:
+    atlas_id: 203500
+    collection_no: 255
+    aliases:
+    - 帕里斯
+    - パリス
+    - Paris
+  加雷斯:
+    atlas_id: 303900
+    collection_no: 256
+    aliases:
+    - 加雷斯
+    - ガレス
+    - Gareth
+  巴沙洛缪·罗伯茨:
+    atlas_id: 403400
+    collection_no: 257
+    aliases:
+    - 巴沙洛缪·罗伯茨
+    - バーソロミュー・ロバーツ
+    - Bartholomew Roberts
+  陈宫:
+    atlas_id: 504400
+    collection_no: 258
+    aliases:
+    - 陈宫
+    - 陳宮
+    - チンキュウ
+    - Chen Gong
+  夏洛特·科黛:
+    atlas_id: 603800
+    collection_no: 259
+    aliases:
+    - 夏洛特·科黛
+    - シャルロット・コルデー
+    - Charlotte Corday
+    - 夏绿蒂
+  莎乐美:
+    atlas_id: 703400
+    collection_no: 260
+    aliases:
+    - 莎乐美
+    - サロメ
+    - Salome
+  宫本武藏（狂阶）:
+    atlas_id: 703600
+    collection_no: 261
+    aliases:
+    - 宫本武藏（狂阶）
+    - 宮本武蔵
+    - ミヤモトムサシ
+  刑部姬（弓阶）:
+    atlas_id: 203600
+    collection_no: 262
+    aliases:
+    - 刑部姬（弓阶）
+    - 刑部姫
+    - オサカベヒメ
+  卡米拉（骑阶）:
+    atlas_id: 403600
+    collection_no: 263
+    aliases:
+    - 卡米拉（骑阶）
+    - カーミラ
+  葛饰北斋（剑阶）:
+    atlas_id: 104000
+    collection_no: 264
+    aliases:
+    - 葛饰北斋（剑阶）
+    - 葛飾北斎
+    - カツシカホクサイ
+  阿尔托莉雅·潘德拉贡（裁阶）:
+    atlas_id: 900900
+    collection_no: 265
+    aliases:
+    - 阿尔托莉雅·潘德拉贡（裁阶）
+    - アルトリア・ペンドラゴン
+  谜之Alterego·Λ:
+    atlas_id: 304000
+    collection_no: 266
+    aliases:
+    - 谜之Alterego·Λ
+    - 謎のアルターエゴ・Λ
+    - ナゾノアルターエゴ・Λ
+    - Mysterious Alter Ego Λ
+    - 枪莉莉丝
+  冲田·J·总司:
+    atlas_id: 604000
+    collection_no: 267
+    aliases:
+    - 冲田·J·总司
     - 沖田総司
-    - Okita Souji
-    - 樱Saber
-    - 冲太
-  美狄亚〔Lily〕:
-    atlas_id: 501700
-    collection_no: 67
+    - オキタソウジ
+    - オキタ・Ｊ・ソウジ
+    - Okita J. Souji
+    - 杀总司
+  太空伊什塔尔:
+    atlas_id: 1100900
+    collection_no: 268
     aliases:
-    - 美狄亚〔Lily〕
-    - メディア〔リリィ〕
-    - Medea (Lily)
-    - C子
-  弗朗西斯·德雷克:
-    atlas_id: 400300
-    collection_no: 65
+    - 太空伊什塔尔
+    - スペース・イシュタル
+    - Space Ishtar
+    - 宇宙凛
+    - 太空凛
+    - S凛
+  灾星简:
+    atlas_id: 203700
+    collection_no: 269
     aliases:
-    - 弗朗西斯·德雷克
-    - フランシス・ドレイク
-    - Francis Drake
-    - 船长
-    - BBA
-  赫克托耳:
-    atlas_id: 301600
-    collection_no: 64
+    - 灾星简
+    - カラミティ・ジェーン
+    - Calamity Jane
+  阿斯托尔福（剑阶）:
+    atlas_id: 104100
+    collection_no: 270
     aliases:
-    - 赫克托耳
-    - ヘクトール
-    - Hektor
-    - 赫叔
-  大卫:
-    atlas_id: 200600
-    collection_no: 63
+    - 阿斯托尔福（剑阶）
+    - アストルフォ
+  南丁格尔〔圣诞〕:
+    atlas_id: 203900
+    collection_no: 271
     aliases:
-    - 大卫
-    - ダビデ
-    - David
-    - 所罗门爹
-  伊丽莎白·巴托里〔万圣节〕:
-    atlas_id: 502600
-    collection_no: 61
+    - 南丁格尔〔圣诞〕
+    - ナイチンゲール〔サンタ〕
+    - Florence Nightingale (Santa)
+    - 弓南丁
+  超人俄里翁:
+    atlas_id: 203800
+    collection_no: 272
     aliases:
-    - 伊丽莎白·巴托里〔万圣节〕
-    - エリザベート・バートリー〔ハロウィン〕
-    - Elisabeth Báthory (Halloween)
-    - C龙娘
-    - 术龙娘
-  俄里翁:
-    atlas_id: 200900
-    collection_no: 60
+    - 超人俄里翁
+    - 超人オリオン
+    - チョウジンオリオン
+    - Super Orion
+    - 超人熊
+  曼迪卡尔多:
+    atlas_id: 403900
+    collection_no: 273
     aliases:
-    - 俄里翁
-    - オリオン
-    - Orion
-    - 月神
-  玉藻猫:
-    atlas_id: 701600
-    collection_no: 58
+    - 曼迪卡尔多
+    - マンドリカルド
+    - Mandricardo
+    - 大老师
+  欧罗巴:
+    atlas_id: 404000
+    collection_no: 274
     aliases:
-    - 玉藻猫
-    - タマモキャット
-    - Tamamo Cat
-    - B玉
-    - B狐
-  血斧埃里克:
-    atlas_id: 701500
-    collection_no: 57
+    - 欧罗巴
+    - エウロペ
+    - Europa
+  杨贵妃:
+    atlas_id: 2500400
+    collection_no: 275
     aliases:
-    - 血斧埃里克
-    - エイリーク・ブラッドアクス
-    - Eric Bloodaxe
-  大流士三世:
-    atlas_id: 701100
-    collection_no: 55
+    - 杨贵妃
+    - 楊貴妃
+    - ヨウキヒ
+    - Yang Guifei
+    - 杨玉环
+    - 琰女
+  清少纳言:
+    atlas_id: 204000
+    collection_no: 276
     aliases:
-    - 大流士三世
-    - ダレイオス三世
-    - Darius III
-    - 酋长
-  卡利古拉:
-    atlas_id: 701000
-    collection_no: 54
+    - 清少纳言
+    - 清少納言
+    - セイショウナゴン
+    - Sei Shonagon
+  奥德修斯:
+    atlas_id: 403800
+    collection_no: 277
     aliases:
-    - 卡利古拉
-    - カリギュラ
-    - Caligula
-    - 鬼舅
-  阿斯忒里俄斯:
-    atlas_id: 700900
-    collection_no: 53
+    - 奥德修斯
+    - オデュッセウス
+    - Odysseus
+  狄俄斯库里:
+    atlas_id: 104200
+    collection_no: 278
     aliases:
-    - 阿斯忒里俄斯
-    - アステリオス
-    - Asterios
-    - 小牛
-  弗拉德三世:
-    atlas_id: 700700
-    collection_no: 52
+    - 狄俄斯库里
+    - ディオスクロイ
+    - Dioscuri
+    - 双子座
+  凯妮斯:
+    atlas_id: 304100
+    collection_no: 279
     aliases:
-    - 弗拉德三世
-    - ヴラド三世
-    - Vlad III
-    - 大公
-    - 穿刺公
-    - 刺绣公
-    - 二胡公
-  斯巴达克斯:
-    atlas_id: 700500
-    collection_no: 50
+    - 凯妮斯
+    - カイニス
+    - Caenis
+    - 沸羊羊
+  罗穆路斯·奎里努斯:
+    atlas_id: 304200
+    collection_no: 280
     aliases:
-    - 斯巴达克斯
-    - スパルタクス
-    - Spartacus
-    - 爱酱
-    - 微笑Boy
-  吕布奉先:
-    atlas_id: 700300
-    collection_no: 49
-    aliases:
-    - 吕布奉先
-    - 呂布奉先
-    - Lu Bu Fengxian
-    - 吕布
-    - 吕高达
-    - 虎狼
-  赫拉克勒斯:
-    atlas_id: 700100
-    collection_no: 47
-    aliases:
-    - 赫拉克勒斯
-    - ヘラクレス
-    - Heracles
-    - B叔
-    - 海叔
-  玛塔·哈丽:
-    atlas_id: 601400
-    collection_no: 45
-    aliases:
-    - 玛塔·哈丽
-    - マタ・ハリ
-    - Mata Hari
-    - 舞娘
-  剧院魅影:
-    atlas_id: 601300
-    collection_no: 44
-    aliases:
-    - 剧院魅影
-    - ファントム・オブ・ジ・オペラ
-    - Phantom of the Opera
-  夏尔·亨利·桑松:
-    atlas_id: 601200
-    collection_no: 43
-    aliases:
-    - 夏尔·亨利·桑松
-    - シャルル＝アンリ・サンソン
-    - Charles-Henri Sanson
-  荆轲:
-    atlas_id: 601100
-    collection_no: 42
-    aliases:
-    - 荆轲
-    - 荊軻
-    - Jing Ke
-    - 匕见
-  斯忒诺:
-    atlas_id: 601000
-    collection_no: 41
-    aliases:
-    - 斯忒诺
-    - ステンノ
-    - Stheno
-    - 大姐
-  咒腕哈桑:
-    atlas_id: 600200
-    collection_no: 40
-    aliases:
-    - 咒腕哈桑
-    - 呪腕のハサン
-    - Hassan of the Cursed Arm
-    - 忠义无双
-  佐佐木小次郎:
-    atlas_id: 600100
-    collection_no: 39
-    aliases:
-    - 佐佐木小次郎
-    - 佐々木小次郎
-    - Sasaki Kojirou
-    - 屠龙剑圣
-    - 小次郎
-  库·丘林:
-    atlas_id: 300100
-    collection_no: 17
-    aliases:
-    - 库·丘林
-    - クー・フーリン
-    - Cú Chulainn
-    - 汪酱
-    - 大狗
-  诸葛孔明〔埃尔梅罗Ⅱ世〕:
-    atlas_id: 501900
-    collection_no: 37
-    aliases:
-    - 诸葛孔明〔埃尔梅罗Ⅱ世〕
-    - 諸葛孔明〔エルメロイⅡ世〕
-    - Zhuge Liang (Lord El-Melloi II)
-    - 孔老师
-    - 拐
-  沃尔夫冈·阿马德乌斯·莫扎特:
-    atlas_id: 501500
-    collection_no: 36
-    aliases:
-    - 沃尔夫冈·阿马德乌斯·莫扎特
-    - ヴォルフガング・アマデウス・モーツァルト
-    - Wolfgang Amadeus Mozart
-  梅菲斯托费勒斯:
-    atlas_id: 501400
-    collection_no: 35
-    aliases:
-    - 梅菲斯托费勒斯
-    - メフィストフェレス
-    - Mephistopheles
-    - 恶魔
-  威廉·莎士比亚:
-    atlas_id: 500700
-    collection_no: 34
-    aliases:
-    - 威廉·莎士比亚
-    - ウィリアム・シェイクスピア
-    - William Shakespeare
-    - 莎比
-    - 莎翁
-  汉斯·克里斯蒂安·安徒生:
-    atlas_id: 500500
-    collection_no: 33
-    aliases:
-    - 汉斯·克里斯蒂安·安徒生
-    - ハンス・クリスチャン・アンデルセン
-    - Hans Christian Andersen
-  吉尔·德·雷:
-    atlas_id: 102200
-    collection_no: 9
-    aliases:
-    - 吉尔·德·雷
-    - ジル・ド・レェ
-    - Gilles de Rais
-    - 剑元帅
-  美狄亚:
-    atlas_id: 500100
-    collection_no: 31
-    aliases:
-    - 美狄亚
-    - メディア
-    - Medea
-    - C妈
-  亚历山大:
-    atlas_id: 401500
-    collection_no: 28
-    aliases:
-    - 亚历山大
-    - アレキサンダー
-    - Alexander
-    - 幼帝
-  布狄卡:
-    atlas_id: 401100
-    collection_no: 26
-    aliases:
-    - 布狄卡
-    - ブーディカ
-    - Boudica
-    - 布妈
-  爱德华·蒂奇:
-    atlas_id: 400800
-    collection_no: 25
-    aliases:
-    - 爱德华·蒂奇
-    - エドワード・ティーチ
-    - Edward Teach
-    - 黑胡子
-    - 男船长
-  乔尔乔斯:
-    atlas_id: 400600
-    collection_no: 24
-    aliases:
-    - 乔尔乔斯
-    - ゲオルギウス
-    - Georgios
-    - 乔老师
-  罗穆路斯:
-    atlas_id: 301000
-    collection_no: 22
-    aliases:
-    - 罗穆路斯
-    - ロムルス
-    - Romulus
-    - 罗马
+    - 罗穆路斯·奎里努斯
+    - ロムルス＝クィリヌス
+    - Romulus=Quirinus
     - 神祖
-  列奥尼达一世:
-    atlas_id: 300900
-    collection_no: 21
+  旅行者:
+    atlas_id: 2500500
+    collection_no: 281
     aliases:
-    - 列奥尼达一世
-    - レオニダス一世
-    - Leonidas I
-    - 炎头
-    - 斯巴达
-  库·丘林〔Prototype〕:
-    atlas_id: 300700
-    collection_no: 20
+    - 旅行者
+    - ボイジャー
+    - Voyager
+    - 小王子
+  鬼女红叶:
+    atlas_id: 703700
+    collection_no: 282
     aliases:
-    - 库·丘林〔Prototype〕
-    - クー・フーリン〔プロトタイプ〕
-    - Cú Chulainn (Prototype)
-    - 旧狗
-  武藏坊弁庆:
-    atlas_id: 300600
-    collection_no: 19
+    - 鬼女红叶
+    - 鬼女紅葉
+    - キジョコウヨウ
+    - Kijyo Koyo
+    - 恐龙
+  宇津见绘里濑:
+    atlas_id: 304300
+    collection_no: 283
     aliases:
-    - 武藏坊弁庆
-    - 武蔵坊弁慶
-    - Musashibou Benkei
-    - 常陆坊海尊
-  阿拉什:
-    atlas_id: 201300
-    collection_no: 16
+    - 宇津见绘里濑
+    - 宇津見エリセ
+    - ウツミエリセ
+    - Utsumi Erice
+    - 宇津见绘里世
+    - 艾莉瑟
+  阿尔托莉雅·卡斯特:
+    atlas_id: 504500
+    collection_no: 284
     aliases:
-    - 阿拉什
-    - アーラシュ
-    - Arash
-    - 自爆弓
-    - 大英雄
-    - Stella
-  尤瑞艾莉:
-    atlas_id: 201200
-    collection_no: 15
+    - 阿尔托莉雅·卡斯特
+    - アルトリア・キャスター
+    - Altria Caster
+    - C呆
+    - 术呆
+  瞑生院祈荒:
+    atlas_id: 2300400
+    collection_no: 285
     aliases:
-    - 尤瑞艾莉
-    - エウリュアレ
-    - Euryale
-    - 二姐
-  阿塔兰忒:
-    atlas_id: 200500
-    collection_no: 14
+    - 瞑生院祈荒
+    - 殺生院キアラ
+    - セッショウインキアラ
+  伊莉雅丝菲尔·冯·爱因兹贝伦（弓阶）:
+    atlas_id: 204200
+    collection_no: 286
     aliases:
-    - 阿塔兰忒
-    - アタランテ
-    - Atalanta
-    - 阿塔
-    - 塔喵
-    - 猫茶
-  罗宾汉:
-    atlas_id: 200300
-    collection_no: 13
+    - 伊莉雅丝菲尔·冯·爱因兹贝伦（弓阶）
+    - イリヤスフィール・フォン・アインツベルン
+    - イリヤスフィール
+  布伦希尔德（狂阶）:
+    atlas_id: 703800
+    collection_no: 287
     aliases:
-    - 罗宾汉
-    - ロビンフッド
-    - Robin Hood
-    - 绿茶
-    - 罗宾
-  卫宫:
-    atlas_id: 200100
-    collection_no: 11
+    - 布伦希尔德（狂阶）
+    - ブリュンヒルデ
+  雏罂:
+    atlas_id: 304400
+    collection_no: 288
     aliases:
-    - 卫宫
-    - エミヤ
-    - Emiya
-    - 红A
-    - 红茶
-    - 核弹剑仙
-    - 阿茶
-    - 背影男
-  骑士迪昂:
-    atlas_id: 102600
-    collection_no: 10
+    - 雏罂
+    - 虞美人
+    - グ・ビジン
+  阿比盖尔·威廉姆斯〔夏〕:
+    atlas_id: 2500700
+    collection_no: 289
     aliases:
-    - 骑士迪昂
-    - シュヴァリエ・デオン
-    - Chevalier d'Eon
-  阿蒂拉:
-    atlas_id: 101800
-    collection_no: 8
+    - 阿比盖尔·威廉姆斯〔夏〕
+    - アビゲイル・ウィリアムズ〔夏〕
+    - アビゲイル・ウィリアムズ
+    - Abigail Williams
+  巴御前:
+    atlas_id: 104500
+    collection_no: 290
     aliases:
-    - 阿蒂拉
-    - アルテラ
-    - Altera
-    - 大王
-    - B提拉
-  盖乌斯·尤利乌斯·恺撒:
-    atlas_id: 101300
-    collection_no: 7
+    - 巴御前
+    - トモエゴゼン
+    - Tomoe Gozen
+    - 剑巴御前
+  紫式部（骑阶）:
+    atlas_id: 404100
+    collection_no: 291
     aliases:
-    - 盖乌斯·尤利乌斯·恺撒
-    - ガイウス・ユリウス・カエサル
-    - Gaius Julius Caesar
-    - 红Saber
-    - 胖尼禄
-    - 凯撒
-  齐格飞:
-    atlas_id: 100800
-    collection_no: 6
+    - 紫式部（骑阶）
+    - ムラサキ・シキブ
+  卑弥呼:
+    atlas_id: 901000
+    collection_no: 292
     aliases:
-    - 齐格飞
-    - ジークフリート
-    - Siegfried
-    - 飞哥
-  阿尔托莉雅·潘德拉贡〔Lily〕:
-    atlas_id: 100300
-    collection_no: 4
+    - 卑弥呼
+    - ヒミコ
+    - Himiko
+    - 邪马台国女王
+  斋藤一:
+    atlas_id: 104400
+    collection_no: 293
     aliases:
-    - 阿尔托莉雅·潘德拉贡〔Lily〕
-    - アルトリア・ペンドラゴン〔リリィ〕
-    - Altria Pendragon (Lily)
-    - 莉莉
-  玛修·基列莱特:
-    atlas_id: 800100
-    collection_no: 1
+    - 斋藤一
+    - 斎藤一
+    - サイトウ・ハジメ
+    - Saitou Hajime
+  织田信胜:
+    atlas_id: 204100
+    collection_no: 294
     aliases:
-    - 玛修·基列莱特
-    - マシュ・キリエライト
-    - Mash Kyrielight
-    - 盾娘
-    - 学妹
+    - 织田信胜
+    - 織田信勝
+    - オダ・ノブカツ
+    - Oda Nobukatsu
+  梵高:
+    atlas_id: 2500600
+    collection_no: 295
+    aliases:
+    - 梵高
+    - ヴァン・ゴッホ
+    - Van Gogh
+  尼莫:
+    atlas_id: 403700
+    collection_no: 296
+    aliases:
+    - 尼莫
+    - ネモ
+    - Nemo
+    - 船长
+  芦屋道满:
+    atlas_id: 1001000
+    collection_no: 297
+    aliases:
+    - 芦屋道满
+    - 蘆屋道満
+    - アシヤドウマン
+    - Ashiya Douman
+  渡边纲:
+    atlas_id: 104700
+    collection_no: 298
+    aliases:
+    - 渡边纲
+    - 渡辺綱
+    - ワタナベノツナ
+    - Watanabe-no-Tsuna
+  伊吹童子:
+    atlas_id: 104600
+    collection_no: 299
+    aliases:
+    - 伊吹童子
+    - イブキドウジ
+    - Ibuki-Douji
+  弗栗多:
+    atlas_id: 304600
+    collection_no: 300
+    aliases:
+    - 弗栗多
+    - ヴリトラ
+    - Vritra
+    - 福利多
+  迦尔纳〔圣诞〕:
+    atlas_id: 104800
+    collection_no: 301
+    aliases:
+    - 迦尔纳〔圣诞〕
+    - カルナ〔サンタ〕
+    - Karna (Santa)
+  千子村正:
+    atlas_id: 104900
+    collection_no: 302
+    aliases:
+    - 千子村正
+    - センジムラマサ
+    - Senji Muramasa
+    - 士郎
+  平景清:
+    atlas_id: 1101000
+    collection_no: 303
+    aliases:
+    - 平景清
+    - タイラノカゲキヨ
+    - Taira-no-Kagekiyo
+  鬼一法眼:
+    atlas_id: 604100
+    collection_no: 304
+    aliases:
+    - 鬼一法眼
+    - キイチホウゲン
+    - Kiichi Hogen
+  阿摩耳〔卡莲〕:
+    atlas_id: 901100
+    collection_no: 305
+    aliases:
+    - 阿摩耳〔卡莲〕
+    - アムール〔カレン〕
+    - Amor (Caren)
+  伽拉忒亚:
+    atlas_id: 703900
+    collection_no: 306
+    aliases:
+    - 伽拉忒亚
+    - ガラテア
+    - Galatea
+  克莱恩小姐:
+    atlas_id: 504600
+    collection_no: 307
+    aliases:
+    - 克莱恩小姐
+    - ミス・クレーン
+    - Miss Crane
+    - 鹤小姐
+  谜之偶像X〔Alter〕:
+    atlas_id: 2500800
+    collection_no: 308
+    aliases:
+    - 谜之偶像X〔Alter〕
+    - 謎のアイドルX〔オルタ〕
+    - ナゾノアイドルエックスオルタ
+    - Mysterious Idol X (Alter)
+  摩根:
+    atlas_id: 704000
+    collection_no: 309
+    aliases:
+    - 摩根
+    - モルガン
+    - Morgan
+  妖精骑士高文:
+    atlas_id: 105000
+    collection_no: 310
+    aliases:
+    - 妖精骑士高文
+    - バーゲスト
+    - 妖精騎士ガウェイン
+    - Tam Lin Gawain
+    - 妖高
+  妖精骑士崔斯坦:
+    atlas_id: 204300
+    collection_no: 311
+    aliases:
+    - 妖精骑士崔斯坦
+    - バーヴァン・シー
+    - 妖精騎士トリスタン
+    - Tam Lin Tristan
+    - 妖崔
+  妖精骑士兰斯洛特:
+    atlas_id: 304800
+    collection_no: 312
+    aliases:
+    - 妖精骑士兰斯洛特
+    - メリュジーヌ
+    - 妖精騎士ランスロット
+    - Tam Lin Lancelot
+    - 妖兰
+  珀西瓦尔:
+    atlas_id: 304700
+    collection_no: 313
+    aliases:
+    - 珀西瓦尔
+    - パーシヴァル
+    - Percival
+    - 帕西瓦尔
+  光之高扬斯卡娅:
+    atlas_id: 604200
+    collection_no: 314
+    aliases:
+    - 光之高扬斯卡娅
+    - 光のコヤンスカヤ
+    - ヒカリノコヤンスカヤ
+    - Koyanskaya of Light
+    - 杀狐
+    - 光狐
+    - 红拐
+    - 杀兔
+    - 光兔
+  哈贝特洛特:
+    atlas_id: 404200
+    collection_no: 315
+    aliases:
+    - 哈贝特洛特
+    - ハベトロット
+    - Habetrot
+    - 哈贝喵
+  奥伯龙:
+    atlas_id: 2800100
+    collection_no: 316
+    aliases:
+    - 奥伯龙
+    - オベロン
+    - Oberon
+    - 蛾子
+    - 奥博龙
+    - 奥贝龙
+    - 奥伯隆
+  冲田总司〔Alter〕（剑阶）:
+    atlas_id: 105100
+    collection_no: 317
+    aliases:
+    - 冲田总司〔Alter〕（剑阶）
+    - 沖田総司〔オルタ〕
+    - オキタソウジ・オルタ
+  阿纳斯塔西娅＆维:
+    atlas_id: 204400
+    collection_no: 318
+    aliases:
+    - 阿纳斯塔西娅＆维
+    - アナスタシア＆ヴィイ
+    - Anastasia&Viy
+  夏洛特·科黛（术阶）:
+    atlas_id: 504800
+    collection_no: 319
+    aliases:
+    - 夏洛特·科黛（术阶）
+    - シャルロット・コルデー
+  莱昂纳多·达·芬奇（裁阶）:
+    atlas_id: 901200
+    collection_no: 320
+    aliases:
+    - 莱昂纳多·达·芬奇（裁阶）
+    - レオナルド・ダ・ヴィンチ
+  迦摩（仇阶）:
+    atlas_id: 1101100
+    collection_no: 321
+    aliases:
+    - 迦摩（仇阶）
+    - カーマ
+  凯妮斯（骑阶）:
+    atlas_id: 404500
+    collection_no: 322
+    aliases:
+    - 凯妮斯（骑阶）
+    - カイニス
+  清少纳言（狂阶）:
+    atlas_id: 704100
+    collection_no: 323
+    aliases:
+    - 清少纳言（狂阶）
+    - 清少納言
+    - セイショウナゴン
+  雅克·德·莫莱:
+    atlas_id: 2501000
+    collection_no: 324
+    aliases:
+    - 雅克·德·莫莱
+    - ジャック・ド・モレー
+    - Jacques de Molay
+    - 女团长
+  芝诺比阿:
+    atlas_id: 204500
+    collection_no: 325
+    aliases:
+    - 芝诺比阿
+    - ゼノビア
+    - Zenobia
+  伊丽莎白·巴托里〔灰姑娘〕:
+    atlas_id: 404600
+    collection_no: 326
+    aliases:
+    - 伊丽莎白·巴托里〔灰姑娘〕
+    - エリザベート・バートリー〔シンデレラ〕
+    - Elisabeth Báthory (Cinderella)
+    - 童话龙娘
+    - R龙娘
+  出云阿国:
+    atlas_id: 504900
+    collection_no: 327
+    aliases:
+    - 出云阿国
+    - 出雲阿国
+    - イズモノオクニ
+    - Izumo-no-Okuni
+  谜之兰丸X:
+    atlas_id: 1101200
+    collection_no: 328
+    aliases:
+    - 谜之兰丸X
+    - 謎の蘭丸X
+    - ナゾノランマルエックス
+    - Mysterious Ranmaru X
+    - 森兰丸
+  坂本龙马（枪阶）:
+    atlas_id: 305000
+    collection_no: 329
+    aliases:
+    - 坂本龙马（枪阶）
+    - 坂本龍馬
+    - サカモトリョウマ
+  玛尔达〔圣诞〕:
+    atlas_id: 505000
+    collection_no: 330
+    aliases:
+    - 玛尔达〔圣诞〕
+    - マルタ〔サンタ〕
+    - Martha (Santa)
+    - 术马达
+    - 术马大
+  太公望:
+    atlas_id: 404300
+    collection_no: 331
+    aliases:
+    - 太公望
+    - タイコウボウ
+    - Taigong Wang
+    - 姜太公
+    - 钓鱼佬
+  多布雷尼亚·尼基季奇:
+    atlas_id: 404400
+    collection_no: 332
+    aliases:
+    - 多布雷尼亚·尼基季奇
+    - ドブルイニャ・ニキチッチ
+    - Dobrynya Nikitich
+  BeastⅣ:
+    atlas_id: 9943610
+    collection_no: 333
+    aliases:
+    - BeastⅣ
+    - ビーストⅣ
+    - '-'
+  暗之高扬斯卡娅:
+    atlas_id: 2500900
+    collection_no: 334
+    aliases:
+    - 暗之高扬斯卡娅
+    - 闇のコヤンスカヤ
+    - ヤミノコヤンスカヤ
+    - Koyanskaya of Dark
+    - 暗狐
+    - 暗兔
+  赫费斯提翁:
+    atlas_id: 2800200
+    collection_no: 335
+    aliases:
+    - 赫费斯提翁
+    - ヘファイスティオン
+    - Hephaistíon
+    - faker
+    - Faker
+  马纳南·麦克·利尔〔巴泽特〕:
+    atlas_id: 1001100
+    collection_no: 336
+    aliases:
+    - 马纳南·麦克·利尔〔巴泽特〕
+    - マナナン・マク・リール〔バゼット〕
+    - Manannán mac Lir (Bazett)
+  征氏姐妹:
+    atlas_id: 105300
+    collection_no: 337
+    aliases:
+    - 征氏姐妹
+    - 徴姉妹
+    - チョウシマイ
+    - Hai Bà Trưng
+    - 二征
+  太岁星君:
+    atlas_id: 1001200
+    collection_no: 338
+    aliases:
+    - 太岁星君
+    - 太歳星君
+    - タイサイセイクン
+    - Taisui Xingjun
+  超级班扬:
+    atlas_id: 1001300
+    collection_no: 339
+    aliases:
+    - 超级班扬
+    - スーパーバニヤン
+    - Super Bunyan
+  大黑天:
+    atlas_id: 504700
+    collection_no: 340
+    aliases:
+    - 大黑天
+    - 大黒天
+    - ダイコクテン
+    - Daikokuten
+  玛丽·安宁:
+    atlas_id: 304900
+    collection_no: 341
+    aliases:
+    - 玛丽·安宁
+    - メアリー・アニング
+    - Mary Anning
+  君士坦丁十一世:
+    atlas_id: 404700
+    collection_no: 342
+    aliases:
+    - 君士坦丁十一世
+    - コンスタンティノス11世
+    - コンスタンティノスジュウイッセイ
+    - Kōnstantînos XI
+    - 君十一
+  查理曼:
+    atlas_id: 105200
+    collection_no: 343
+    aliases:
+    - 查理曼
+    - シャルルマーニュ
+    - Charlemagne
+    - 夏露露
+  罗兰:
+    atlas_id: 104300
+    collection_no: 344
+    aliases:
+    - 罗兰
+    - ローラン
+    - Roland
+    - 脱衣男
+  克里姆希尔德:
+    atlas_id: 704200
+    collection_no: 345
+    aliases:
+    - 克里姆希尔德
+    - クリームヒルト
+    - Kriemhild
+    - 飞嫂
+    - 克琳希德
+  詹姆斯·莫里亚蒂:
+    atlas_id: 901300
+    collection_no: 346
+    aliases:
+    - 詹姆斯·莫里亚蒂
+    - ジェームズ・モリアーティ
+    - James Moriarty
+    - 教授lily
+    - 莫里亚蒂lily
+    - 茉莉
+  堂·吉诃德:
+    atlas_id: 305100
+    collection_no: 347
+    aliases:
+    - 堂·吉诃德
+    - ドン・キホーテ
+    - Don Quixote
+  张角:
+    atlas_id: 505100
+    collection_no: 348
+    aliases:
+    - 张角
+    - 張角
+    - チョウカク
+    - Zhang Jue
+    - 黄巾
+  曲亭马琴:
+    atlas_id: 404800
+    collection_no: 349
+    aliases:
+    - 曲亭马琴
+    - 曲亭馬琴
+    - キョクテイバキン
+    - Kyokutei Bakin
+    - 阿路
+  源为朝:
+    atlas_id: 204600
+    collection_no: 350
+    aliases:
+    - 源为朝
+    - 源為朝
+    - ミナモトノタメトモ
+    - Minamoto-no-Tametomo
+  Archetype：Earth:
+    atlas_id: 2300500
+    collection_no: 351
+    aliases:
+    - Archetype：Earth
+    - アーキタイプ：アース
+    - 'Archetype: EARTH'
+    - 爱尔奎特·布伦史塔德
+    - 地球姬
+    - 公主
+  徐福:
+    atlas_id: 1001400
+    collection_no: 352
+    aliases:
+    - 徐福
+    - ジョフク
+    - Xu Fu
+    - 方巿
+  阿瓦隆女士:
+    atlas_id: 2800300
+    collection_no: 353
+    aliases:
+    - 阿瓦隆女士
+    - レディ・アヴァロン
+    - Lady Avalon
+    - 女梅林
+  加雷斯（剑阶）:
+    atlas_id: 105400
+    collection_no: 354
+    aliases:
+    - 加雷斯（剑阶）
+    - ガレス
+  伊吹童子（狂阶）:
+    atlas_id: 704300
+    collection_no: 355
+    aliases:
+    - 伊吹童子（狂阶）
+    - イブキドウジ
+  宇津见绘里濑（仇阶）:
+    atlas_id: 1101400
+    collection_no: 356
+    aliases:
+    - 宇津见绘里濑（仇阶）
+    - 宇津見エリセ
+    - ウツミエリセ
+  斯卡哈·斯卡蒂（裁阶）:
+    atlas_id: 901400
+    collection_no: 357
+    aliases:
+    - 斯卡哈·斯卡蒂（裁阶）
+    - スカサハ＝スカディ
+  武则天:
+    atlas_id: 505200
+    collection_no: 358
+    aliases:
+    - 武则天
+    - 武則天
+    - ブソクテン
+    - Wu Zetian
+    - 周照
+  斯露德:
+    atlas_id: 604500
+    collection_no: 359
+    aliases:
+    - 斯露德
+    - スルーズ
+    - Thrúd
+    - 女武神
+  希露德:
+    atlas_id: 604400
+    collection_no: 360
+    aliases:
+    - 希露德
+    - ヒルド
+    - Hildr
+    - 女武神
+  奥特琳德:
+    atlas_id: 604300
+    collection_no: 361
+    aliases:
+    - 奥特琳德
+    - オルトリンデ
+    - Ortlinde
+    - 女武神
+  千利休:
+    atlas_id: 704400
+    collection_no: 362
+    aliases:
+    - 千利休
+    - センノリキュウ
+    - Sen-no-Rikyu
+  山南敬助:
+    atlas_id: 105500
+    collection_no: 363
+    aliases:
+    - 山南敬助
+    - ヤマナミケイスケ
+    - Yamanami Keisuke
+  壹与:
+    atlas_id: 901500
+    collection_no: 364
+    aliases:
+    - 壹与
+    - 壱与
+    - イヨ
+    - Iyo
+  呼延灼:
+    atlas_id: 604600
+    collection_no: 365
+    aliases:
+    - 呼延灼
+    - コエンシャク
+    - Huyan Zhuo
+    - 吾绰
+  黄飞虎:
+    atlas_id: 404900
+    collection_no: 366
+    aliases:
+    - 黄飞虎
+    - 黄飛虎
+    - コウヒコ
+    - Huang Feihu
+  九纹龙伊丽莎:
+    atlas_id: 2800400
+    collection_no: 367
+    aliases:
+    - 九纹龙伊丽莎
+    - 九紋竜エリザ
+    - クモンリュウエリザ
+    - Elisa the Nine-Tattooed Dragon
+  布里托玛特:
+    atlas_id: 305300
+    collection_no: 368
+    aliases:
+    - 布里托玛特
+    - ブリトマート
+    - Britomart
+  格里戈里·拉斯普京:
+    atlas_id: 1001500
+    collection_no: 369
+    aliases:
+    - 格里戈里·拉斯普京
+    - 言峰綺礼
+    - コトミネキレイ
+    - グレゴリー・ラスプーチン
+    - Grigori Rasputin
+    - 言峰绮礼
+    - 言峰神父
+    - 麻婆
+  尼托克丽丝〔Alter〕:
+    atlas_id: 1101500
+    collection_no: 370
+    aliases:
+    - 尼托克丽丝〔Alter〕
+    - ニトクリス〔オルタ〕
+    - ニトクリス・オルタ
+    - Nitocris (Alter)
+    - 黑尼托
+    - 仇尼托
+  特斯卡特利波卡:
+    atlas_id: 604700
+    collection_no: 371
+    aliases:
+    - 特斯卡特利波卡
+    - テスカトリポカ
+    - Tezcatlipoca
+    - 烟雾镜
+  特拉洛克:
+    atlas_id: 2800500
+    collection_no: 372
+    aliases:
+    - 特拉洛克
+    - テノチティトラン
+    - トラロック
+    - Tlāloc
+    - 维齐洛波奇特利
+    - 特诺奇蒂特兰
+    - 雨神
+  库库尔坎:
+    atlas_id: 2501100
+    collection_no: 373
+    aliases:
+    - 库库尔坎
+    - ククルカン
+    - Kukulcan
+    - 羽蛇神
+  女教皇若安:
+    atlas_id: 901600
+    collection_no: 374
+    aliases:
+    - 女教皇若安
+    - 女教皇ヨハンナ
+    - オンナキョウコウヨハンナ
+    - Pope Johanna
+  高杉晋作:
+    atlas_id: 204700
+    collection_no: 375
+    aliases:
+    - 高杉晋作
+    - タカスギシンサク
+    - Takasugi Shinsaku
+    - 社长
+  幼体／提亚马特:
+    atlas_id: 1001600
+    collection_no: 376
+    aliases:
+    - 幼体／提亚马特
+    - ラーヴァ／ティアマト
+    - Larva/Tiamat
+    - 提妈
+  所多玛之兽／德拉科:
+    atlas_id: 3300100
+    collection_no: 377
+    aliases:
+    - 所多玛之兽／德拉科
+    - ソドムズビースト／ドラコー
+    - Sodom's Beast/Draco
+    - 兽尼禄
+  洛库斯塔:
+    atlas_id: 604800
+    collection_no: 378
+    aliases:
+    - 洛库斯塔
+    - ロクスタ
+    - Locusta
+  瑟坦特:
+    atlas_id: 105700
+    collection_no: 379
+    aliases:
+    - 瑟坦特
+    - セタンタ
+    - Sétanta
+    - 幼狗
+  果心居士:
+    atlas_id: 604900
+    collection_no: 380
+    aliases:
+    - 果心居士
+    - カシンコジ
+    - Kashin Koji
+  怖军:
+    atlas_id: 305400
+    collection_no: 381
+    aliases:
+    - 怖军
+    - ビーマ
+    - Bhīma
+  难敌:
+    atlas_id: 704600
+    collection_no: 382
+    aliases:
+    - 难敌
+    - ドゥリーヨダナ
+    - Duryodhana
+  杜尔伽:
+    atlas_id: 204800
+    collection_no: 383
+    aliases:
+    - 杜尔伽
+    - ドゥルガー
+    - Durgā
+    - 黑樱
+    - 迦梨
+  美杜莎（剑阶）:
+    atlas_id: 105600
+    collection_no: 384
+    aliases:
+    - 美杜莎（剑阶）
+    - メドゥーサ
+  雨之魔女梣:
+    atlas_id: 505300
+    collection_no: 385
+    aliases:
+    - 雨之魔女梣
+    - 雨の魔女トネリコ
+    - トネリコ
+    - Aesc the Rain Witch
+    - 水摩根
+    - 术摩根
+  阿尔托莉雅·卡斯特（狂阶）:
+    atlas_id: 704700
+    collection_no: 386
+    aliases:
+    - 阿尔托莉雅·卡斯特（狂阶）
+    - アルトリア・キャスター
+  铃鹿御前〔暑假〕:
+    atlas_id: 405000
+    collection_no: 387
+    aliases:
+    - 铃鹿御前〔暑假〕
+    - 鈴鹿御前〔サマバケ〕
+    - スズカゴゼン・サマバケ
+    - Suzuka Gozen (Vacay)
+  克洛伊·冯·爱因兹贝伦（仇阶）:
+    atlas_id: 1101600
+    collection_no: 388
+    aliases:
+    - 克洛伊·冯·爱因兹贝伦（仇阶）
+    - クロエ・フォン・アインツベルン
+  诺克娜蕾·雅兰杜:
+    atlas_id: 2501200
+    collection_no: 389
+    aliases:
+    - 诺克娜蕾·雅兰杜
+    - ノクナレア・ヤラアーンドゥ
+    - Cnoc na Riabh Yaraändoo
+    - 梅芙
+  梅柳齐娜:
+    atlas_id: 901700
+    collection_no: 390
+    aliases:
+    - 梅柳齐娜
+    - メリュジーヌ
+    - Mélusine
+    - 梅柳齐娜·翁蒂娜
+    - 妖精骑士兰斯洛特
+    - 妖兰
+  UDK－巴格斯特:
+    atlas_id: 204900
+    collection_no: 391
+    aliases:
+    - UDK－巴格斯特
+    - ＵＤＫ－バーゲスト
+    - バーゲスト
+    - UDK-Barghest
+    - 妖精骑士巴格斯特
+    - 妖精骑士高文
+    - 妖高
+  凯特·库·米可科尔:
+    atlas_id: 2800600
+    collection_no: 392
+    aliases:
+    - 凯特·库·米可科尔
+    - ケット・クー・ミコケル
+    - バーヴァン・シー
+    - Cait Cú MikoCer
+    - 芭万·希
+    - 妖精骑士崔斯坦
+    - 妖崔
+  旺吉娜:
+    atlas_id: 2501300
+    collection_no: 393
+    aliases:
+    - 旺吉娜
+    - ワンジナ
+    - Wandjina
+  托勒密:
+    atlas_id: 205000
+    collection_no: 394
+    aliases:
+    - 托勒密
+    - プトレマイオス
+    - Ptolemaîos
+  杉谷善住坊:
+    atlas_id: 205100
+    collection_no: 395
+    aliases:
+    - 杉谷善住坊
+    - スギタニゼンジュウボウ
+    - Sugitani Zenjubou
+  忒修斯:
+    atlas_id: 105800
+    collection_no: 396
+    aliases:
+    - 忒修斯
+    - テセウス
+    - Thēseus
+  武田晴信:
+    atlas_id: 405200
+    collection_no: 397
+    aliases:
+    - 武田晴信
+    - タケダハルノブ
+    - Takeda Harunobu
+    - 武田信玄
+  永仓新八:
+    atlas_id: 704800
+    collection_no: 398
+    aliases:
+    - 永仓新八
+    - 永倉新八
+    - ナガクラシンパチ
+    - Nagakura Shinpachi
+  杂贺孙一:
+    atlas_id: 205200
+    collection_no: 399
+    aliases:
+    - 杂贺孙一
+    - 雑賀孫一
+    - サイカマゴイチ
+    - Saika Magoichi
+    - 杂贺孙市
+    - 杂贺萤
+  上杉谦信:
+    atlas_id: 901800
+    collection_no: 400
+    aliases:
+    - 上杉谦信
+    - 上杉謙信
+    - ウエスギケンシン
+    - Uesugi Kenshin
+    - 裁谦信
+  尼莫〔圣诞〕:
+    atlas_id: 405300
+    collection_no: 401
+    aliases:
+    - 尼莫〔圣诞〕
+    - ネモ〔サンタ〕
+    - Nemo (Santa)
+  大和武尊:
+    atlas_id: 105900
+    collection_no: 402
+    aliases:
+    - 大和武尊
+    - ヤマトタケル
+    - Yamato Takeru
+    - 日本武尊
+  源赖光／丑御前:
+    atlas_id: 1101800
+    collection_no: 403
+    aliases:
+    - 源赖光／丑御前
+    - 源頼光／丑御前
+    - ミナモトノライコウ／ウシゴゼン
+    - Minamoto-no-Raikou/Ushi Gozen
+    - 仇奶光
+    - 仇赖光
+  由井正雪:
+    atlas_id: 505400
+    collection_no: 404
+    aliases:
+    - 由井正雪
+    - ユイショウセツ
+    - Yui Shousetsu
+  宫本伊织:
+    atlas_id: 106000
+    collection_no: 405
+    aliases:
+    - 宫本伊织
+    - 宮本伊織
+    - ミヤモトイオリ
+    - Miyamoto Iori
+  安德洛墨达:
+    atlas_id: 405500
+    collection_no: 406
+    aliases:
+    - 安德洛墨达
+    - アンドロメダ
+    - Andromeda
+    - 仙女座
+  玛丽·安托瓦内特〔Alter〕:
+    atlas_id: 1101300
+    collection_no: 407
+    aliases:
+    - 玛丽·安托瓦内特〔Alter〕
+    - マリー・アントワネット〔オルタ〕
+    - Marie Antoinette (Alter)
+  耀星哈桑:
+    atlas_id: 605000
+    collection_no: 408
+    aliases:
+    - 耀星哈桑
+    - 耀星のハサン
+    - ヨウセイノハサン
+    - Hassan of the Aglare Star
+  岩窟王　基督山:
+    atlas_id: 1101700
+    collection_no: 409
+    aliases:
+    - 岩窟王　基督山
+    - 巌窟王 モンテ・クリスト
+    - ガンクツオウ モンテ・クリスト
+    - Monte Cristo
+    - 新伯爵
+  亚历山德罗·迪·卡利奥斯特罗:
+    atlas_id: 2800700
+    collection_no: 410
+    aliases:
+    - 亚历山德罗·迪·卡利奥斯特罗
+    - アレッサンドロ・ディ・カリオストロ
+    - Alessandro di Cagliostro
+    - 卡伯爵
+  E－火玛丽:
+    atlas_id: 9945590
+    collection_no: 411
+    aliases:
+    - E－火玛丽
+    - Ｅ－フレアマリー
+    - '-'
+    - E-Flare Marie
+    - 火所长,火玛丽,火之奥尔加玛丽
+  E－水玛丽:
+    atlas_id: 9945600
+    collection_no: 412
+    aliases:
+    - E－水玛丽
+    - Ｅ－アクアマリー
+    - '-'
+    - E-Aqua Marie
+    - 水所长,水玛丽,水之奥尔加玛丽
+  苍崎青子:
+    atlas_id: 2501400
+    collection_no: 413
+    aliases:
+    - 苍崎青子
+    - 蒼崎青子
+    - アオザキアオコ
+    - Aozaki Aoko
+    - 第五魔法使
+  静希草十郎:
+    atlas_id: 704900
+    collection_no: 414
+    aliases:
+    - 静希草十郎
+    - シズキソウジュウロウ
+    - Shizuki Soujyuro
+  久远寺有珠:
+    atlas_id: 505500
+    collection_no: 415
+    aliases:
+    - 久远寺有珠
+    - 久遠寺有珠
+    - クオンジアリス
+    - Kuonji Alice
+  响＆千键:
+    atlas_id: 1001700
+    collection_no: 416
+    aliases:
+    - 响＆千键
+    - ひびき＆千鍵
+    - ヒビキ＆チカギ
+    - Hibiki&Chikagi
+    - 阿昙矶良
+  埃列什基伽勒（beasteresh）:
+    atlas_id: 3300200
+    collection_no: 417
+    aliases:
+    - 埃列什基伽勒（beasteresh）
+    - エレシュキガル
+  谜之代行者C.I.E.L:
+    atlas_id: 2300900
+    collection_no: 418
+    aliases:
+    - 谜之代行者C.I.E.L
+    - 謎の代行者C.I.E.L
+    - ナゾノダイコウシャシエル
+    - Mysterious Executor C.I.E.L
+    - 教教我吧！希耶尔老师
+    - 星之希耶尔
+    - 学姐
+  多布雷尼亚·尼基季奇（枪阶）:
+    atlas_id: 305500
+    collection_no: 419
+    aliases:
+    - 多布雷尼亚·尼基季奇（枪阶）
+    - ドブルイニャ・ニキチッチ
+  方巿:
+    atlas_id: 1101900
+    collection_no: 420
+    aliases:
+    - 方巿
+    - 徐福
+    - ジョフク
+  BB迪拜:
+    atlas_id: 2300600
+    collection_no: 421
+    aliases:
+    - BB迪拜
+    - ＢＢドバイ
+    - BB Dubai
+    - BB宇宙
+    - 黄金BB
+  特诺奇蒂特兰:
+    atlas_id: 2301000
+    collection_no: 422
+    aliases:
+    - 特诺奇蒂特兰
+    - テノチティトラン
+    - Tenochtitlan
+    - 泳装特拉洛克
+    - 维齐洛波奇特利
+    - 雨神
+  谜之女主角XX〔Alter〕:
+    atlas_id: 2501600
+    collection_no: 423
+    aliases:
+    - 谜之女主角XX〔Alter〕
+    - 謎のヒロインXX〔オルタ〕
+    - ナゾノヒロインダブルエックス〔オルタ〕
+    - Mysterious Heroine XX (Alter)
+  岸波白野:
+    atlas_id: 2300700
+    collection_no: 424
+    aliases:
+    - 岸波白野
+    - キシナミハクノ
+    - Kishinami Hakuno
+    - 扎比夫
+  岸波白野（mooncancer）:
+    atlas_id: 2300800
+    collection_no: 425
+    aliases:
+    - 岸波白野（mooncancer）
+    - キシナミハクノ
+  Kazuradrop:
+    atlas_id: 1001800
+    collection_no: 426
+    aliases:
+    - Kazuradrop
+    - カズラドロップ
+    - 缪瑞恩
+    - 糖果藤蔓
+    - 藤蔓之滴
+    - 猪笼草
+  图坦卡蒙:
+    atlas_id: 205300
+    collection_no: 427
+    aliases:
+    - 图坦卡蒙
+    - ツタンカーメン
+    - Tutankhamun
+  梵高〔矿工〕:
+    atlas_id: 305600
+    collection_no: 428
+    aliases:
+    - 梵高〔矿工〕
+    - ヴァン・ゴッホ〔マイナー〕
+    - Van Gogh (Miner)
+  娄希:
+    atlas_id: 705000
+    collection_no: 429
+    aliases:
+    - 娄希
+    - ロウヒ
+    - Louhi
+  阿比盖尔·威廉姆斯〔圣诞〕:
+    atlas_id: 2800800
+    collection_no: 430
+    aliases:
+    - 阿比盖尔·威廉姆斯〔圣诞〕
+    - アビゲイル・ウィリアムズ〔サンタ〕
+    - Abigail Williams (Santa)
+    - 圣诞阿比
+  Phantasmoon:
+    atlas_id: 2800900
+    collection_no: 431
+    aliases:
+    - Phantasmoon
+    - ファンタズムーン
+    - Space PhantasmoonⅤ
+    - Santasmoon
+    - 幻月
+    - 白月姬
+    - 白公主
+    - 魔法少女
+    - 月披
+  理查一世:
+    atlas_id: 106100
+    collection_no: 432
+    aliases:
+    - 理查一世
+    - リチャードⅠ世
+    - リチャードイッセイ
+    - Richard I
+    - 狮心王理查
+    - 理查1世
+  比肖内:
+    atlas_id: 305700
+    collection_no: 433
+    aliases:
+    - 比肖内
+    - ビショーネ
+    - Biscione
+    - 纹章蛇
+    - 纹章龙
+    - 毒龙
+    - 绿龙
+  黑姬:
+    atlas_id: 106200
+    collection_no: 434
+    aliases:
+    - 黑姬
+    - 黒姫
+    - クロヒメ
+    - Kurohime
+  小野小町:
+    atlas_id: 505800
+    collection_no: 435
+    aliases:
+    - 小野小町
+    - オノノコマチ
+    - Ono-no-Komachi
+  E－宏玛丽:
+    atlas_id: 9946280
+    collection_no: 436
+    aliases:
+    - E－宏玛丽
+    - Ｅ－グランマリー
+    - '-'
+    - E-Grand Marie
+    - 地所长,地玛丽,地之奥尔加玛丽
+  但丁·阿利吉耶里:
+    atlas_id: 2801000
+    collection_no: 437
+    aliases:
+    - 但丁·阿利吉耶里
+    - ダンテ・アリギエーリ
+    - Dante Alighieri
+  梅塔特隆·贞德:
+    atlas_id: 901900
+    collection_no: 438
+    aliases:
+    - 梅塔特隆·贞德
+    - メタトロン・ジャンヌ
+    - Metatron Jeanne
+    - 神贞德
+    - 睡贞
+  阿育王:
+    atlas_id: 305800
+    collection_no: 439
+    aliases:
+    - 阿育王
+    - アショカ王
+    - アショカオウ
+    - Ashoka
+  莉莉丝:
+    atlas_id: 705100
+    collection_no: 440
+    aliases:
+    - 莉莉丝
+    - リリス
+    - Lilith
+  堤丰·厄斐墨洛斯:
+    atlas_id: 2801100
+    collection_no: 441
+    aliases:
+    - 堤丰·厄斐墨洛斯
+    - テュフォン・エフェメロス
+    - Typhon Ephemeros
+    - 果子龙
+  因陀罗:
+    atlas_id: 305900
+    collection_no: 442
+    aliases:
+    - 因陀罗
+    - インドラ
+    - Indra
+  E－星玛丽:
+    atlas_id: 9946760
+    collection_no: 443
+    aliases:
+    - E－星玛丽
+    - Ｅ－ステラマリー
+    - '-'
+    - E-Stella Marie
+    - 风所长
+    - 风玛丽
+    - 风之奥尔加玛丽
+  U－奥尔加玛丽:
+    atlas_id: 4000100
+    collection_no: 444
+    aliases:
+    - U－奥尔加玛丽
+    - Ｕ－オルガマリー
+    - ユーオルガマリー
+    - U-Olga Marie
+    - 所长
+  パッションリップ:
+    atlas_id: 106300
+    collection_no: 445
+    aliases:
+    - パッションリップ
+  クリームヒルト:
+    atlas_id: 405800
+    collection_no: 446
+    aliases:
+    - クリームヒルト
+  呼延灼（狂阶）:
+    atlas_id: 705200
+    collection_no: 447
+    aliases:
+    - 呼延灼（狂阶）
+    - コエンシャク
+  玉兔:
+    atlas_id: 2301100
+    collection_no: 448
+    aliases:
+    - 玉兔
+    - 玉兎
+    - ギョクト
+    - Gyokuto
+    - 水式姐
+    - 泳装式姐
+    - '212'
+    - '216'
+  美遊・エーデルフェルト:
+    atlas_id: 306000
+    collection_no: 449
+    aliases:
+    - 美遊・エーデルフェルト
+    - ミユ・エーデルフェルト
+  ラーヴァ／ティアマト:
+    atlas_id: 205400
+    collection_no: 450
+    aliases:
+    - ラーヴァ／ティアマト
+  热内斯·克莱恩:
+    atlas_id: 1001900
+    collection_no: 451
+    aliases:
+    - 热内斯·克莱恩
+    - ジュネス・クレーン
+    - Jeunesse Crane
+    - 鹤Lily,青年克莱恩
+  尼莫／诺亚:
+    atlas_id: 405700
+    collection_no: 452
+    aliases:
+    - 尼莫／诺亚
+    - ネモ／ノア
+    - Nemo/Noah
+    - 大尼莫
+  河上彦斋:
+    atlas_id: 605100
+    collection_no: 453
+    aliases:
+    - 河上彦斋
+    - 河上彦斎
+    - カワカミゲンサイ
+    - Kawakami Gensai
+    - 剑心
+  藤堂平助:
+    atlas_id: 1102100
+    collection_no: 454
+    aliases:
+    - 藤堂平助
+    - トウドウヘイスケ
+    - Toudou Heisuke
+  原田左之助:
+    atlas_id: 306100
+    collection_no: 455
+    aliases:
+    - 原田左之助
+    - ハラダサノスケ
+    - Harada Sanosuke
+  近藤勇:
+    atlas_id: 106400
+    collection_no: 456
+    aliases:
+    - 近藤勇
+    - コンドウイサミ
+    - Kondou Isami
+    - 组长
+    - 局长
+    - 大猩猩
+  エリザベート・バートリー:
+    atlas_id: 306200
+    collection_no: 457
+    aliases:
+    - エリザベート・バートリー
+  终结之伊丽莎白:
+    atlas_id: 1102200
+    collection_no: 458
+    aliases:
+    - 终结之伊丽莎白
+    - 終わりのエリザベート
+    - オワリノエリザベート
+    - Ultimate Elisabeth
+    - 仇龙娘
+  ソロモン:
+    atlas_id: 2801200
+    collection_no: 459
+    aliases:
+    - ソロモン
+  马里斯·迦勒底亚斯:
+    atlas_id: 9947530
+    collection_no: 460
+    aliases:
+    - 马里斯·迦勒底亚斯
+    - マリス・カルデアス
+    - '-'
+    - Maris Chaldeas
+  领主洛格雷斯:
+    atlas_id: 106500
+    collection_no: 461
+    aliases:
+    - 领主洛格雷斯
+    - ロード・ログレス
+    - Lord Logres
+    - 冠呆毛
+  花咲翁:
+    atlas_id: 505900
+    collection_no: 462
+    aliases:
+    - 花咲翁
+    - ハナサカノオキナ
+    - Hanasaka no Okina
+    - 开花爷爷
+  蛇女房:
+    atlas_id: 605200
+    collection_no: 463
+    aliases:
+    - 蛇女房
+    - ヘビニョウボウ
+    - Hebi Nyobo
+    - 蛇妻
+  芙萝拉:
+    atlas_id: 1002000
+    collection_no: 464
+    aliases:
+    - 芙萝拉
+    - フローラ
+    - Flora
+  得墨忒耳:
+    atlas_id: 306400
+    collection_no: 465
+    aliases:
+    - 得墨忒耳
+    - デメテル
+    - Demeter
+    - 农神
+    - 德墨忒尔
+  雅克・德・莫莱:
+    atlas_id: 106600
+    collection_no: 466
+    aliases:
+    - 雅克・德・莫莱
+    - ジャック・ド・モレー
+    - Jacques de Molay
+    - 男团长
+    - 雅雅
+  普勒拉蒂:
+    atlas_id: 505600
+    collection_no: 467
+    aliases:
+    - 普勒拉蒂
+    - フランソワ・プレラーティ
+    - プレラーティ
+    - Prelati
+  希波吕忒:
+    atlas_id: 405600
+    collection_no: 468
+    aliases:
+    - 希波吕忒
+    - ヒッポリュテ
+    - Hippolyta
+  无地王约翰:
+    atlas_id: 1102000
+    collection_no: 469
+    aliases:
+    - 无地王约翰
+    - ジョン・ラックランド
+    - John Lackland
+  ウルズ:
+    atlas_id: 205500
+    collection_no: 470
+    aliases:
+    - ウルズ
+  フランチェスカ・プレラーティ:
+    atlas_id: 505700
+    collection_no: 0
+    aliases:
+    - フランチェスカ・プレラーティ
+  フローラ:
+    atlas_id: 1002100
+    collection_no: 0
+    aliases:
+    - フローラ
+  亨利·杰基尔＆海德（狂阶）:
+    atlas_id: 600710
+    collection_no: 0
+    aliases:
+    - 亨利·杰基尔＆海德（狂阶）
+    - ヘンリー・ジキル＆ハイド
+  苍崎青子（异界）:
+    atlas_id: 2501500
+    collection_no: 0
+    aliases:
+    - 苍崎青子（异界）
+    - 蒼崎青子
+    - アオザキアオコ

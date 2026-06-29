@@ -13,8 +13,6 @@ build/
 .vscode/
 .DS_Store
 
-# 运行时数据
-fgo.db
 
 # 调试产物
 mini.png
@@ -22,7 +20,10 @@ mini.png
 # 数据缓存
 plugins/fgo/data/cache/
 
-# 离线渲染测试产物（生成的图片不入库）
-tools/svt_table.png
+# 离线渲染测试产物
 test_render.py
+test_screenshot.py
 render_test_output.png
+wiki_screenshot.png
+screenshots/
+svt_test_data.json
