@@ -143,7 +143,6 @@ equips:
     - 钢之锻炼
     - 鋼の鍛錬
     - ハガネノタンレン
-    - 钢之抱歉
   原始咒术:
     atlas_id: 9400220
     collection_no: 22
@@ -185,7 +184,6 @@ equips:
     - 秉持优雅
     - 優雅たれ
     - ユウガタレ
-    - 优雅
   虚数魔术:
     atlas_id: 9400280
     collection_no: 28
@@ -193,8 +191,6 @@ equips:
     - 虚数魔术
     - 虚数魔術
     - キョスウマジュツ
-    - 虚数
-    - 龙脉上位
   天之晚餐:
     atlas_id: 9400290
     collection_no: 29
@@ -215,8 +211,6 @@ equips:
     aliases:
     - 元素转换
     - フォーマルクラフト
-    - Formalcraft
-    - 投影魔术
   虚数环:
     atlas_id: 9400320
     collection_no: 32
@@ -235,19 +229,12 @@ equips:
     aliases:
     - 万华镜
     - カレイドスコープ
-    - 宝石翁
-    - 老头
-    - kaleidoscope
-    - 宝石老头
-    - 万华
   天之杯:
     atlas_id: 9400350
     collection_no: 35
     aliases:
     - 天之杯
     - ヘブンズ・フィール
-    - 白杯
-    - Heaven's Feel
   旅途的开始:
     atlas_id: 9400360
     collection_no: 36
@@ -334,8 +321,6 @@ equips:
     - 黑之圣杯
     - 黒の聖杯
     - クロノセイハイ
-    - 黑杯
-    - Black Grail
   南瓜杰克:
     atlas_id: 9400490
     collection_no: 49
@@ -360,8 +345,6 @@ equips:
     aliases:
     - 万圣节公主
     - ハロウィン・プリンセス
-    - 万圣太太
-    - Halloween Princess
   万圣节小恶魔:
     atlas_id: 9400530
     collection_no: 53
@@ -374,8 +357,6 @@ equips:
     aliases:
     - 万圣节女仆
     - メイド・イン・ハロウィン
-    - 女仆
-    - 万圣女仆
   扬帆远航:
     atlas_id: 9400550
     collection_no: 55
@@ -396,7 +377,6 @@ equips:
     - 月之胜利者
     - 月の勝利者
     - ツキノショウリシャ
-    - 月胜
   另一个结局:
     atlas_id: 9400580
     collection_no: 58
@@ -404,7 +384,6 @@ equips:
     - 另一个结局
     - もう一つの結末
     - モウヒトツノケツマツ
-    - Another Ending
   唠叨指定:
     atlas_id: 9400590
     collection_no: 59
@@ -466,9 +445,6 @@ equips:
     - 2030年的碎片
     - 2030年の欠片
     - 2030ネンノカケラ
-    - '2030'
-    - 月胜
-    - 月之胜利者
   雷光之驯鹿:
     atlas_id: 9400660
     collection_no: 68
@@ -483,7 +459,6 @@ equips:
     - 圣者的行进
     - 聖者の行進
     - セイジャノコウシン
-    - 圣者行进
   献给我的御主的礼物:
     atlas_id: 9400680
     collection_no: 70
@@ -1055,8 +1030,6 @@ equips:
     - 冠位人偶师
     - 冠位人形師
     - カンイニンギョウシ
-    - 人偶师
-    - 冠位
   三重结界:
     atlas_id: 9401140
     collection_no: 157
@@ -1232,7 +1205,6 @@ equips:
     - 死之艺术
     - 死の芸術
     - シノゲイジュツ
-    - 死艺
   柔软的慈爱:
     atlas_id: 9401400
     collection_no: 184
@@ -1240,7 +1212,6 @@ equips:
     - 柔软的慈爱
     - 柔らかな慈愛
     - ヤワラカナジアイ
-    - 柔软
   月灵髓液:
     atlas_id: 9401410
     collection_no: 185
@@ -1433,7 +1404,6 @@ equips:
     - 黄金捕鲤图
     - ゴールデン捕鯉魚図
     - ゴールデンリギョヲトラウズ
-    - 鲤鱼图
   狐狸的夜之梦:
     atlas_id: 9401480
     collection_no: 213
@@ -1671,9 +1641,6 @@ equips:
     - 宝石剑泽尔里奇
     - 宝石剣ゼルレッチ
     - ホウセキケンゼルレッチ
-    - 宝石剑
-    - 泽尔里奇
-    - Zelretch
   玉藻俱乐部:
     atlas_id: 9300410
     collection_no: 248
@@ -1771,8 +1738,6 @@ equips:
     - 黄金相扑～岩场～
     - ゴールデン相撲～岩場所～
     - ゴールデンズモウ～イワバショ～
-    - 相扑
-    - 黄金相扑
   月之疗养温泉:
     atlas_id: 9401670
     collection_no: 262
@@ -1787,7 +1752,6 @@ equips:
     - 起源弹
     - 起源弾
     - キゲンダン
-    - Origin Bullet
   援护射击:
     atlas_id: 9401690
     collection_no: 264
@@ -1795,7 +1759,6 @@ equips:
     - 援护射击
     - 援護射撃
     - エンゴシャゲキ
-    - Covering Fire
   卡姆兰之战:
     atlas_id: 9401700
     collection_no: 265
@@ -1890,7 +1853,6 @@ equips:
     - 王之相伴
     - 王の相伴
     - オウノショウバン
-    - With the King
   捞金鱼:
     atlas_id: 9401750
     collection_no: 279
@@ -3954,7 +3916,6 @@ equips:
     - 幻想种
     - 幻想種
     - ゲンソウシュ
-    - Phantasmal Species
   山鲁亚尔王之闺:
     atlas_id: 9301720
     collection_no: 586
@@ -4620,7 +4581,6 @@ equips:
     aliases:
     - 天际旋荡
     - エアリアル・ドライブ
-    - Aerial Drive
   黄金之翼:
     atlas_id: 9402760
     collection_no: 684
@@ -5289,7 +5249,6 @@ equips:
     - 繁荣
     - 繁栄
     - ハンエイ
-    - 繁荣的结晶体
   欺瞒:
     atlas_id: 9403110
     collection_no: 784
@@ -7772,7 +7731,6 @@ equips:
     aliases:
     - 巧克力天堂
     - チョコレート・ヘヴン
-    - Chocolate Heaven
   王后之梦:
     atlas_id: 9404330
     collection_no: 1151
