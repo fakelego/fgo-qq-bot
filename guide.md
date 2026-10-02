@@ -174,7 +174,7 @@ fgo-qq-bot/
 
 不再打开 fgo.wiki 网页截图，改为 **parse API 拿 HTML → 本地渲染**，把对 fgo.wiki 的访问降到最低：
 
-- **页面 HTML**：`action=parse&prop=text` 拿渲染后的 HTML（约 834KB），磁盘缓存 7 天（`data/cache/pages/`）；页面名不精确时用 `list=search` 拿规范标题重试
+- **页面 HTML**：`action=parse&prop=text` 拿渲染后的 HTML（约 834KB），磁盘缓存 7 天（`data/cache/pages/`）；页面名不精确时依次走「全角括号规范化 → prefixsearch → 全站搜索」兜底，按职阶映射评分选标题（如「清少纳言（狂阶）」→ `清少纳言(Berserker)`）
 - **CSS 收集**：一次性打开页面收集全部 `<link rel=stylesheet>` 原文 + inline `<style>`，相对 `url()` 按来源 URL 补全，缓存 30 天（`data/cache/fgowiki.css`，约 665KB）。其中 **Font Awesome 字体 base64 内嵌**进 `@font-face`（本地渲染页面 Origin=null，跨域字体必然被 CORS 拒绝，且减少对静态站的请求）
 - **图片**：渲染时 `page.route("https://media.fgo.wiki/**")` 拦截，按 URL SHA1 磁盘缓存（`data/cache/img/`），命中直接 fulfill——同一从者多次查询零图片请求
 - **渲染清洗**（`render_page()`）：
@@ -263,10 +263,11 @@ fgo-qq-bot/
 **仍待处理**：
 
 1. **RapidFuzz 未使用**：依赖已声明，后续可用于别名模糊匹配
-2. **工作区未收口**：`git status` 有大量修改未提交，根目录仍有未跟踪的调试脚本（`debug_all_commands.py` 等），建议归入 `tools/` 或清理
+2. **改动已提交但未推送**：parse API 架构改动已提交到分支 `调用api生图`（`e5c71e5`），因本机到 GitHub 网络不通（connection reset / 443 超时）尚未推送；根目录仍有未跟踪的调试脚本（`debug_all_commands.py` 等），建议归入 `tools/` 或清理
 3. **`/查询` 只发第一张截图**（`fr.sections[0]`），完整信息需配合其他分项命令查看
 4. **无自动化测试体系**：截图类功能依赖 fgo.wiki 页面结构，页面改版会导致截图失效；`debug_all_commands.py` 已覆盖全部命令（含素材），作为人工回归工具
 5. **首次渲染耗时**：新从者首次查询需下载全部图片（约几十 MB）；图片磁盘缓存后再次查询很快
+6. **持有技能型从者章节重复**：`持有技能` 大节会先整体截出 3 张技能表、随后 `技能1/2/3` 再各截一次（同一批表格截两遍），2026-10-03 已对照旧版源码确认与网页截图时代行为一致，属于既有行为，如需修复要单独调整章节收集逻辑
 
 ---
 
@@ -278,12 +279,12 @@ fgo-qq-bot/
 | 2 | ~7 月 | **取消生图，改用 Playwright 截取 fgo.wiki 页面**（提交 `170523b`），区服偏好功能移除 |
 | 3 | ~7 月下旬 | 截图引擎完善：章节切分、tabber 多版本、表格精确截图、超长分片 |
 | 4 | 近期 | 扩展礼装查询（`6b4caf8`）、素材查询、卡面原图提取（`wiki_card.py`）、道具查询与刷取关卡查询（`d973987`） |
-| 5 | 2026-10 | **parse API + 本地渲染**：HTML/CSS/图片全部磁盘缓存并本地渲染，大幅减少对 fgo.wiki 的负载；卡面提取改为纯文本解析 |
+| 5 | 2026-10 | **parse API + 本地渲染**：HTML/CSS/图片全部磁盘缓存并本地渲染，大幅减少对 fgo.wiki 的负载；卡面提取改为纯文本解析（分支 `调用api生图`，提交 `e5c71e5`） |
 
 ## 9. 未来开发方向
 
 - 清理根目录调试产物
-- 提交当前工作区的未提交改动
+- 推送 `调用api生图` 分支并发起 PR 合并到 main（当前被本机网络问题阻塞）
 - `commands/query/__init__.py` 中已预留注释：`/enemy`（敌人查询）、`/quest`（关卡查询）
 - 建立截图回归测试体系，降低 fgo.wiki 页面改版带来的隐性故障风险
 - 别名模糊匹配（RapidFuzz）优化查询体验
