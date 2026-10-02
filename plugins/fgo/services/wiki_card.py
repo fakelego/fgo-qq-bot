@@ -1,27 +1,36 @@
-"""fgowiki 从者卡面立绘图片提取服务
+"""fgowiki 从者卡面立绘图片提取服务(parse API 纯文本解析)
 
-从 fgowiki 从者页面查找卡面/灵衣文件链接，按文件名模式匹配阶段并下载原图。
+从 parse API 拿到的页面 HTML 中解析「文件:」链接，按文件名模式匹配阶段
+并下载原图。不再打开浏览器页面,匹配逻辑与原 DOM 扫描版本一致。
 """
 from __future__ import annotations
 
-import asyncio
 import hashlib
 import re
 from pathlib import Path
+from urllib.parse import unquote
 
-import aiohttp
-from playwright.async_api import Page
-
-from .wiki_screenshot import (
-    _get_browser,
-    _hide_sidebar_and_expand,
-    _force_load_all_images,
-    _build_fgowiki_urls,
-)
+from . import api_render
 
 # 图片缓存目录
 CARD_CACHE_DIR = Path(__file__).parent.parent / "data" / "cache" / "card"
 CARD_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+# 排除关键词(不应匹配的图片类型)
+EXCLUDE = ["愚人节", "model_", "模型", "图标", "指令卡", "职阶", "阶职", "冠位", "Buster", "Arts", "Quick"]
+
+# 灵衣关键词
+COSTUME_PATTERNS = ["灵衣", "霊衣", "Costume", "costume"]
+
+
+def _stage_patterns(cn_name: str) -> dict[str, list[str]]:
+    """阶段关键词映射(末尾的「从者名+数字」兜底模式,如 玄奘三藏1.png)。"""
+    return {
+        "1": ["初期", "初始", "卡面1", "卡面 1", "Stage 1", "stage 1", "Stage1", "stage1", cn_name + "1"],
+        "2": ["一破", "卡面2", "卡面 2", "Stage 2", "stage 2", "Stage2", "stage2", "二破", cn_name + "2"],
+        "3": ["三破", "卡面3", "卡面 3", "Stage 3", "stage 3", "Stage3", "stage3", cn_name + "3"],
+        "4": ["満破", "满破", "卡面4", "卡面 4", "Stage 4", "stage 4", "Stage4", "stage4", "四破", cn_name + "4"],
+    }
 
 
 def _thumb_to_full_url(url: str) -> str:
@@ -51,9 +60,7 @@ async def _download_image(url: str) -> bytes | None:
         return cache_fn.read_bytes()
 
     try:
-        async with aiohttp.ClientSession(
-            timeout=aiohttp.ClientTimeout(total=20)
-        ) as session:
+        async with api_render._session(total=20) as session:
             async with session.get(url) as resp:
                 if resp.status != 200:
                     return None
@@ -61,7 +68,10 @@ async def _download_image(url: str) -> bytes | None:
     except Exception:
         return None
 
-    cache_fn.write_bytes(data)
+    try:
+        cache_fn.write_bytes(data)
+    except OSError:
+        pass
     return data
 
 
@@ -70,7 +80,7 @@ async def get_servant_card_image(
 ) -> bytes | None:
     """从 fgowiki 从者页面提取指定阶段的卡面原图。
 
-    策略：搜索页面中所有 <a> 标签的 href="文件:..." 链接，
+    策略：解析页面 HTML 中所有 href="文件:..." 链接，
     匹配文件名中的 "卡面{N}" 或 "灵衣" 模式，提取对应图片。
 
     Args:
@@ -81,180 +91,126 @@ async def get_servant_card_image(
     Returns:
         PNG 图片 bytes，失败返回 None
     """
-    browser = await _get_browser()
-    page: Page = await browser.new_page(
-        viewport={"width": 1100, "height": 1200},
-        device_scale_factor=1,
-    )
-
     try:
-        # 1. 加载从者页面
-        urls = _build_fgowiki_urls(cn_name)
-        for url in urls:
-            try:
-                resp = await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-            except Exception:
+        html = await api_render.fetch_page_html(cn_name)
+        if not html:
+            return None
+
+        # 1. 解析所有「文件:」链接
+        candidates: list[dict] = []
+        for m in re.finditer(
+            r'<a[^>]+href="([^"]*%E6%96%87%E4%BB%B6:[^"]*)"[^>]*>(.*?)</a>',
+            html,
+            re.S,
+        ):
+            href, inner = m.group(1), m.group(2)
+            filename = unquote(href)
+            idx = filename.find("文件:")
+            if idx == -1:
                 continue
-            if resp and resp.status in (200, 304):
-                break
+            filename = filename[idx + 3:]
+
+            # 排除无关图片类型
+            if any(kw in filename for kw in EXCLUDE):
+                continue
+
+            # 获取 <a> 内的 <img>
+            img_m = re.search(r"<img[^>]*>", inner)
+            if not img_m:
+                continue
+            img_tag = img_m.group(0)
+            src_m = re.search(r'\bsrc="([^"]+)"', img_tag)
+            if not src_m:
+                src_m = re.search(r'\bdata-src="([^"]+)"', img_tag)
+            if not src_m:
+                continue
+            src = src_m.group(1)
+            if "data:" in src or "svg" in src:
+                continue
+
+            # 排除太小的图
+            w_m = re.search(r'\bwidth="(\d+)"', img_tag)
+            h_m = re.search(r'\bheight="(\d+)"', img_tag)
+            w = int(w_m.group(1)) if w_m else 0
+            h = int(h_m.group(1)) if h_m else 0
+            if w < 150 and h < 150:
+                continue
+
+            # 解析阶段编号
+            card_num = None
+            is_costume = False
+
+            # 检查是否是灵衣
+            for kw in COSTUME_PATTERNS:
+                if kw in filename:
+                    is_costume = True
+                    cm = re.search(kw + r"\s*(\d+)", filename)
+                    card_num = int(cm.group(1)) if cm else 1
+                    break
+
+            # 检查是否是阶段卡面
+            if not is_costume:
+                for stage, patterns in _stage_patterns(cn_name).items():
+                    for p in patterns:
+                        if p in filename:
+                            card_num = int(stage)
+                            break
+                    if card_num is not None:
+                        break
+
+            # 如果没有匹配到阶段编号，继续（可能是其他无关图片）
+            if card_num is None:
+                continue
+
+            candidates.append({
+                "filename": filename,
+                "src": src,
+                "card_num": card_num,
+                "is_costume": is_costume,
+                "width": w,
+                "height": h,
+            })
+
+        if not candidates:
+            return None
+
+        # 2. 按 spec 筛选
+        if card_spec == "灵衣":
+            matches = [c for c in candidates if c["is_costume"]]
         else:
+            target_num = int(card_spec)
+            matches = [c for c in candidates if not c["is_costume"] and c["card_num"] == target_num]
+
+        if not matches:
+            # 回退：按位置索引
+            if card_spec != "灵衣":
+                target_num = int(card_spec)
+                non_costume = [c for c in candidates if not c["is_costume"]]
+                # 去重 card_num 后按 card_num 排序
+                seen: set[int] = set()
+                unique = []
+                for c in non_costume:
+                    if c["card_num"] not in seen:
+                        seen.add(c["card_num"])
+                        unique.append(c)
+                unique.sort(key=lambda c: c["card_num"])
+                idx = target_num - 1
+                if 0 <= idx < len(unique):
+                    matches = [unique[idx]]
+
+        if not matches:
             return None
 
-        await _hide_sidebar_and_expand(page)
-        await asyncio.sleep(0.3)
+        # 3. 取分辨率最高的
+        matches.sort(key=lambda c: -(c["width"] * c["height"]))
+        img_src = matches[0]["src"]
 
-        # 关闭弹窗
-        try:
-            await page.evaluate("""() => {
-                document.querySelectorAll('.mw-dialog,[role="dialog"]').forEach(e => e.remove());
-            }""")
-        except Exception:
-            pass
-
-        await _force_load_all_images(page)
-
-        # 2. 搜索文件链接中的卡面/灵衣图片
-        img_src = await page.evaluate(
-            """([spec, cnName]) => {
-            // 排除关键词（不应匹配的图片类型）
-            const EXCLUDE = ['愚人节', 'model_', '模型', '图标', '指令卡', '职阶', '阶职', '冠位', 'Buster', 'Arts', 'Quick'];
-            // 阶段关键词映射（末尾的「从者名+数字」兜底模式，如 玄奘三藏1.png）
-            const STAGE_PATTERNS = {
-                '1': ['初期', '初始', '卡面1', '卡面 1', 'Stage 1', 'stage 1', 'Stage1', 'stage1', cnName + '1'],
-                '2': ['一破', '卡面2', '卡面 2', 'Stage 2', 'stage 2', 'Stage2', 'stage2', '二破', cnName + '2'],
-                '3': ['三破', '卡面3', '卡面 3', 'Stage 3', 'stage 3', 'Stage3', 'stage3', cnName + '3'],
-                '4': ['満破', '满破', '卡面4', '卡面 4', 'Stage 4', 'stage 4', 'Stage4', 'stage4', '四破', cnName + '4'],
-            };
-            const COSTUME_PATTERNS = ['灵衣', '霊衣', 'Costume', 'costume'];
-
-            // 收集所有 "文件:" 链接
-            const allLinks = document.querySelectorAll('a[href*="%E6%96%87%E4%BB%B6:"]');
-            const candidates = [];
-
-            for (const a of allLinks) {
-                const href = a.getAttribute('href') || '';
-                let filename = '';
-                try {
-                    filename = decodeURIComponent(href);
-                } catch (e) {
-                    filename = href;
-                }
-                const idx = filename.indexOf('文件:');
-                if (idx === -1) continue;
-                filename = filename.substring(idx + 3);
-
-                // 排除无关图片类型
-                let excluded = false;
-                for (const kw of EXCLUDE) {
-                    if (filename.includes(kw)) { excluded = true; break; }
-                }
-                if (excluded) continue;
-
-                // 获取 <a> 内的 <img>
-                const img = a.querySelector('img');
-                if (!img) continue;
-                const src = img.src || img.getAttribute('data-src') || '';
-                if (!src || src.includes('data:') || src.includes('svg')) continue;
-
-                // 排除太小的图
-                const w = img.naturalWidth || img.width || 0;
-                const h = img.naturalHeight || img.height || 0;
-                if (w < 150 && h < 150) continue;
-
-                // 解析阶段编号
-                let cardNum = null;
-                let isCostume = false;
-
-                // 检查是否是灵衣
-                for (const kw of COSTUME_PATTERNS) {
-                    if (filename.includes(kw)) {
-                        isCostume = true;
-                        const cm = filename.match(new RegExp(kw + '\\\\s*(\\\\d+)'));
-                        cardNum = cm ? parseInt(cm[1]) : 1;
-                        break;
-                    }
-                }
-
-                // 检查是否是阶段卡面
-                if (!isCostume) {
-                    for (const [stage, patterns] of Object.entries(STAGE_PATTERNS)) {
-                        for (const p of patterns) {
-                            if (filename.includes(p)) {
-                                cardNum = parseInt(stage);
-                                break;
-                            }
-                        }
-                        if (cardNum !== null) break;
-                    }
-                }
-
-                // 如果没有匹配到阶段编号，继续（可能是其他无关图片）
-                if (cardNum === null) continue;
-
-                candidates.push({
-                    filename: filename,
-                    src: src,
-                    cardNum: cardNum,
-                    isCostume: isCostume,
-                    width: w,
-                    height: h,
-                });
-            }
-
-            if (candidates.length === 0) return null;
-
-            // 按 spec 筛选
-            let matches;
-            if (spec === '灵衣') {
-                matches = candidates.filter(c => c.isCostume);
-            } else {
-                const targetNum = parseInt(spec);
-                matches = candidates.filter(c => !c.isCostume && c.cardNum === targetNum);
-            }
-
-            if (matches.length === 0) {
-                // 回退：按位置索引
-                if (spec !== '灵衣') {
-                    const targetNum = parseInt(spec);
-                    const nonCostume = candidates.filter(c => !c.isCostume);
-                    // 去重 cardNum 后按 cardNum 排序
-                    const seen = new Set();
-                    const unique = [];
-                    for (const c of nonCostume) {
-                        if (!seen.has(c.cardNum)) {
-                            seen.add(c.cardNum);
-                            unique.push(c);
-                        }
-                    }
-                    unique.sort((a, b) => a.cardNum - b.cardNum);
-                    const idx = targetNum - 1;
-                    if (idx >= 0 && idx < unique.length) {
-                        matches = [unique[idx]];
-                    }
-                }
-            }
-
-            if (matches.length === 0) return null;
-
-            // 取分辨率最高的
-            matches.sort((a, b) => (b.width * b.height) - (a.width * a.height));
-            return matches[0].src;
-        }""",
-            [card_spec, cn_name],
-        )
-
-        if not img_src:
-            return None
-
-        # 3. 缩略图 → 原图 URL
+        # 4. 缩略图 → 原图 URL
         full_url = _thumb_to_full_url(img_src)
         print(f"[wiki_card] 卡面图片 URL: {full_url}")
 
-        # 4. 下载图片
-        data = await _download_image(full_url)
-        return data
+        # 5. 下载图片
+        return await _download_image(full_url)
 
     except Exception:
         return None
-    finally:
-        await page.close()
