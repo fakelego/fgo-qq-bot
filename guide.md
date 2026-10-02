@@ -1,867 +1,285 @@
 # fgo-qq-bot 项目梳理与开发说明
 
+> 最后更新：2026-10-03（对应「Playwright 网页截图」架构）
+
 ## 1. 项目概述
 
-`fgo-qq-bot` 是一个基于 **NoneBot2 + OneBot v11** 的 FGO 信息查询 Bot，目标是在 QQ 上提供从者等 FGO 相关信息的查询功能。
+`fgo-qq-bot` 是一个基于 **NoneBot2 + OneBot v11** 的 FGO 信息查询 Bot，在 QQ 上提供从者、礼装、素材等信息查询，查询结果以 **fgowiki 网页截图** 的形式返回。
 
 当前仓库地址：
 
 - `fakelego/fgo-qq-bot`
 
-仓库描述：
-
-- 一个可以在 qq 上使用的 fgo 信息查询 bot
-
 当前项目状态：
 
 - 已完成基础机器人启动链路
-- 已完成 FGO 插件基础结构划分
-- 已完成区服偏好存储
-- 已完成从者查询主链路的雏形
-- 已开始进行 Mooncell 风格图片渲染
-- 仍处于“原型到可用版本”的过渡阶段，尚未完整收口
+- 已完成从者查询体系（11 个查询命令，覆盖基础信息 / 宝具 / 技能 / 资料 / 卡面等）
+- 已完成礼装查询体系（别名表 + 网页截图）
+- 已完成素材查询体系（道具页面 + 刷取推荐）
+- 已完成中文别名系统（从者 / 礼装 / 素材三套 YAML 别名表）
+- 已从「PIL 生图」全面转向「Playwright 网页截图」（提交 `170523b 取消生图功能，使用网页截图`）
+- 旧 PIL 渲染器与区服偏好存储已废弃（区服功能已移除，见 §8）
 
 ---
 
-## 2. 当前仓库结构概览
+## 2. 技术栈
 
-根据当前仓库代码，核心结构如下：
+### 核心框架
+- Python
+- NoneBot2（2.5.0）+ nonebot-adapter-onebot（OneBot v11，2.4.6）
+
+### 截图引擎
+- Playwright（无头 Chromium，`>=1.48.0`）— 核心展示手段
+- Pillow — 仅用于多张 PNG 的垂直拼接
+
+### 数据与网络
+- aiohttp — Atlas Academy API 请求
+- PyYAML — 别名表加载
+- RapidFuzz — 已在依赖中声明，**代码中尚未使用**（预留做模糊匹配）
+
+### 服务与协议
+- FastAPI / Uvicorn（NoneBot 运行基础）
+
+---
+
+## 3. 当前仓库结构概览
 
 ```text
 fgo-qq-bot/
-├─ bot.py
-├─ README.md
+├─ bot.py                          # 启动入口
+├─ .env                            # NoneBot 配置（gitignore，含 OneBot 连接信息）
 ├─ requirements.txt
-├─ run_bot.ps1
-├─ gen_aliases.ps1
-├─ fgo.db
-├─ svt2.json
-├─ svt_table.png
-├─ mini.png
+├─ run_bot.ps1                     # 启动脚本
+├─ debug_all_commands.py           # 调试：随机从者/礼装跑全部命令并输出截图
+├─ gen_material_aliases.py         # 调试：素材别名生成
+├─ scrape_materials.py / _v2.py    # 调试：素材数据抓取
+├─ test_card.py / test_card_debug.py
 ├─ plugins/
 │  └─ fgo/
-│     ├─ __init__.py
-│     ├─ state.py
-│     ├─ storage_sqlite.py
+│     ├─ __init__.py               # Bot 环境才加载命令；离线导入不加载
 │     ├─ commands/
-│     │  ├─ __init__.py
 │     │  ├─ meta/
-│     │  │  ├─ __init__.py
-│     │  │  ├─ help.py
-│     │  │  ├─ ping.py
-│     │  │  ├─ region.py
-│     │  │  ├─ setregion.py
-│     │  │  └─ setgroupregion.py
+│     │  │  ├─ ping.py             # /ping
+│     │  │  └─ help.py             # /help（内容已过时，待更新）
 │     │  └─ query/
-│     │     ├─ __init__.py
-│     │     └─ svt.py
+│     │     ├─ __init__.py         # 显式 import 各命令模块
+│     │     ├─ svt.py              # /查询
+│     │     ├─ np.py               # /宝具
+│     │     ├─ skill.py            # /技能
+│     │     ├─ class_skill.py      # /职阶技能
+│     │     ├─ append_skill.py     # /追加技能
+│     │     ├─ material.py         # /素材
+│     │     ├─ bond.py             # /牵绊
+│     │     ├─ profile.py          # /资料、/资料1~/资料6
+│     │     ├─ appearance.py       # /形象
+│     │     ├─ card.py             # /卡面
+│     │     ├─ equip.py            # /礼装
+│     │     ├─ item.py             # /道具
+│     │     └─ farm.py             # /刷取
 │     ├─ services/
-│     │  ├─ assets.py
-│     │  └─ query/
-│     │     └─ svt_search.py
+│     │  ├─ query/
+│     │  │  ├─ servant_helper.py   # 从者查询-截图-筛选公共流水线 fetch()
+│     │  │  └─ svt_search.py       # 别名 → Atlas 查询
+│     │  ├─ wiki_screenshot.py     # 核心截图引擎（章节切分/tabber/表格截图）
+│     │  ├─ wiki_card.py           # 卡面立绘原图提取 + 磁盘缓存
+│     │  ├─ wiki_equip_screenshot.py      # 礼装页面截图
+│     │  ├─ wiki_material_screenshot.py   # 素材页面 + 掉落关卡截图
+│     │  └─ assets.py              # 旧资源缓存（已无调用，可清理）
 │     ├─ stores/
-│     │  ├─ aliases_servant_cn.py
-│     │  └─ atlas_client.py
-│     ├─ render/
+│     │  ├─ aliases_servant_cn.py  # 从者别名查找
+│     │  ├─ aliases_equip_cn.py    # 礼装别名查找
+│     │  ├─ aliases_material_cn.py # 素材别名查找
+│     │  └─ atlas_client.py        # Atlas Academy API 客户端
+│     ├─ render/                   # 旧 PIL 渲染器（已废弃，无任何引用）
 │     │  ├─ svt_card.py
 │     │  └─ svt_mooncell.py
 │     └─ data/
 │        ├─ aliases/
-│        ├─ cache/
-│        └─ guides.sample.yaml
+│        │  ├─ servant_cn.yaml     # 从者别名（~3900 行）
+│        │  ├─ equip_cn.yaml       # 礼装别名（~17400 行）
+│        │  └─ material_cn.yaml    # 素材别名（~790 行）
+│        ├─ guides.sample.yaml
+│        └─ cache/                 # 卡面图片缓存（gitignore）
 └─ tools/
+   ├─ gen_servant_cn_aliases_from_mooncell.py
+   ├─ gen_servant_aliases.py
+   ├─ gen_equip_aliases.py
+   ├─ test_render_svt.py
    ├─ atlas_collection_map.json
-   └─ gen_servant_cn_aliases_from_mooncell.py
+   └─ svt2.json
 ```
 
 ---
 
-## 3. 项目使用的技术栈
+## 4. 已实现的功能命令
 
-从当前代码和依赖可以看出，项目主要使用了以下技术：
+### 4.1 Meta 命令
 
-### 核心框架
-- Python
-- NoneBot2
-- OneBot v11 Adapter
+| 命令 | 别名 | 行为 |
+|---|---|---|
+| `/ping` | — | 返回 `pong` |
+| `/help` | `帮助` | 返回帮助文本（**内容过时**，只列了 3 个命令，待更新） |
 
-### 服务与协议
-- FastAPI
-- Uvicorn
+### 4.2 从者查询命令（走 `servant_helper.fetch()` 公共流水线）
 
-### 数据与网络
-- aiohttp
-- SQLite
-- PyYAML
+所有从者类命令的链路相同：**关键词 → 从者别名表 → Atlas API → fgowiki 分节截图 → 按标题筛选出目标节**。
 
-### 图像处理
-- Pillow（代码中已使用，建议显式写入依赖）
+| 命令 | 别名 | 返回内容 |
+|---|---|---|
+| `/查询 摩根` | `svt`、`从者` | 从者页面第一张截图（基础信息） |
+| `/宝具 摩根` | `np`、`NP` | 宝具截图；有强化前后多版本时逐条带 `【强化后】` 标签 |
+| `/技能 摩根` | `skill` | 主动技能 1/2/3 截图（含强化前后变体，带 `【技能N】` 标签） |
+| `/职阶技能 摩根` | `职介技能`、`classskill`、`cs` | 职阶技能截图 |
+| `/追加技能 摩根` | `appendskill`、`as` | 追加技能截图（多张表合并为一张） |
+| `/素材 摩根` | `材料`、`素材需求`、`material`、`mat` | 灵基再临 / 技能强化素材需求截图 |
+| `/牵绊 摩根` | `牵绊点数`、`羁绊`、`bond` | 牵绊点数 / 牵绊礼装截图 |
+| `/资料 摩根` | `profile` | 角色详情截图 |
+| `/资料1 摩根` ~ `/资料6 摩根` | — | 个人资料 1~6 截图（`profile.py` 循环注册 6 个命令） |
+| `/形象 摩根` | `战斗形象`、`立绘`、`appearance`、`skin` | 各阶段图标与战斗形象截图 |
+| `/卡面 摩根 3` | `card` | 卡面立绘**原图**（不是截图）；支持阶段 `1-4` 和 `灵衣`，默认阶段 1 |
 
-### 其他
-- RapidFuzz（依赖中存在，后续可用于模糊匹配优化）
+`/卡面` 特殊之处：不走截图，而是从 fgowiki 页面解析「文件:」链接，按文件名模式匹配阶段（初期/一破/三破/满破/灵衣，另有「从者名+数字」兜底模式，如 `玄奘三藏1.png`），下载原图后按 URL SHA1 缓存在 `plugins/fgo/data/cache/card/`。
+
+### 4.3 礼装与素材命令（独立链路）
+
+| 命令 | 别名 | 返回内容 |
+|---|---|---|
+| `/礼装 万华镜` | `equip`、`ce`、`礼装查询` | 礼装页面表单区域截图（截到「成长曲线」行为止） |
+| `/道具 英雄之证` | `item`、`材料查询`、`道具查询` | 素材页面顶部信息框截图 |
+| `/刷取 英雄之证` | `farm`、`掉落`、`刷材料`、`去哪刷` | 「主要掉落关卡」表：自动识别 AP 效率列，按 AP/个 升序只取前 3 行 |
 
 ---
 
-## 4. 当前项目已经实现的部分
+## 5. 核心架构
 
-### 4.1 机器人启动入口
+### 5.1 从者查询流水线
 
-入口文件是 `bot.py`：
-
-```python
-import nonebot
-from nonebot.adapters.onebot.v11 import Adapter as OneBotV11Adapter
-
-nonebot.init()
-driver = nonebot.get_driver()
-driver.register_adapter(OneBotV11Adapter)
-
-nonebot.load_plugins("plugins")
-
-if __name__ == "__main__":
-    nonebot.run()
+```
+用户输入 /查询 摩根
+  → commands/query/*.py          （NoneBot matcher，解析关键词）
+  → services/query/servant_helper.py::fetch()
+      1. svt_search.query_svt_detail_by_keyword_cn_first()
+           → stores/aliases_servant_cn.py  本地 YAML 别名（精确→包含匹配）
+           → stores/atlas_client.py        Atlas Academy API（CN 优先 + JP 成长曲线回退）
+      2. wiki_screenshot.capture_servant_sections(cn_name)
+           → Playwright 打开 fgo.wiki 页面 → 分节截图
+      3. 返回 FetchResult(ok, cn_name, sections)
+  → 命令层用 FetchResult.filter() 按标题筛选目标章节
+  → MessageSegment.image 发图
 ```
 
-说明当前机器人启动逻辑是：
+`FetchResult` 是统一的查询+截图结果容器，`filter()` 支持三种筛选：
 
-1. 初始化 NoneBot
-2. 注册 OneBot v11 适配器
-3. 自动加载 `plugins` 目录
-4. 启动 Bot
+- `prefix=` — 标题前缀匹配（如 `"宝具"` 匹配 `宝具(强化后)`）
+- `pattern=` — 正则匹配（如 `/技能` 用 `^技能[123]`）
+- `exact=` — 精确匹配（如 `/资料` 用 `资料(角色详情)`）
 
----
+### 5.2 Playwright 截图引擎（`wiki_screenshot.py`，核心模块）
 
-### 4.2 插件加载逻辑
+要点：
 
-`plugins/fgo/__init__.py` 中做了兼容处理：
+- **共享浏览器实例**：模块级单例 `_browser` + `asyncio.Lock`，所有截图复用同一个无头 Chromium（`--no-sandbox`、`--disable-dev-shm-usage`），每次截图新建 page、用完关闭
+- **URL 策略**：先试直达 `https://fgo.wiki/w/{中文名}`，失败回退 `index.php?search=` 搜索页
+- **页面清洗**：注入 CSS 隐藏侧边栏/导航/页脚/广告/编辑链接；滚动全页触发懒加载图片（`data-src` → `src`），等待可见图片 `complete`
+- **章节切分**：JS 收集 `#mw-content-text` 下所有 h2/h3 标题的 Y 坐标；「技能」大节特殊处理，h3 子标题单独成节
+- **tabber 处理**：收集 `.tabber` 面板（如宝具「强化前/强化后」），逐面板切换 `location.hash` 后分别截图，标题追加 `(标签)`
+- **两种截图方式**：
+  - 表格章节（宝具/技能/职阶技能/追加技能/资料）→ 用 `locator("table.wikitable.nomobile").nth(idx)` 精确截表
+  - 非表格章节（素材需求/牵绊/各阶段图标等）→ 按标题边界 clip 截图，超长章节（>1400px）自动分片并加 `(续)` 后缀
+- **追加技能**多表自动垂直拼接（Pillow）
+- **跳过无效章节**：相关礼装 / 语音 / 成长曲线 / 国服未来PickUp / 注释和链接 / 愚人节
+- **兜底**：章节解析失败时返回整页全高截图（标题「从者页面」）
 
-- 若在 NoneBot 环境中运行，则加载命令模块
-- 若离线导入（测试/脚本），则不强制加载命令
+### 5.3 别名系统（三套 YAML）
 
-这说明项目已经兼顾了：
+统一模式：`{显示名: {atlas_id?, category?, name_jp?, name_en?, aliases: [...]}}`，查找时先精确匹配、再包含匹配（如 `妖精骑士` 命中 `妖精骑士女王`）。
 
-- 正常 Bot 运行
-- 独立脚本测试 / 离线渲染
+| 文件 | 行数 | 用途 |
+|---|---|---|
+| `data/aliases/servant_cn.yaml` | ~3900 | 从者（含日文名、英文名、昵称） |
+| `data/aliases/equip_cn.yaml` | ~17400 | 礼装 |
+| `data/aliases/material_cn.yaml` | ~790 | 素材/道具（含 category、日文名、英文名） |
 
----
+未命中时的提示会引导用户到对应 YAML 文件添加映射。
 
-### 4.3 已实现的命令
+### 5.4 Atlas Academy 数据源（`atlas_client.py`）
 
-#### Meta 类命令
-- `/ping`
-- `/help`
-- `/region`
-- `/setregion`
-- `/setgroupregion`
-
-#### Query 类命令
-- `/svt`
-
-其中 `/help` 中也已经规划了未来待实现的命令：
-
-- `/ce`
-- `/mat`
-- `/guide`
-
----
-
-### 4.4 区服逻辑
-
-项目已经实现了用户/群的区服偏好设置，存储在 SQLite 中。
-
-数据库文件：
-
-- `fgo.db`
-
-核心逻辑位于：
-
-- `plugins/fgo/storage_sqlite.py`
-
-已实现能力：
-
-- 设置用户默认区服
-- 设置群默认区服
-- 根据上下文解析当前生效区服
-
-规则：
-
-- 群聊：`群默认 > 用户默认 > cn`
-- 私聊：`用户默认 > cn`
-
-这是当前项目中的一个完整子系统。
+- `aiohttp` session 复用（模块级单例）
+- 内存缓存 `_servant_cache[(region, id)]`
+- `get_servant_detail_cn_with_jp_growth_fallback()`：CN 为主（中文名/文本/资源），若 CN 的 `atkGrowth`/`hpGrowth` 不足 120 级则用 JP 补齐，缺失基础字段（`atkBase`/`atkMax`/`hpBase`/`hpMax`/`lvMax`）也从 JP 兜底
 
 ---
 
-### 4.5 从者查询主链路
+## 6. 运行与开发
 
-当前 `/svt` 的整体设计思路是：
+### 6.1 环境配置
 
-1. 用户输入关键词
-2. 判断是否显式指定区服
-3. 若未显式指定，则走上下文区服解析
-4. 使用中文别名映射查到 `atlas_id`
-5. 调用 Atlas Academy API 获取从者 detail
-6. 用渲染器将 detail 生成为图片
-7. 发送图片消息到 QQ
+`.env`（已 gitignore）中的关键项：
 
-这一链路已经具备雏形。
+- `DRIVER` / `HOST` / `PORT` / `LOG_LEVEL` — NoneBot 运行参数
+- `ONEBOT_WS_URLS` / `ONEBOT_ACCESS_TOKEN` — OneBot v11 反向 WebSocket 连接
+- `COMMAND_START` — 命令前缀
 
----
-
-### 4.6 中文别名系统
-
-中文别名系统位于：
-
-- `plugins/fgo/stores/aliases_servant_cn.py`
-
-对应数据文件：
-
-- `plugins/fgo/data/aliases/servant_cn.yaml`
-
-功能：
-
-- 支持中文名
-- 支持别名列表
-- 支持命中后的展示名
-- 支持简单包含匹配
-
-这一步的意义很大，因为 FGO 中文环境下的查询体验高度依赖别名系统。
-
----
-
-### 4.7 Atlas Academy 数据源接入
-
-远程数据源主要通过：
-
-- `plugins/fgo/stores/atlas_client.py`
-
-当前已实现：
-
-- `aiohttp` Session 复用
-- Atlas API 基础 GET
-- 基础缓存
-- 按 id 获取从者基础信息
-- 按区服获取从者 detail
-
-此外，从代码调用关系可看出，你已经在尝试做：
-
-- CN 数据优先
-- JP 成长曲线回退
-
-这是一个合理的数据整合方向。
-
----
-
-### 4.8 图片渲染系统
-
-当前已经有两个渲染文件：
-
-- `plugins/fgo/render/svt_card.py`
-- `plugins/fgo/render/svt_mooncell.py`
-
-其中最近主要在开发的是：
-
-- `svt_mooncell.py`
-
-当前渲染方向：
-
-- 大画布排版
-- 左侧基础数值表
-- 右侧立绘展示
-- Q/A/B 指令卡展示
-- 底部来源 footer
-- 尽量贴近 Mooncell 页面风格
-
-这说明项目正在从“可查询”向“可展示、可观感化”推进。
-
----
-
-### 4.9 静态资源缓存
-
-图片资源缓存逻辑位于：
-
-- `plugins/fgo/services/assets.py`
-
-缓存策略：
-
-- 使用 URL 的 SHA1 作为文件名
-- 缓存到本地目录
-- 若本地存在缓存则直接读取
-- 否则重新下载并写入缓存
-
-缓存目录：
-
-- `plugins/fgo/data/cache/assets`
-
-该设计可减少重复网络请求。
-
----
-
-### 4.10 辅助脚本
-
-当前项目包含辅助脚本：
-
-#### 启动脚本
-- `run_bot.ps1`
-
-内容：
-```powershell
-.\.venv\Scripts\python.exe bot.py
-```
-
-#### 别名生成脚本
-- `gen_aliases.ps1`
-
-内容：
-```powershell
-.\.venv\Scripts\python.exe tools\gen_servant_cn_aliases_from_mooncell.py
-echo $LASTEXITCODE
-```
-
-这说明项目当前的开发环境明显偏向：
-
-- Windows
-- PowerShell
-- 本地虚拟环境
-
----
-
-## 5. 推测的项目原始搭建步骤
-
-根据当前仓库内容，可以较高可信度地反推出项目最初的搭建流程。
-
-### 第一步：创建项目目录
-新建一个 Python 项目目录，例如：
-
-```bash
-mkdir fgo-qq-bot
-cd fgo-qq-bot
-```
-
-### 第二步：创建虚拟环境
-
-```bash
-python -m venv .venv
-```
-
-Windows PowerShell 激活：
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-### 第三步：安装依赖
-
-```bash
-pip install -r requirements.txt
-```
-
-### 第四步：创建最小 NoneBot 启动入口
-编写 `bot.py`：
-
-- `nonebot.init()`
-- 注册 OneBot v11 Adapter
-- 加载插件目录
-- 启动机器人
-
-### 第五步：建立插件结构
-建立：
-
-- `plugins/fgo/commands`
-- `plugins/fgo/services`
-- `plugins/fgo/stores`
-- `plugins/fgo/render`
-- `plugins/fgo/data`
-
-### 第六步：优先做基础命令与状态层
-先实现：
-
-- `/ping`
-- `/help`
-- `/region`
-- `/setregion`
-- `/setgroupregion`
-
-并建立 SQLite 持久化存储。
-
-### 第七步：接入 Atlas 数据源
-在 `stores` 层实现：
-
-- API 请求
-- Session 复用
-- servant detail 获取
-- 基础缓存
-
-### 第八步：建立中文别名体系
-建立：
-
-- YAML 别名文件
-- 本地别名查询逻辑
-- Mooncell 辅助别名生成脚本
-
-### 第九步：实现 `/svt` 查询链路
-打通：
-
-- 关键词 → 别名 → atlas_id → detail → 渲染 → 发送消息
-
-### 第十步：开发图片渲染器
-使用 Pillow 开始做 Mooncell 风格页面图。
-
----
-
-## 6. 当前项目总体逻辑
-
-项目现在的运行逻辑可以概括为：
-
-### 6.1 启动阶段
-- 运行 `bot.py`
-- 初始化 NoneBot
-- 注册 OneBot v11
-- 加载 `plugins`
-
-### 6.2 插件初始化阶段
-- `plugins/fgo/__init__.py` 判断当前环境
-- 若是 Bot 环境则加载命令
-
-### 6.3 命令接收阶段
-- 用户发送 `/ping`、`/region`、`/svt` 等命令
-- `commands` 层负责接收消息与参数
-
-### 6.4 状态解析阶段
-- 若命令依赖区服，则走 `storage_sqlite.resolve_region()`
-
-### 6.5 数据查询阶段
-- 先在本地别名系统中解析关键词
-- 命中后拿到 `atlas_id`
-- 再向 Atlas Academy 请求结构化数据
-
-### 6.6 渲染阶段
-- 从者 detail 进入 `render` 层
-- 生成 Mooncell 风格图片
-
-### 6.7 回复阶段
-- 将文本或图片通过 OneBot v11 发送回 QQ
-
----
-
-## 7. 当前最需要解决的问题
-
-结合代码现状和最近开发方向，当前最重要的问题主要有以下几个。
-
----
-
-### 问题 1：`/svt` 主命令逻辑存在半重构状态
-
-`plugins/fgo/commands/query/svt.py` 当前存在明显风险：
-
-- 图片渲染逻辑与旧文本逻辑混杂
-- 分支结构可疑
-- `result.atlas` 的使用与 `SvtDetailResult` 定义不一致
-- 很可能仍保留旧版返回逻辑的残余代码
-
-这说明 `/svt` 还没有完全整理完。
-
----
-
-### 问题 2：查询结果类型与命令使用方式不一致
-
-`plugins/fgo/services/query/svt_search.py` 中的 `SvtDetailResult` 定义包含：
-
-- `atlas_id`
-- `cn_name`
-- `mooncell_url`
-- `detail`
-
-但 `svt.py` 中仍有旧逻辑尝试访问：
-
-- `result.atlas`
-
-这说明调用方与返回结构未完全同步。
-
----
-
-### 问题 3：`svt_mooncell.py` 中可能存在作用域和流程问题
-
-当前渲染文件中可见以下风险：
-
-- `extra` 的定义未在片段中看到
-- `sess` 的定义未在片段中看到
-- `buf` 在部分路径中可能未初始化
-- footer/save/return 的逻辑嵌套在 `if cg_url:` 中，不够稳定
-
-这类问题通常会造成：
-
-- 渲染失败
-- 局部路径正常、局部路径报错
-- 代码后续难维护
-
----
-
-### 问题 4：依赖声明可能不完整
-
-代码中使用了：
-
-- `PIL.Image`
-- `PIL.ImageDraw`
-- `PIL.ImageFont`
-
-但 `requirements.txt` 当前内容中未明显看见 `Pillow`。
-
-如果确实未声明，会导致新环境克隆后直接运行失败。
-
----
-
-### 问题 5：README 几乎为空，项目难以复现
-
-当前 `README.md` 只包含一句：
-
-- 只是一个还没实现完整功能的项目
-
-这不足以让其他人或未来的自己快速恢复开发环境，缺少：
-
-- 安装步骤
-- 启动方式
-- OneBot 对接方式
-- 命令说明
-- 数据来源说明
-- 图片渲染依赖说明
-
----
-
-### 问题 6：仓库中混入运行产物和调试产物
-
-根目录当前存在：
-
-- `fgo.db`
-- `mini.png`
-- `svt2.json`
-- `svt_table.png`
-
-这些文件可能分别属于：
-
-- 本地数据库
-- 调试图片
-- 离线测试输入
-- 渲染输出样例
-
-如果不加区分，会导致仓库结构逐渐混乱。
-
-建议未来将其分类移动到：
-
-- `docs/`
-- `examples/`
-- `tests/fixtures/`
-- `tmp/`
-
-或者纳入 `.gitignore`。
-
----
-
-## 8. 最近开发重点总结
-
-根据最近相关对话和当前代码，最近的开发重点主要集中在以下三方面：
-
-### 8.1 Mooncell 风格渲染器重排
-近期你一直在调整：
-
-- 画布尺寸
-- 左右布局比例
-- 右侧立绘填充方式
-- 指令卡样式
-- footer 放置位置
-- 留白和视觉平衡
-
-说明最近的主目标是：
-
-- 把从者详情图从“能生成”优化为“接近产品成品观感”
-
----
-
-### 8.2 将本地项目推送到 GitHub
-最近也处理了 GitHub 推送问题，包括：
-
-- 初始化仓库
-- 关联远程 origin
-- 解决推送连接失败问题
-
-现在仓库已经公开可见。
-
----
-
-### 8.3 开始整理项目结构与后续规划
-当前问题已从单点 bug 转向：
-
-- 总体架构梳理
-- 当前阶段问题识别
-- 后续开发路线设计
-
-这说明项目正从“试验性原型”转向“计划性开发”。
-
----
-
-## 9. 如果现在重新搭建这个项目，推荐步骤
-
-以下步骤适用于当前仓库的重新部署与本地恢复。
-
-### 9.1 克隆仓库
-
-```bash
-git clone https://github.com/fakelego/fgo-qq-bot.git
-cd fgo-qq-bot
-```
-
-### 9.2 创建虚拟环境
-
-```bash
-python -m venv .venv
-```
-
-PowerShell 激活：
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-### 9.3 安装依赖
-
-```bash
-pip install -r requirements.txt
-```
-
-如果尚未在依赖中写入 Pillow，请补装：
-
-```bash
-pip install Pillow
-```
-
-### 9.4 准备 OneBot v11 运行环境
-
-当前仓库中尚未提供完整 `.env.example` 或 OneBot 对接说明，因此需要补充配置以下内容：
-
-- OneBot 客户端（例如 go-cqhttp / Lagrange）
-- 上报地址 / 反向 WebSocket / HTTP 配置
-- NoneBot 监听配置
-
-这部分建议后续补进 README。
-
-### 9.5 准备字体文件
-
-渲染器会尝试读取以下字体：
-
-- `plugins/fgo/data/fonts/NotoSansCJKsc-Regular.otf`
-- `plugins/fgo/data/fonts/SourceHanSansSC-Regular.otf`
-
-如果字体缺失，中文渲染效果可能异常。
-
-### 9.6 准备别名数据
-
-确认存在：
-
-- `plugins/fgo/data/aliases/servant_cn.yaml`
-
-如果没有，可以考虑使用脚本生成：
-
-```powershell
-.\.venv\Scripts\python.exe tools\gen_servant_cn_aliases_from_mooncell.py
-```
-
-或运行：
-
-```powershell
-.\gen_aliases.ps1
-```
-
-### 9.7 启动 Bot
+### 6.2 启动
 
 ```powershell
 .\run_bot.ps1
-```
-
-或者：
-
-```powershell
+# 等价于
 .\.venv\Scripts\python.exe bot.py
 ```
 
-### 9.8 基础功能测试
+### 6.3 调试
 
-建议至少测试以下命令：
+- `debug_all_commands.py` — 从别名表随机选从者 + 礼装，依次执行全部查询命令逻辑，把每张截图落到 `screenshots/`（gitignore），用于全命令回归
+- 单命令测试：`test_card.py` / `test_card_debug.py`
+- 注意 Windows 终端 GBK 编码问题，调试脚本里已做 `sys.stdout.reconfigure(encoding="utf-8")` 处理
 
-- `/ping`
-- `/help`
-- `/region`
-- `/setregion cn`
-- `/svt 摩根`
+### 6.4 离线导入兼容
 
----
-
-## 10. 未来继续开发该项目的推荐顺序
-
-为了让项目从“能运行的原型”逐步变成“稳定、可扩展的 Bot”，推荐按以下顺序推进。
+`plugins/fgo/__init__.py` 检测 NoneBot 环境：未初始化时跳过命令加载，保证测试脚本可以 `import plugins.fgo.services.*` 而不触发 NoneBot 依赖。
 
 ---
 
-### 第一阶段：先修现有主链路稳定性
+## 7. 已知问题与待办
 
-优先处理：
+**已解决（2026-10-03）**：
 
-1. 修复 `plugins/fgo/commands/query/svt.py`
-2. 修复 `plugins/fgo/render/svt_mooncell.py`
-3. 补齐 `requirements.txt` 中的 Pillow
-4. 确保 `/svt` 能稳定返回图片
+- ~~`/help` 过时~~ → 已重写，列出全部 16+ 命令
+- ~~旧代码未清理~~ → 已删除 `render/`（旧 PIL 渲染器）、`services/assets.py`、`test_render.py`、`test_screenshot.py`、`tools/test_render_svt.py`、`tools/svt2.json`
+- ~~`_find_table_indices` 参数漏传~~ → 已修复，`nxt` 正常传入
+- ~~资料个人资料1~6 截图空白~~ → 根因：Playwright 的 `clip` 是**视口相对坐标**，`location.hash` 切换面板后页面滚动，按文档坐标截图落到空白区；修复为直接 `locator.screenshot()` 截 panel 元素
+- ~~卡面「从者名+数字」命名未匹配~~ → 如 `玄奘三藏1.png` 这类文件命名不在原模式表中；已把从者名传入 JS 并在 STAGE_PATTERNS 末尾加入 `从者名+N` 兜底模式
 
-目标：
+**仍待处理**：
 
-- 让当前最核心功能稳定可用
-
----
-
-### 第二阶段：补文档
-
-补一份完整 README，至少包括：
-
-- 项目简介
-- 环境要求
-- 安装与启动方法
-- OneBot 接入说明
-- 命令列表
-- 开发中功能
-- 数据来源
-- 图片渲染说明
-
-目标：
-
-- 项目可复现
-- 后续维护成本降低
+1. **RapidFuzz 未使用**：依赖已声明，后续可用于别名模糊匹配
+2. **工作区未收口**：`git status` 有大量修改未提交（`commands/query/*` 全部 M），根目录仍有多个未跟踪的调试脚本（`debug_all_commands.py`、`gen_material_aliases.py`、`scrape_materials*.py`、`test_card*.py` 等），建议归入 `tools/` 或清理
+3. **`/查询` 只发第一张截图**（`fr.sections[0]`），完整信息需配合其他分项命令查看
+4. **无自动化测试体系**：截图类功能依赖 fgo.wiki 页面结构，页面改版会导致截图失效；`debug_all_commands.py` 已覆盖全部命令（含素材），作为人工回归工具
+5. **clip 截图依赖 `scrollY=0` 前提**：普通章节的 clip 截图使用文档坐标，依赖截图前页面滚动位置在顶部（当前流程保证，但较脆弱），后续可统一改为元素定位截图
 
 ---
 
-### 第三阶段：清理仓库结构
+## 8. 历史架构演变
 
-建议处理：
+| 阶段 | 时间 | 方案 |
+|---|---|---|
+| 1 | 早期 | PIL 手动绘制 Mooncell 风格信息图（`render/svt_mooncell.py`） |
+| 2 | ~7 月 | **取消生图，改用 Playwright 截取 fgo.wiki 页面**（提交 `170523b`），区服偏好功能移除 |
+| 3 | ~7 月下旬 | 截图引擎完善：章节切分、tabber 多版本、表格精确截图、超长分片 |
+| 4 | 近期 | 扩展礼装查询（别名表 + `wiki_equip_screenshot.py`，提交 `6b4caf8`）、素材查询（`wiki_material_screenshot.py`）、卡面原图提取（`wiki_card.py`） |
 
-- `fgo.db`
-- `mini.png`
-- `svt2.json`
-- `svt_table.png`
+## 9. 未来开发方向
 
-将这些文件重新归类为：
-
-- 示例
-- 测试资源
-- 文档截图
-- 本地产物
-
-目标：
-
-- 仓库结构更清晰
-- 减少未来维护混乱
+- 更新 `/help` 命令清单
+- 清理废弃代码（`render/`、`assets.py`）与根目录调试产物
+- 提交当前工作区的未提交改动
+- `commands/query/__init__.py` 中已预留注释：`/enemy`（敌人查询）、`/quest`（关卡查询）
+- 建立截图回归测试体系，降低 fgo.wiki 页面改版带来的隐性故障风险
+- 别名模糊匹配（RapidFuzz）优化查询体验
 
 ---
 
-### 第四阶段：继续完善渲染器
+## 10. 一句话总结
 
-当前最接近成品化的部分就是渲染器，因此建议继续：
-
-- 微调布局
-- 增加职阶图标
-- 增加更多信息字段
-- 处理不同立绘比例
-- 提升字体和边距统一性
-
-目标：
-
-- 从“功能图”升级为“成品图”
-
----
-
-### 第五阶段：扩展功能命令
-
-建议未来按如下顺序扩展：
-
-1. `/svt`
-2. `/ce`
-3. `/mat`
-4. `/guide`
-
-原因：
-
-- `/svt` 是当前主场景
-- `/ce` 与从者查询结构最相近
-- `/mat` 依赖名称与素材体系整理
-- `/guide` 更偏链接整合
-
----
-
-### 第六阶段：建立测试体系
-
-建议增加：
-
-- 离线渲染测试
-- 示例输入 JSON
-- 输出样图目录
-- 功能回归测试脚本
-
-目标：
-
-- 调整渲染和数据逻辑时更安心
-- 降低改坏现有功能的风险
-
----
-
-### 第七阶段：配置化与可扩展化
-
-未来建议逐步把以下内容配置化：
-
-- 默认区服
-- 字体路径
-- 缓存路径
-- Atlas API 超时时间
-- 命令前缀
-- 数据源开关
-
-目标：
-
-- 让项目更适合长期维护与扩展
-
----
-
-## 11. 对当前项目的整体评价
-
-### 优点
-- 分层结构已经建立
-- 核心启动链路清晰
-- 区服状态设计合理
-- Atlas 数据源选型正确
-- 中文别名体系方向正确
-- 图片渲染已经有明显成果
-- 已经具备继续扩展为完整产品的基础
-
-### 当前不足
-- 文档严重不足
-- 核心 `/svt` 命令存在半重构痕迹
-- 渲染器存在流程和作用域风险
-- 依赖可能未完整声明
-- 仓库中包含运行与调试产物
-- 配置和部署方式尚未系统化
-
----
-
-## 12. 当前最推荐的下一步行动
-
-建议优先按以下顺序执行：
-
-1. 修复 `/svt` 命令逻辑
-2. 修复 `svt_mooncell.py` 的结构性问题
-3. 在 `requirements.txt` 中补齐 Pillow
-4. 编写正式 README
-5. 清理仓库根目录的调试/运行产物
-6. 跑通完整 `/svt` 查询链路
-7. 再继续优化 Mooncell 风格细节
-8. 最后扩展 `/ce` 等新功能
-
----
-
-## 13. 一句话总结
-
-这个项目的方向、结构和核心链路都已经是对的；当前最重要的不是再盲目加功能，而是先把已有主链路和渲染链路收口、稳定、文档化，再进入下一阶段开发。
+项目已从「PIL 生图原型」进化为「**别名表 + Atlas 数据 + fgowiki 网页截图**」的稳定查询体系：从者 11 个命令、礼装/素材各 1~2 个命令全部可用；当前重点是收口工作区、更新 `/help`、清理废弃代码，然后继续扩展敌人/关卡等新查询能力。

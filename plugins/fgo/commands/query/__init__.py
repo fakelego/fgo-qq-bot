@@ -8,6 +8,9 @@ from . import material  # noqa
 from . import bond  # noqa
 from . import profile  # noqa
 from . import appearance  # noqa
+from . import card  # noqa
 from . import equip  # noqa
+from . import item  # noqa
+from . import farm  # noqa
 # from . import enemy  # noqa
 # from . import quest  # noqa

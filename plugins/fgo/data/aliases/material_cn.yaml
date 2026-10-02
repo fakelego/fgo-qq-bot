@@ -1,0 +1,788 @@
+# FGO 素材/道具别名表
+# 数据来源: https://fgo.wiki/w/道具一览
+# 生成脚本: gen_material_aliases.py
+
+items:
+  万死的毒针:
+    category: 铜素材
+    name_jp: 万死の毒針
+    name_en: Deadly Poisonous Needle
+    aliases:
+    - 万死的毒针
+    - 万死の毒針
+    - Deadly Poisonous Needle
+  不忘之灰:
+    category: 铜素材
+    name_jp: 忘れじの灰
+    name_en: Ash of Remembrance
+    aliases:
+    - 不忘之灰
+    - 忘れじの灰
+    - Ash of Remembrance
+  世界树之种:
+    category: 银素材
+    name_jp: 世界樹の種
+    name_en: Seed of Yggdrassil
+    aliases:
+    - 世界树之种
+    - 世界樹の種
+    - Seed of Yggdrassil
+  九十九镜:
+    category: 金素材
+    name_jp: 九十九鏡
+    name_en: Tsukumo Mirror
+    aliases:
+    - 九十九镜
+    - 九十九鏡
+    - Tsukumo Mirror
+  人工生命体幼体:
+    category: 银素材
+    name_jp: ホムンクルスベビー
+    name_en: Homunculus Baby
+    aliases:
+    - 人工生命体幼体
+    - ホムンクルスベビー
+    - Homunculus Baby
+  以太收光体:
+    category: 银素材
+    name_jp: エーテル収光体
+    name_en: Ether Converger
+    aliases:
+    - 以太收光体
+    - エーテル収光体
+    - Ether Converger
+  光银之冠:
+    category: 银素材
+    name_jp: 光銀の冠
+    name_en: Crown of Silvery Light
+    aliases:
+    - 光银之冠
+    - 光銀の冠
+    - Crown of Silvery Light
+  八连双晶:
+    category: 银素材
+    name_jp: 八連双晶
+    name_en: Octuplet Crystals
+    aliases:
+    - 八连双晶
+    - 八連双晶
+    - Octuplet Crystals
+  凤凰羽毛:
+    category: 银素材
+    name_jp: 鳳凰の羽根
+    name_en: Phoenix Feather
+    aliases:
+    - 凤凰羽毛
+    - 鳳凰の羽根
+    - Phoenix Feather
+  凶骨:
+    category: 铜素材
+    name_jp: 凶骨
+    name_en: Evil Bone
+    aliases:
+    - 凶骨
+    - 凶骨
+    - Evil Bone
+  创生的珍珠:
+    category: 银素材
+    name_jp: 創生の真珠
+    name_en: ''
+    aliases:
+    - 创生的珍珠
+    - 創生の真珠
+  剑之秘石:
+    category: 职阶技能石
+    name_jp: 剣の秘石
+    name_en: Secret Gem of Saber
+    aliases:
+    - 剑之秘石
+    - 剣の秘石
+    - Secret Gem of Saber
+  剑之辉石:
+    category: 职阶技能石
+    name_jp: 剣の輝石
+    name_en: Gem of Saber
+    aliases:
+    - 剑之辉石
+    - 剣の輝石
+    - Gem of Saber
+  剑之魔石:
+    category: 职阶技能石
+    name_jp: 剣の魔石
+    name_en: Magic Gem of Saber
+    aliases:
+    - 剑之魔石
+    - 剣の魔石
+    - Magic Gem of Saber
+  剑阶金像:
+    category: 职阶棋子
+    name_jp: セイバーモニュメント
+    name_en: Saber Monument
+    aliases:
+    - 剑阶金像
+    - セイバーモニュメント
+    - Saber Monument
+  剑阶银棋:
+    category: 职阶棋子
+    name_jp: セイバーピース
+    name_en: Saber Piece
+    aliases:
+    - 剑阶银棋
+    - セイバーピース
+    - Saber Piece
+  咒兽胆石:
+    category: 金素材
+    name_jp: 呪獣胆石
+    name_en: Cursed Beast Gallstone
+    aliases:
+    - 咒兽胆石
+    - 呪獣胆石
+    - Cursed Beast Gallstone
+  大骑士勋章:
+    category: 银素材
+    name_jp: 大騎士勲章
+    name_en: Great Knight Medal
+    aliases:
+    - 大骑士勋章
+    - 大騎士勲章
+    - Great Knight Medal
+  天命圣水:
+    category: 金素材
+    name_jp: 天命の聖水
+    name_en: ''
+    aliases:
+    - 天命圣水
+    - 天命の聖水
+  太阳皮:
+    category: 银素材
+    name_jp: 太陽皮
+    name_en: Solar Hide
+    aliases:
+    - 太阳皮
+    - 太陽皮
+    - Solar Hide
+  奇奇神酒:
+    category: 金素材
+    name_jp: 奇奇神酒
+    name_en: Mysterious Divine Wine
+    aliases:
+    - 奇奇神酒
+    - 奇奇神酒
+    - Mysterious Divine Wine
+  宇宙立方形:
+    category: 银素材
+    name_jp: ユニバーサルキューブ
+    name_en: ''
+    aliases:
+    - 宇宙立方形
+    - ユニバーサルキューブ
+  宵泣之铁桩:
+    category: 铜素材
+    name_jp: 宵哭きの鉄杭
+    name_en: Stake of Wailing Night
+    aliases:
+    - 宵泣之铁桩
+    - 宵哭きの鉄杭
+    - Stake of Wailing Night
+  封魔之灯:
+    category: 金素材
+    name_jp: 封魔のランプ
+    name_en: Lamp of Evil-Sealing
+    aliases:
+    - 封魔之灯
+    - 封魔のランプ
+    - Lamp of Evil-Sealing
+  巨人的戒指:
+    category: 银素材
+    name_jp: 巨人の指輪
+    name_en: Giant's Ring
+    aliases:
+    - 巨人的戒指
+    - 巨人の指輪
+    - Giant's Ring
+  弓之秘石:
+    category: 职阶技能石
+    name_jp: 弓の秘石
+    name_en: Secret Gem of Archer
+    aliases:
+    - 弓之秘石
+    - 弓の秘石
+    - Secret Gem of Archer
+  弓之辉石:
+    category: 职阶技能石
+    name_jp: 弓の輝石
+    name_en: Gem of Archer
+    aliases:
+    - 弓之辉石
+    - 弓の輝石
+    - Gem of Archer
+  弓之魔石:
+    category: 职阶技能石
+    name_jp: 弓の魔石
+    name_en: Magic Gem of Archer
+    aliases:
+    - 弓之魔石
+    - 弓の魔石
+    - Magic Gem of Archer
+  弓阶金像:
+    category: 职阶棋子
+    name_jp: アーチャーモニュメント
+    name_en: Archer Monument
+    aliases:
+    - 弓阶金像
+    - アーチャーモニュメント
+    - Archer Monument
+  弓阶银棋:
+    category: 职阶棋子
+    name_jp: アーチャーピース
+    name_en: Archer Piece
+    aliases:
+    - 弓阶银棋
+    - アーチャーピース
+    - Archer Piece
+  悠久果实:
+    category: 金素材
+    name_jp: 悠久の実
+    name_en: Fruit of Eternity
+    aliases:
+    - 悠久果实
+    - 悠久の実
+    - Fruit of Eternity
+  愚者之锁:
+    category: 铜素材
+    name_jp: 愚者の鎖
+    name_en: Fool's Chain
+    aliases:
+    - 愚者之锁
+    - 愚者の鎖
+    - Fool's Chain
+  战马的幼角:
+    category: 金素材
+    name_jp: 戦馬の幼角
+    name_en: Warhorse's Young Horn
+    aliases:
+    - 战马的幼角
+    - 戦馬の幼角
+    - Warhorse's Young Horn
+  振荡火药:
+    category: 铜素材
+    name_jp: 励振火薬
+    name_en: Mystic Gunpowder
+    aliases:
+    - 振荡火药
+    - 励振火薬
+    - Mystic Gunpowder
+  无间齿轮:
+    category: 银素材
+    name_jp: 無間の歯車
+    name_en: Eternal Gear
+    aliases:
+    - 无间齿轮
+    - 無間の歯車
+    - Eternal Gear
+  晓光炉心:
+    category: 金素材
+    name_jp: 暁光炉心
+    name_en: Reactor Core of Dawn
+    aliases:
+    - 晓光炉心
+    - 暁光炉心
+    - Reactor Core of Dawn
+  智慧之圣甲虫像:
+    category: 金素材
+    name_jp: 智慧のスカラベ
+    name_en: Scarab of Wisdom
+    aliases:
+    - 智慧之圣甲虫像
+    - 智慧のスカラベ
+    - Scarab of Wisdom
+  月光核:
+    category: 金素材
+    name_jp: 月光核
+    name_en: ''
+    aliases:
+    - 月光核
+    - 月光核
+  术之秘石:
+    category: 职阶技能石
+    name_jp: 術の秘石
+    name_en: Secret Gem of Caster
+    aliases:
+    - 术之秘石
+    - 術の秘石
+    - Secret Gem of Caster
+  术之辉石:
+    category: 职阶技能石
+    name_jp: 術の輝石
+    name_en: Gem of Caster
+    aliases:
+    - 术之辉石
+    - 術の輝石
+    - Gem of Caster
+  术之魔石:
+    category: 职阶技能石
+    name_jp: 術の魔石
+    name_en: Magic Gem of Caster
+    aliases:
+    - 术之魔石
+    - 術の魔石
+    - Magic Gem of Caster
+  术阶金像:
+    category: 职阶棋子
+    name_jp: キャスターモニュメント
+    name_en: Caster Monument
+    aliases:
+    - 术阶金像
+    - キャスターモニュメント
+    - Caster Monument
+  术阶银棋:
+    category: 职阶棋子
+    name_jp: キャスターピース
+    name_en: Caster Piece
+    aliases:
+    - 术阶银棋
+    - キャスターピース
+    - Caster Piece
+  杀之秘石:
+    category: 职阶技能石
+    name_jp: 殺の秘石
+    name_en: Secret Gem of Assassin
+    aliases:
+    - 杀之秘石
+    - 殺の秘石
+    - Secret Gem of Assassin
+  杀之辉石:
+    category: 职阶技能石
+    name_jp: 殺の輝石
+    name_en: Gem of Assassin
+    aliases:
+    - 杀之辉石
+    - 殺の輝石
+    - Gem of Assassin
+  杀之魔石:
+    category: 职阶技能石
+    name_jp: 殺の魔石
+    name_en: Magic Gem of Assassin
+    aliases:
+    - 杀之魔石
+    - 殺の魔石
+    - Magic Gem of Assassin
+  杀阶金像:
+    category: 职阶棋子
+    name_jp: アサシンモニュメント
+    name_en: Assassin Monument
+    aliases:
+    - 杀阶金像
+    - アサシンモニュメント
+    - Assassin Monument
+  杀阶银棋:
+    category: 职阶棋子
+    name_jp: アサシンピース
+    name_en: Assassin Piece
+    aliases:
+    - 杀阶银棋
+    - アサシンピース
+    - Assassin Piece
+  极光之钢:
+    category: 银素材
+    name_jp: オーロラ鋼
+    name_en: Aurora Steel
+    aliases:
+    - 极光之钢
+    - オーロラ鋼
+    - Aurora Steel
+  枪之秘石:
+    category: 职阶技能石
+    name_jp: 槍の秘石
+    name_en: Secret Gem of Lancer
+    aliases:
+    - 枪之秘石
+    - 槍の秘石
+    - Secret Gem of Lancer
+  枪之辉石:
+    category: 职阶技能石
+    name_jp: 槍の輝石
+    name_en: Gem of Lancer
+    aliases:
+    - 枪之辉石
+    - 槍の輝石
+    - Gem of Lancer
+  枪之魔石:
+    category: 职阶技能石
+    name_jp: 槍の魔石
+    name_en: Magic Gem of Lancer
+    aliases:
+    - 枪之魔石
+    - 槍の魔石
+    - Magic Gem of Lancer
+  枪阶金像:
+    category: 职阶棋子
+    name_jp: ランサーモニュメント
+    name_en: Lancer Monument
+    aliases:
+    - 枪阶金像
+    - ランサーモニュメント
+    - Lancer Monument
+  枪阶银棋:
+    category: 职阶棋子
+    name_jp: ランサーピース
+    name_en: Lancer Piece
+    aliases:
+    - 枪阶银棋
+    - ランサーピース
+    - Lancer Piece
+  枯淡勾玉:
+    category: 银素材
+    name_jp: 枯淡勾玉
+    name_en: Refined Magatama
+    aliases:
+    - 枯淡勾玉
+    - 枯淡勾玉
+    - Refined Magatama
+  梦幻的鳞粉:
+    category: 银素材
+    name_jp: 夢幻の鱗粉
+    name_en: Scales of Fantasy
+    aliases:
+    - 梦幻的鳞粉
+    - 夢幻の鱗粉
+    - Scales of Fantasy
+  永远结冰:
+    category: 银素材
+    name_jp: 永遠結氷
+    name_en: Eternal Ice
+    aliases:
+    - 永远结冰
+    - 永遠結氷
+    - Eternal Ice
+  混沌之爪:
+    category: 金素材
+    name_jp: 混沌の爪
+    name_en: Claw of Chaos
+    aliases:
+    - 混沌之爪
+    - 混沌の爪
+    - Claw of Chaos
+  煌星碎片:
+    category: 金素材
+    name_jp: 煌星のカケラ
+    name_en: Fragment of a Twinkling Star
+    aliases:
+    - 煌星碎片
+    - 煌星のカケラ
+    - Fragment of a Twinkling Star
+  狂之秘石:
+    category: 职阶技能石
+    name_jp: 狂の秘石
+    name_en: Secret Gem of Berserker
+    aliases:
+    - 狂之秘石
+    - 狂の秘石
+    - Secret Gem of Berserker
+  狂之辉石:
+    category: 职阶技能石
+    name_jp: 狂の輝石
+    name_en: Gem of Berserker
+    aliases:
+    - 狂之辉石
+    - 狂の輝石
+    - Gem of Berserker
+  狂之魔石:
+    category: 职阶技能石
+    name_jp: 狂の魔石
+    name_en: Magic Gem of Berserker
+    aliases:
+    - 狂之魔石
+    - 狂の魔石
+    - Magic Gem of Berserker
+  狂阶金像:
+    category: 职阶棋子
+    name_jp: バーサーカーモニュメント
+    name_en: Berserker Monument
+    aliases:
+    - 狂阶金像
+    - バーサーカーモニュメント
+    - Berserker Monument
+  狂阶银棋:
+    category: 职阶棋子
+    name_jp: バーサーカーピース
+    name_en: Berserker Piece
+    aliases:
+    - 狂阶银棋
+    - バーサーカーピース
+    - Berserker Piece
+  疯狂的残渣:
+    category: 铜素材
+    name_jp: 狂気の残滓
+    name_en: Remnant of Madness
+    aliases:
+    - 疯狂的残渣
+    - 狂気の残滓
+    - Remnant of Madness
+  真理之卵:
+    category: 金素材
+    name_jp: 真理の卵
+    name_en: Egg of Truth
+    aliases:
+    - 真理之卵
+    - 真理の卵
+    - Egg of Truth
+  神彩透镜:
+    category: 银素材
+    name_jp: 神彩のレンズ
+    name_en: ''
+    aliases:
+    - 神彩透镜
+    - 神彩のレンズ
+  神脉灵子:
+    category: 银素材
+    name_jp: 神脈霊子
+    name_en: Divine Spiritron
+    aliases:
+    - 神脉灵子
+    - 神脈霊子
+    - Divine Spiritron
+  祸罪之箭头:
+    category: 银素材
+    name_jp: 禍罪の矢尻
+    name_en: Arrowhead of Malice
+    aliases:
+    - 祸罪之箭头
+    - 禍罪の矢尻
+    - Arrowhead of Malice
+  禁断书页:
+    category: 银素材
+    name_jp: 禁断の頁
+    name_en: Forbidden Page
+    aliases:
+    - 禁断书页
+    - 禁断の頁
+    - Forbidden Page
+  精灵根:
+    category: 金素材
+    name_jp: 精霊根
+    name_en: Spirit Root
+    aliases:
+    - 精灵根
+    - 精霊根
+    - Spirit Root
+  终之花:
+    category: 银素材
+    name_jp: 終の花
+    name_en: ''
+    aliases:
+    - 终之花
+    - 終の花
+  英雄之证:
+    category: 铜素材
+    name_jp: 英雄の証
+    name_en: Proof of Hero
+    aliases:
+    - 英雄之证
+    - 英雄の証
+    - Proof of Hero
+  虚影之尘:
+    category: 铜素材
+    name_jp: 虚影の塵
+    name_en: Void's Dust
+    aliases:
+    - 虚影之尘
+    - 虚影の塵
+    - Void's Dust
+  虹之线球:
+    category: 银素材
+    name_jp: 虹の糸玉
+    name_en: Ball of Rainbow Thread
+    aliases:
+    - 虹之线球
+    - 虹の糸玉
+    - Ball of Rainbow Thread
+  蛇之宝玉:
+    category: 银素材
+    name_jp: 蛇の宝玉
+    name_en: Serpent Jewel
+    aliases:
+    - 蛇之宝玉
+    - 蛇の宝玉
+    - Serpent Jewel
+  蛮神心脏:
+    category: 金素材
+    name_jp: 蛮神の心臓
+    name_en: Heart of the Foreign God
+    aliases:
+    - 蛮神心脏
+    - 蛮神の心臓
+    - Heart of the Foreign God
+  血之泪石:
+    category: 金素材
+    name_jp: 血の涙石
+    name_en: Tearstone of Blood
+    aliases:
+    - 血之泪石
+    - 血の涙石
+    - Tearstone of Blood
+  赦免的小钟:
+    category: 铜素材
+    name_jp: 赦免の小鐘
+    name_en: Small Bell of Absolution
+    aliases:
+    - 赦免的小钟
+    - 赦免の小鐘
+    - Small Bell of Absolution
+  起源的胎毛:
+    category: 金素材
+    name_jp: 原初の産毛
+    name_en: Primordial Lanugo
+    aliases:
+    - 起源的胎毛
+    - 原初の産毛
+    - Primordial Lanugo
+  追忆的贝壳:
+    category: 银素材
+    name_jp: 追憶の貝殻
+    name_en: Shell of Reminiscence
+    aliases:
+    - 追忆的贝壳
+    - 追憶の貝殻
+    - Shell of Reminiscence
+  遗灵箱:
+    category: 金素材
+    name_jp: 遺霊箱
+    name_en: ''
+    aliases:
+    - 遗灵箱
+    - 遺霊箱
+  闲古铃:
+    category: 银素材
+    name_jp: 閑古鈴
+    name_en: Soundless Bell
+    aliases:
+    - 闲古铃
+    - 閑古鈴
+    - Soundless Bell
+  陨蹄铁:
+    category: 银素材
+    name_jp: 隕蹄鉄
+    name_en: Meteor Horseshoe
+    aliases:
+    - 陨蹄铁
+    - 隕蹄鉄
+    - Meteor Horseshoe
+  骑之秘石:
+    category: 职阶技能石
+    name_jp: 騎の秘石
+    name_en: Secret Gem of Rider
+    aliases:
+    - 骑之秘石
+    - 騎の秘石
+    - Secret Gem of Rider
+  骑之辉石:
+    category: 职阶技能石
+    name_jp: 騎の輝石
+    name_en: Gem of Rider
+    aliases:
+    - 骑之辉石
+    - 騎の輝石
+    - Gem of Rider
+  骑之魔石:
+    category: 职阶技能石
+    name_jp: 騎の魔石
+    name_en: Magic Gem of Rider
+    aliases:
+    - 骑之魔石
+    - 騎の魔石
+    - Magic Gem of Rider
+  骑阶金像:
+    category: 职阶棋子
+    name_jp: ライダーモニュメント
+    name_en: Rider Monument
+    aliases:
+    - 骑阶金像
+    - ライダーモニュメント
+    - Rider Monument
+  骑阶银棋:
+    category: 职阶棋子
+    name_jp: ライダーピース
+    name_en: Rider Piece
+    aliases:
+    - 骑阶银棋
+    - ライダーピース
+    - Rider Piece
+  鬼炎鬼灯:
+    category: 金素材
+    name_jp: 鬼炎鬼灯
+    name_en: Flaming Oni Lantern Plant
+    aliases:
+    - 鬼炎鬼灯
+    - 鬼炎鬼灯
+    - Flaming Oni Lantern Plant
+  鬼魂提灯:
+    category: 银素材
+    name_jp: ゴーストランタン
+    name_en: Ghost Lantern
+    aliases:
+    - 鬼魂提灯
+    - ゴーストランタン
+    - Ghost Lantern
+  魔术髓液:
+    category: 铜素材
+    name_jp: 魔術髄液
+    name_en: Mystic Spinal Fluid
+    aliases:
+    - 魔术髓液
+    - 魔術髄液
+    - Mystic Spinal Fluid
+  黄昏的仪式剑:
+    category: 铜素材
+    name_jp: 黄昏の儀式剣
+    name_en: Ceremonial Sword of Twilight
+    aliases:
+    - 黄昏的仪式剑
+    - 黄昏の儀式剣
+    - Ceremonial Sword of Twilight
+  黄金釜:
+    category: 金素材
+    name_jp: 黄金釜
+    name_en: ''
+    aliases:
+    - 黄金釜
+    - 黄金釜
+  黎溟琥珀:
+    category: 金素材
+    name_jp: 黎溟琥珀
+    name_en: ''
+    aliases:
+    - 黎溟琥珀
+    - 黎溟琥珀
+  黑兽脂:
+    category: 金素材
+    name_jp: 黒獣脂
+    name_en: Black Beast Grease
+    aliases:
+    - 黑兽脂
+    - 黒獣脂
+    - Black Beast Grease
+  黑曜锐刃:
+    category: 铜素材
+    name_jp: 黒曜鋭刃
+    name_en: Obsidian Blade
+    aliases:
+    - 黑曜锐刃
+    - 黒曜鋭刃
+    - Obsidian Blade
+  龙之牙:
+    category: 铜素材
+    name_jp: 竜の牙
+    name_en: Dragon Fang
+    aliases:
+    - 龙之牙
+    - 竜の牙
+    - Dragon Fang
+  龙之逆鳞:
+    category: 金素材
+    name_jp: 竜の逆鱗
+    name_en: Dragon's Reverse Scale
+    aliases:
+    - 龙之逆鳞
+    - 竜の逆鱗
+    - Dragon's Reverse Scale

@@ -276,7 +276,7 @@ async def capture_servant_sections(
                     }
                 }
                 return indices;
-            }""", [escaped, pid])
+            }""", [escaped, pid, next_escaped])
 
         def _merge_pngs(pngs: list[bytes], gap: int = 4) -> bytes:
             """垂直拼接多张 PNG"""
@@ -355,20 +355,13 @@ async def capture_servant_sections(
                             merge = _is_multi_table(title)
                             pngs = await _screenshot_indices(indices, merge=merge)
                         else:
-                            # 无表格时回退到 clip 截图（如资料），直接从当前 panel 裁
-                            box = await page.evaluate(
-                                "(pid) => { const p = document.getElementById(pid); if (!p) return null; const r = p.getBoundingClientRect(); return { y: r.y + window.scrollY, h: r.height }; }",
-                                panel_id,
-                            )
-                            if box:
-                                clip_w = int(VIEWPORT_W * 0.75) if title.startswith("资料") else VIEWPORT_W
-                                clip = {"x": 0, "y": box["y"], "width": clip_w, "height": min(box["h"], MAX_CLIP_H * 2)}
-                                try:
-                                    png = await page.screenshot(type="png", clip=clip, full_page=True)
-                                    pngs = [png]
-                                except Exception:
-                                    pngs = []
-                            else:
+                            # 无表格时直接对 panel 元素截图（如资料个人资料面板）。
+                            # 不能用 clip + 文档坐标：location.hash 切换后页面已滚动，
+                            # Playwright 的 clip 是视口相对坐标，文档坐标会截出空白。
+                            try:
+                                png = await page.locator(f'[id="{panel_id}"]').screenshot(type="png")
+                                pngs = [png]
+                            except Exception:
                                 pngs = []
                         for j, png in enumerate(pngs):
                             sub = f"({lbl})" if len(matched_tabber) > 1 else ""

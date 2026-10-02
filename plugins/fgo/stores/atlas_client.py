@@ -38,6 +38,14 @@ async def _get_session() -> aiohttp.ClientSession:
         return _session
 
 
+async def close_session():
+    """关闭共享 aiohttp session（调试脚本退出前调用，避免 Unclosed session 警告）。"""
+    global _session
+    if _session is not None and not _session.closed:
+        await _session.close()
+    _session = None
+
+
 async def atlas_get_json(path: str) -> Any:
     url = f"{ATLAS_BASE}{path}"
     sess = await _get_session()

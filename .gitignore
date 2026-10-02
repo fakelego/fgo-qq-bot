@@ -16,9 +16,19 @@ build/
 
 # 调试产物
 mini.png
+target_output.png
+test_clip.png
 
 # 数据缓存
 plugins/fgo/data/cache/
+
+# 测试/调试脚本
+debug_all_commands.py
+gen_material_aliases.py
+scrape_materials.py
+scrape_materials_v2.py
+test_card.py
+test_card_debug.py
 
 # 离线渲染测试产物
 test_render.py
