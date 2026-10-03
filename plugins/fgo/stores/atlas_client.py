@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from typing import Any, Optional
 
 import aiohttp
+from aiohttp.resolver import ThreadedResolver
 
 
 ATLAS_BASE = "https://api.atlasacademy.io"
@@ -34,7 +35,11 @@ async def _get_session() -> aiohttp.ClientSession:
     global _session
     async with _session_lock:
         if _session is None or _session.closed:
-            _session = aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=12))
+            # ThreadedResolver:aiodns 在部分环境(尤其 Windows)下 DNS 解析不稳定
+            _session = aiohttp.ClientSession(
+                timeout=aiohttp.ClientTimeout(total=12),
+                connector=aiohttp.TCPConnector(resolver=ThreadedResolver()),
+            )
         return _session
 
 

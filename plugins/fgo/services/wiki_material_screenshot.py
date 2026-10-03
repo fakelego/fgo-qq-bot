@@ -1,12 +1,9 @@
-"""fgowiki 素材/道具页面截图服务"""
+"""fgowiki 素材/道具页面截图服务(parse API + 本地渲染)"""
 from __future__ import annotations
-
-import asyncio
-from urllib.parse import quote
 
 from playwright.async_api import Page
 
-from .wiki_screenshot import _get_browser, _hide_sidebar_and_expand, _force_load_all_images
+from . import api_render
 
 VIEWPORT_W = 800
 VIEWPORT_H = 1000
@@ -14,40 +11,17 @@ VIEWPORT_H = 1000
 _FARM_VIEWPORT_W = 1000
 
 
-async def _load_material_page(keyword: str, viewport_w: int, timeout_ms: int) -> Page | None:
-    """加载素材页面，隐藏侧边栏、加载图片，返回 page 对象。失败返回 None。"""
-    encoded = quote(keyword)
-    urls = [
-        f"https://fgo.wiki/w/{encoded}",
-        f"https://fgo.wiki/index.php?search={encoded}",
-    ]
-
-    browser = await _get_browser()
-    page: Page = await browser.new_page(
-        viewport={"width": viewport_w, "height": VIEWPORT_H},
-        device_scale_factor=1,
-    )
-
-    for url in urls:
-        try:
-            resp = await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-        except Exception:
-            continue
-        if resp and resp.status in (200, 304):
-            break
-    else:
-        await page.close()
+async def _load_material_page(keyword: str, viewport_w: int) -> Page | None:
+    """渲染素材页面,返回 page 对象。失败返回 None。"""
+    html = await api_render.fetch_page_html(keyword)
+    if not html:
         return None
-
-    await _hide_sidebar_and_expand(page)
-    await asyncio.sleep(0.3)
-    await _force_load_all_images(page)
-    return page
+    return await api_render.render_page(html, viewport_w=viewport_w, viewport_h=VIEWPORT_H)
 
 
 async def capture_material_page(keyword: str, *, timeout_ms: int = 15000) -> bytes | None:
     """截取 fgowiki 素材页面顶部信息框，返回 PNG 字节。查不到返回 None。"""
-    page = await _load_material_page(keyword, VIEWPORT_W, timeout_ms)
+    page = await _load_material_page(keyword, VIEWPORT_W)
     if not page:
         return None
 
@@ -73,9 +47,9 @@ async def capture_material_page(keyword: str, *, timeout_ms: int = 15000) -> byt
         if not bounds:
             return None
 
-        clip = {"x": 0, "y": bounds["y"], "width": VIEWPORT_W, "height": bounds["height"]}
-        png = await page.screenshot(type="png", clip=clip, full_page=True)
-        return png
+        return await api_render.capture_region(
+            page, bounds["y"], int(bounds["height"]), VIEWPORT_W
+        )
 
     except Exception:
         return None
@@ -85,7 +59,7 @@ async def capture_material_page(keyword: str, *, timeout_ms: int = 15000) -> byt
 
 async def capture_material_farming(keyword: str, *, timeout_ms: int = 15000) -> bytes | None:
     """截取 fgowiki 素材页面的「主要掉落关卡」表，按 AP 效率排序只取前 3 行。查不到返回 None。"""
-    page = await _load_material_page(keyword, _FARM_VIEWPORT_W, timeout_ms)
+    page = await _load_material_page(keyword, _FARM_VIEWPORT_W)
     if not page:
         return None
 
@@ -182,4 +156,3 @@ async def capture_material_farming(keyword: str, *, timeout_ms: int = 15000) -> 
         return None
     finally:
         await page.close()
-
