@@ -24,12 +24,13 @@ COSTUME_PATTERNS = ["灵衣", "霊衣", "Costume", "costume"]
 
 
 def _stage_patterns(cn_name: str) -> dict[str, list[str]]:
-    """阶段关键词映射(末尾的「从者名+数字」兜底模式,如 玄奘三藏1.png)。"""
+    """阶段关键词映射(末尾的「从者名+数字」「立绘N」兜底模式,
+    如 玄奘三藏1.png、喀耳刻立绘1.png——页面名与角色名不一致时仍可命中)。"""
     return {
-        "1": ["初期", "初始", "卡面1", "卡面 1", "Stage 1", "stage 1", "Stage1", "stage1", cn_name + "1"],
-        "2": ["一破", "卡面2", "卡面 2", "Stage 2", "stage 2", "Stage2", "stage2", "二破", cn_name + "2"],
-        "3": ["三破", "卡面3", "卡面 3", "Stage 3", "stage 3", "Stage3", "stage3", cn_name + "3"],
-        "4": ["満破", "满破", "卡面4", "卡面 4", "Stage 4", "stage 4", "Stage4", "stage4", "四破", cn_name + "4"],
+        "1": ["初期", "初始", "卡面1", "卡面 1", "Stage 1", "stage 1", "Stage1", "stage1", cn_name + "1", "立绘1"],
+        "2": ["一破", "卡面2", "卡面 2", "Stage 2", "stage 2", "Stage2", "stage2", "二破", cn_name + "2", "立绘2"],
+        "3": ["三破", "卡面3", "卡面 3", "Stage 3", "stage 3", "Stage3", "stage3", cn_name + "3", "立绘3"],
+        "4": ["満破", "满破", "卡面4", "卡面 4", "Stage 4", "stage 4", "Stage4", "stage4", "四破", cn_name + "4", "立绘4"],
     }
 
 
