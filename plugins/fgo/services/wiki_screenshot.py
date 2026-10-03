@@ -52,16 +52,25 @@ _HEADING_JS = """() => {
             while (cur && cur.tagName !== 'H2') {
                 if (cur.tagName === 'H3') {
                     const h3t = titleOf(cur);
-                    if (h3t) results.push({title: h3t, y: getY(cur)});
                     if (h3t.includes('保有技能') || h3t.includes('持有技能')) {
+                        // 持有技能大节:有「技能N」子标题时只收子标题。
+                        // 大节整体截图与技能N截图是同一批表格(重复),且无命令消费大节截图
                         let sub = cur.nextElementSibling;
+                        const subs = [];
                         while (sub && sub.tagName !== 'H3' && sub.tagName !== 'H2') {
                             if (sub.tagName === 'P') {
                                 const m = sub.textContent.trim().match(/技能\\d+/);
-                                if (m) results.push({title: m[0], y: getY(sub)});
+                                if (m) subs.push({title: m[0], y: getY(sub)});
                             }
                             sub = sub.nextElementSibling;
                         }
+                        if (subs.length) {
+                            results.push(...subs);
+                        } else {
+                            results.push({title: h3t, y: getY(cur)});
+                        }
+                    } else if (h3t) {
+                        results.push({title: h3t, y: getY(cur)});
                     }
                 }
                 cur = cur.nextElementSibling;
